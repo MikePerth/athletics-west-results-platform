@@ -1,0 +1,610 @@
+Athletics WA Records Platform - Full Project Handover
+Project Overview
+
+The Athletics WA Records Platform is a cloud-hosted records management system used to manage:
+
+State Records
+Championship Records
+All Comers Records
+Relay Records
+Athlete Records
+Audit History
+Record Governance
+Import Processes
+
+The platform is now operational and deployed.
+
+
+
+
+Technology Stack
+
+
+Frontend
+
+React
+React Router
+Axios
+Vite
+
+
+Purpose:
+Administration UI
+Record management
+Athlete management
+Audit viewing
+Import management
+
+
+Frontend Hosting:
+Vercel
+
+Current deployment: https://athletics-west-records-platform-d2b.vercel.app
+
+
+
+Backend
+
+
+FastAPI
+Pydantic
+SQLAlchemy
+Uvicorn
+
+Purpose:
+REST API
+Authentication
+Business logic
+Database access
+Record governance
+
+Hosted on Railway
+
+
+
+
+
+Database 
+
+PostgreSQL
+
+Local: athletics_west
+
+Hosted: Railway PostgreSQL
+
+
+Current state: Local database = Railway database, confirmed after full restore
+
+
+
+
+
+
+
+Architecture
+
+
+React Frontend
+       |
+       v
+FastAPI Backend
+       |
+       v
+PostgreSQL Database
+
+
+
+
+Current Functional Features
+
+
+Authentication
+Users can:
+Login
+Logout
+
+
+Permission model: Superuser
+Key dependency: require_superuser
+Location: backend/app/api/auth_dependencies.py
+
+
+
+
+Records
+
+Supported:
+View Records
+Create Records
+Edit Records
+Archive Records
+Relay Records
+Record History
+
+
+
+
+Automatic Record Superseding implemented
+
+Previous Model:
+
+Frontend
+   ↓
+Manual supersede
+
+
+
+Current Model:
+Create Record
+      ↓
+Backend checks existing records
+      ↓
+Automatically supersedes current record
+
+
+implemented in backend/app/api/records.py
+
+
+
+
+Current Record Fields
+
+
+Records table contains:
+current_record
+superseded_by
+superseded_date
+
+
+Purpose:
+Record lineage
+Record history
+Current record tracking
+
+
+
+
+Relay Records supported
+
+Includes:
+Relay team records
+Relay athlete membership
+Relay running orders
+
+Relay order editing confirmed working. Table: record_athletes
+
+
+
+
+
+Athlete Management 
+
+Implemented
+
+
+Create Athlete
+Backend: POST /athletes
+Frontend: CreateAthlete.jsx
+
+Workflow:
+Create Record
+     ↓
+Athlete not found
+     ↓
+Create New Athlete
+     ↓
+Save Athlete
+     ↓
+Return to Create Record
+     ↓
+Athlete auto-selected
+
+
+
+
+
+Record History
+
+implemented
+
+
+Frontend: RecordHistory.jsx
+Backend: GET /records/{record_id}/history
+
+Navigation:
+Records
+  ↓
+Edit Record
+  ↓
+View History
+
+
+
+
+
+
+Current Database Structure
+
+Records
+
+Key fields:
+id
+record_type_id
+athlete_id
+event_specification_id
+performance
+performance_numeric
+current_record
+verification_status
+superseded_by
+superseded_date
+archived_at
+archived_by
+archive_reason
+
+
+
+Important: performance_numeric exists but currently contains NULL. Intended for future record comparison logic
+
+
+
+Athletes
+
+Key fields:
+id
+first_name
+last_name
+gender
+date_of_birth
+club
+state
+active
+created_at
+
+
+
+
+record_athletes
+
+Used for:
+Relay teams
+Relay running order
+
+Contains:
+record_id
+athlete_id
+relay_leg
+
+
+
+
+audit_log
+
+tracks:
+Record creation
+Record updates
+Superseding
+Archive actions
+Athlete creation
+
+
+
+Event Ordering 
+
+implemented
+
+Order:
+Track
+Walks
+Relays
+Combined Events
+Road Running
+Field Events
+
+used consistently across:
+Create Record
+Records listing
+
+
+
+
+
+Important Business Rules
+
+Relay Records
+
+athlete_id = NULL because athletes are stored via record_athletes
+
+
+
+
+
+Historical Records
+
+Current approach: current_record = TRUE for current record
+Superseded records: current_record = FALSE
+
+
+
+
+
+
+New Discovery and Next Implementation
+
+
+
+Equalled Records - current system assumes:
+One category
+    ↓
+One current record
+
+where reality is:
+One category
+    ↓
+Multiple current records
+
+
+
+Example:
+
+Open F High Jump
+Vanessa Ward CUT 1.98m Perth 12/02/1989
+Alison Inverarity UWA 1.98m Germany 17/07/1994
+
+
+Future Design
+
+Athletics West staff with NOT determine:
+
+New Record
+Equalled Record
+
+System should determine automatically
+
+Current status:
+
+SQL table already contains performance_numeric which can support this, although performance_numeric is currently unpopulated.
+
+
+Recorded Performance Formats
+
+Field:
+75.78m
+2.31m
+15.84m
+
+
+
+Track:
+44.86
+10.89
+3:33.64
+14:01.89
+30:30.32
+
+
+Combined Events:
+7440 pts
+
+Hand Timed:
+8:11.4h where h = hand timed
+
+
+
+Populate performance_numeric 
+
+Examples:
+75.78m
+→ 75.78
+
+3:33.64
+→ 213.64
+
+7440 pts
+→ 7440
+
+
+then compare automatically
+
+
+Proposed comparison_direction
+
+Values:
+LOWER
+HIGHER
+
+
+LOWER:
+
+Track
+Road Running
+Walks
+Steeplechase
+Relays
+
+
+Higher:
+
+Long Jump
+Triple Jump
+High Jump
+Pole Vault
+Discus
+Hammer
+Shot Put
+Javelin
+Combined Events
+
+
+Backend Structure
+
+backend/
+└── app/
+    ├── main.py
+    │
+    ├── api/
+    │   ├── auth.py
+    │   ├── auth_dependencies.py
+    │   ├── athletes.py
+    │   ├── records.py
+    │   ├── record_evidence.py
+    │   ├── users.py
+    │   └── ...
+    │
+    ├── schemas/
+    │   ├── record_create.py
+    │   ├── record_approval_schema.py
+    │   ├── record_change_request_schema.py
+    │   ├── athlete_match_resolution_schema.py
+    │   ├── evidence_approval_schema.py
+    │   └── ...
+    │
+    └── database/
+
+
+
+
+Frontend Structure
+
+frontend/
+└── src/
+    ├── App.jsx
+    │
+    ├── services/
+    │   └── api.js
+    │
+    ├── components/
+    │   └── Navbar.jsx
+    │
+    └── pages/
+        ├── Login.jsx
+        ├── Dashboard.jsx
+        ├── Records.jsx
+        ├── CreateRecord.jsx
+        ├── EditRecord.jsx
+        ├── RecordHistory.jsx
+        ├── CreateAthlete.jsx
+        ├── ApprovalQueue.jsx
+        ├── AuditReports.jsx
+        ├── AuditLog.jsx
+        ├── UserAdministration.jsx
+        ├── ImportDashboard.jsx
+        ├── ImportBatch.jsx
+        └── imports/
+            └── ImportResolutionQueuePage.jsx
+
+
+
+Key API Endpoints
+
+Authentication: POST /login
+
+Records: 
+GET    /records
+POST   /records
+PUT    /records/{id}
+GET    /admin/records/{id}
+GET    /records/{record_id}/history
+POST   /records/{id}/archive
+PUT    /records/{record_id}/relay-order
+
+Athletes:
+POST /athletes
+
+Future:
+GET /athletes/search
+
+
+
+
+Deployment
+
+Frontend: Vercel
+
+Build:
+npm install
+npm run build
+
+
+
+Backend: Railway
+
+Startup - uvicorn app.main:app
+
+
+
+
+
+
+Current Production Status
+
+Verified:
+
+✅ Records visible
+
+✅ Local and Railway databases synchronised
+
+✅ Athlete creation
+
+✅ Record creation
+
+✅ Record editing
+
+✅ Relay order updates
+
+✅ Record history screen
+
+✅ Automatic superseding
+
+✅ Audit tracking
+
+✅ Vercel frontend live
+
+✅ Railway backend live
+
+
+
+
+
+Highest Priority Remaining Work
+
+
+Equalled Records
+
+Implement:
+Better Record
+Equal Record
+
+automatically determined using:
+performance_numeric
+comparison_direction
+
+so no user decision is required.
+
+
+
+
+Athlete Search/Autocompleted
+
+Replace Selected Athlete with Search Athlete for better usability
+
+
+
+
+Current Project Assessment
+
+The platform is now:
+Cloud hosted
+Production deployed
+Database synchronised
+Operational 
+
+
+Remaining work is primarily:
+Usability improvements
+Record comparison automation
+Shared/equalled record handling
+
+
+
+

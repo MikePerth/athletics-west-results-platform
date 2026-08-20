@@ -1,0 +1,535 @@
+Athletics West Records Platform - Handover Document
+Executive Summary
+
+The Athletics West Records Platform is a web-based records management system designed to manage, display, audit, approve and maintain athletics records across multiple athletics schemes.
+
+The platform currently supports:
+
+Athletics WA (Senior Athletics)
+Little Athletics WA (Junior Athletics)
+
+The application provides:
+
+Public records display
+Athlete management
+Record management
+Record creation and editing
+Record approval workflows
+Evidence management
+Audit logging
+Data import facilities
+Historical record tracking
+Frozen/permanent records
+
+
+
+
+Technology Stack
+
+Frontend
+
+Framework - 	React
+Build Tool - 	Vite
+Routing - 	React Router DOM
+HTTP Client - 	Axois
+Styling - 	Inline React Styling
+
+Current frontend architecture intentionally avoids major UI frameworks such as:
+Material UI
+Ant Design
+Bootstrap
+
+to keep the application lightweight and easy to maintain
+
+
+
+
+Backend
+
+Framework - 		FastAPI
+Language - 		Python
+Authentication - 	JWT Authentication (using bearer tokens)
+Database Access - 	SQLAlchemy Core with raw SWQL queries. Example:
+conn.execute(
+    text("""
+        SELECT ...
+    """)
+)
+
+No SQLAlchemy ORM is currently used
+
+
+
+
+Database
+
+
+RDBMS
+
+PostgreSQL - primary database athletics_west
+
+
+
+
+
+
+Deployment Architecture
+
+
+Frontend Deployment
+
+Hosted on: Vercel
+
+Typical workflow:
+
+Git Push
+↓
+Vercel Build
+↓
+Frontend Deployment
+
+
+
+
+Backend Deployment
+
+
+Hosted separately from frontend.
+
+Typical deployment options:
+Render
+Railway
+VPS
+Azure
+
+
+Backend exposes REST API endpoints
+GET /records
+GET /athletes
+GET /search-options
+
+
+
+
+Database Environment
+
+
+Two environments currently exist:
+
+
+Local Development
+
+localhost PostgreSQL
+
+
+Hosted Production
+
+Separate PostgreSQL database used by deployed application.
+
+Important:
+
+The hosted database does not automatically receive local imports.
+
+Any imports completed locally must be migrated separately.
+
+
+
+
+Current Architecture
+
+
+Frontend Structure
+
+src
+│
+├── components
+│
+├── pages
+│   ├── Records.jsx
+│   ├── Athletes.jsx
+│   ├── CreateRecord.jsx
+│   └── ...
+│
+├── services
+│   └── api.js
+│
+└── styles
+
+
+Components
+
+Reusable UI:
+Navbar
+Common controls
+Layout elements
+
+
+
+Pages
+
+Business functionality resides mostly inside pages.
+
+Example:
+Records.jsx
+
+contains:
+Records display
+Filters
+Senior/Junior switching
+
+
+
+
+Backend Structure
+
+backend
+└── app
+    ├── api
+    │
+    ├── schemas
+    │
+    ├── database
+    │
+    └── security
+
+
+API Modules
+
+Exarecords.py
+athletes.py
+events.py
+age_groups.py
+imports.py
+users.py
+auth.py
+
+Each expose FastAPI routes
+
+
+
+
+Core Business Concepts
+
+
+Schemes
+
+The platform now supports
+
+Scheme 1 - Athletics West
+Scheme 2 - Little Athletics WA
+
+stored in record_schemes
+
+
+
+Event Specifications
+
+Records are linked to event specifications
+
+Example:
+100m
+U18 Female
+
+creates a unique specification
+
+
+Key fields:
+Event
+Age Group
+Gender
+Implement Weight
+Hurdle Height
+Scheme
+
+
+
+Records
+
+Records are linked to:
+Event Specification
+Record Type
+Athlete
+
+Current fields include:
+Performance
+Competition
+Venue
+Record Date
+Current Record
+Verification Status
+
+
+
+
+Current Functional Features
+
+
+Records Page
+Provides:
+
+Senior/Junior Toggle
+
+◉ Athletics WA
+○ Little Athletics WA
+
+
+Changes:
+Available age groups
+Displayed records
+Table layout
+
+
+
+Senior Records display:
+Event
+Age Group
+Sex
+Type
+Performance
+Athlete
+
+Record Types:
+State Record
+All Comers Record
+
+
+Little Athletics records display:
+Event
+Category
+Performance
+Athlete
+Centre
+
+Examples:
+
+U18 Boys
+U18 Girls
+
+instead of U18 M and U18 F
+
+
+Relay Support
+
+Relay athletes displayed vertically:
+Athlete 1
+Athlete 2
+Athlete 3
+Athlete 4
+
+instead of comma-separated lists
+
+
+Athletes Page
+
+Provides:
+Athlete Search
+Athlete Management
+Athlete Editing
+Athlete Merging
+
+
+Create Record supports:
+Individual Records
+Relay Records
+
+Scheme-Aware Age Groups
+
+Athletics West:
+Open
+U20
+U18
+U16
+U14
+
+
+Little Athletics:
+U18
+U17
+U16
+U15
+U14
+U13
+U12
+U11
+U10
+U9
+
+Age groups are dynamically derived from event_specifications rather than a static lookup table
+
+
+
+
+Record Workflow
+
+
+New Record Creation
+Create Record
+↓
+Resolve Event Specification
+↓
+Compare With Current Record
+↓
+Determine:
+    Better
+    Equal
+    Worse
+↓
+Supersede if required
+
+
+Record Approval
+
+Supported statuses:
+Approved
+Pending
+Superseded
+
+
+
+Audit Functionality
+
+All important actions are logged:
+Record Created
+Record Edited
+Record Superseded
+Approvals
+
+
+stored within audit_log
+
+
+
+
+Historical Results
+
+The platform supports:
+Current Records
+Historical Records
+
+using curent_record flag. Historical records remain searchable.
+
+
+
+Frozen Records
+
+Permanent records that can never be beaten due to change in event specifications.
+
+U15 Girls and U15 Boys javelin
+
+
+
+
+
+Superseding Logic
+
+Frozen Records:
+
+Cannot be superseded
+Cannot be replaced
+Remain permanently current
+
+Superseding logic excludes:
+frozen_record = TRUE
+
+
+
+
+Security
+
+Authentication:	JWT
+Authorization implemented with require_superuser protecting:
+Record Creation
+Record Editing
+Athlete Management
+Admin Operations
+
+
+
+
+Backups
+
+Current recommended procedures:
+
+
+Git
+
+git add .
+git commit -m "Milestone description"
+
+
+
+PostgreSQL
+
+pg_dump
+
+before:
+Data imports
+Athlete merges
+Bulk updates
+
+
+
+
+
+Known Future Enhancements
+
+
+Athlete Deduplication
+
+Potential duplicates now exit across:
+Senior athletics
+Little athletics
+
+
+
+Production Synchronisation
+
+Little Athletics data currently needs verification within hosted environment
+
+Update public UI and confirm
+
+
+
+
+Key Tables
+
+
+Core Tables
+athletes
+records
+record_types
+events
+event_specifications
+record_schemes
+record_athletes
+audit_log
+users
+
+
+
+
+
+Summary
+
+The Athletics West Records Platform is now a fully functioning multi-scheme athletics records management platform supporting both Athletics WA and Little Athletics WA records within a single application, including:
+
+Records administration
+Athlete administration
+Imports
+Audit logging
+Approval workflows
+Relay support
+Historical tracking
+Frozen/permanent records
+Scheme-aware filtering
+PostgreSQL-backed persistence
+React/FastAPI architecture
+
+The platform is currently positioned for:
+
+Duplicate athlete reconciliation.
+Production environment synchronization.
+Public-facing Little Athletics display enhancements.
+Ongoing records administration and maintenance.
+
+

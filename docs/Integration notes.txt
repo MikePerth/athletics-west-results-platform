@@ -1,0 +1,320 @@
+Athletics WA Records Management System
+
+The Athletics WA Records Management System provides a central, secure platform for managing State, Championship and Association records across all athletics disciplines and age groups.
+
+Staff can search, view, create, edit and archive records while maintaining a complete audit trail of all changes. Records are organised by event, age group, gender and record type, ensuring consistent governance and accurate record keeping.
+
+When a new record is entered, the system automatically checks whether a current record already exists for that category. If a record is being broken, the previous record is automatically superseded and retained as part of the historical record. This removes the risk of accidentally creating duplicate current records and ensures record lineage is maintained.
+
+The system also supports athlete management. If an athlete is not already in the database, staff can create a new athlete directly from the record creation workflow without losing any data already entered. This streamlines data entry and improves efficiency.
+
+Additional features include user administration, approval workflows, audit logs, reporting, and bulk data import tools. These capabilities assist administrators in maintaining data quality, tracking changes, and managing records across the organisation.
+
+The overall goal of the platform is to provide Athletics WA with a modern, reliable and auditable records management solution that preserves historical records, supports governance requirements, and simplifies the administration of athletics achievements across all disciplines and age groups.
+
+
+
+
+
+
+Athletics WA Records System - Integrations & Dependencies Handover
+
+
+
+Frontend Dependencies
+
+
+Core:
+
+react
+react-dom
+react-router-dom
+axios
+vite
+
+
+Frontend Files:
+
+src/App.jsx
+
+src/pages/
+├── Login.jsx
+├── Dashboard.jsx
+├── Records.jsx
+├── CreateRecord.jsx
+├── EditRecord.jsx
+├── CreateAthlete.jsx
+├── ApprovalQueue.jsx
+├── AuditReports.jsx
+├── AuditLog.jsx
+├── UserAdministration.jsx
+├── ImportDashboard.jsx
+├── ImportBatch.jsx
+└── imports/
+    └── ImportResolutionQueuePage.jsx
+
+
+Shared Components
+
+src/components/
+├── Navbar.jsx
+
+
+
+API Service
+
+src/services/api.js used by all pages for backend communication
+
+
+
+Backend Dependencies
+
+
+python
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic
+python-jose
+passlib
+bcrypt
+
+
+Authentication used within:
+
+backend/app/api/auth.py
+backend/app/api/auth_dependencies.py
+
+Key dependency: require_superuser
+
+Used by:
+
+POST /records
+POST /athletes
+PUT /records/{id}
+POST /records/{id}/archive
+
+
+
+PostgreSQL Dependencies
+Database
+
+
+
+Backend API Structure
+
+Records API - backend/app/api/records.py contains:
+
+GET    /records
+POST   /records
+PUT    /records/{id}
+GET    /admin/records/{id}
+GET    /current-record
+POST   /records/{id}/archive
+
+
+
+Athletes API 
+
+backend/app/api/athletes.py   contains POST /athletes recently upgraded to use AthleteCreate schema
+
+Authentication
+
+backend/app/api/auth.py
+backend/app/api/auth_dependencies.py
+
+
+
+Pydantic Schemas
+
+backend/app/schemas/record_create.py contains:
+
+RecordCreate class AthleteCreate(BaseModel) fields:
+
+first_name
+last_name
+gender
+date_of_birth
+club
+
+
+
+Database Tables
+
+
+Core Tables
+
+
+records
+athletes
+events
+event_specifications
+record_types
+audit_log
+
+
+
+Records important columns:
+
+id
+record_type_id
+athlete_id
+event_specification_id
+performance
+current_record
+verification_status
+superseded_by
+superseded_date
+
+
+
+Athletes columns:
+
+id
+first_name
+last_name
+gender
+date_of_birth
+club
+state
+active
+created_at
+
+
+Audit log used by:
+
+Record creation
+Record superseding
+Athlete creation
+Record archive
+
+
+
+Frontend ↔ Backend Integrations
+
+
+Frontend: Login.jsx
+Backend: auth.py
+
+
+
+Create Record
+
+Frontend: CreateRecord.jsx
+API Calls:
+GET /search-options
+GET /event-specification
+GET /current-record
+POST /records
+
+
+
+Edit Record
+
+Frontend: EditRecord.jsx
+API:
+GET /admin/records/{id}
+PUT /records/{id}
+POST /records/{id}/archive
+
+
+CreateAthlete
+
+Frontend: CreateAthlete.jsx
+
+API: POST /athletes
+Workflow:
+Create Athlete
+↓
+POST /athletes
+↓
+returns athlete_id
+↓
+navigate:
+   /records/create?athlete=<id>
+
+
+
+Auto Athlete Selection
+
+Dependency: useLocation() reads: ?athlete=<id> inside CreateRecord.jsx
+
+
+
+
+
+
+Railway Integrations
+
+Railway Backend hosts Fast API application
+
+
+
+Railway PostgreSQL hosts production database
+
+
+
+Build / Deployment
+
+
+Local Frontend
+
+npm install
+npm run dev
+
+runs: http://localhost:5173
+
+
+Local Backend
+
+uvicorn app.main:app --reload
+
+runs: http://localhost:8000
+Swagger: http://localhost:8000/docs
+
+
+
+
+
+Current Operational Workflow
+
+
+Create Record
+      ↓
+Athlete exists?
+      ↓
+YES
+      ↓
+Continue
+
+NO
+      ↓
+Create New Athlete
+      ↓
+Save Athlete
+      ↓
+Return to Create Record
+      ↓
+Athlete auto-selected
+
+Create Record
+      ↓
+Backend checks existing current record
+      ↓
+Automatic supersede
+      ↓
+Audit written
+
+
+
+
+Outstanding Dependencies / Future Development
+Phase 6
+
+Record History
+
+Planned:GET /records/{record_id}/history
+Frontend: RecordHistory.jsx
+
+

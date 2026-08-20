@@ -1,0 +1,271 @@
+Athletics WA Records System - Handover Notes
+Current Status
+
+Project is stable and at a good checkpoint.
+
+Recent major work completed:
+
+✅ Backend automatic record superseding
+✅ superseded_by support
+✅ superseded_date support
+✅ Create Athlete backend API
+✅ Create Athlete frontend page
+✅ Create Record → Create Athlete workflow
+✅ Return-to-record flow after athlete creation
+✅ Event ordering improvements
+✅ Event grouping in dropdown
+✅ Database backup completed
+✅ Local PostgreSQL dump completed
+
+
+
+
+Completed Features
+
+
+Records Governance
+
+Previously:
+
+Create Record
+    ↓
+Frontend manually called
+/supersede
+
+
+Now:
+
+Create Record
+    ↓
+Backend checks category
+    ↓
+Current record exists?
+    ↓
+Automatic supersede
+
+Implemented in:backend/app/api/records.py
+
+
+
+Database Changes
+
+
+Records Table
+
+
+added:
+superseded_by UUID
+superseded_date TIMESTAMP
+
+Current record logic:current_record BOOLEAN is now authoritative
+
+Records page filters: current_record = TRUE only
+
+
+
+Create Record (frontend/src/pages/CreateRecord.jsx) completed
+
+
+Event ordering
+
+Track
+Walks
+Relays
+Combined Events
+Road Running
+Field Events
+
+
+Event grouping
+
+Dropdown displays visually grouped headings.
+
+
+Current Record Warning
+
+When record exists:
+
+Current Record Exists
+
+Athlete:
+Performance:
+
+Saving this record will
+automatically supersede
+the existing record.
+
+
+
+Create Athlete
+
+Backend backend/app/api/athletes.py
+
+@router.post("/athletes") uses AthleteCreate from backend/app/schemas/record_create.py
+
+Schema:
+
+class AthleteCreate(BaseModel):
+    first_name: str
+    last_name: str
+    date_of_birth: Optional[date] = None
+    gender: Optional[str] = None
+    club: Optional[str] = None
+
+
+
+
+Frontend
+
+
+File src/pages/CreateAthlete.jsx working
+
+Workflow:
+
+Create Athlete
+↓
+POST /athletes
+↓
+Returns athlete_id
+↓
+Navigate:
+
+/records/create?athlete=<id>
+
+
+
+Automatic Athlete Selection
+
+Implemented in:CreateRecord.jsx
+
+Flow:
+Create Record
+↓
+Create New Athlete
+↓
+Save Athlete
+↓
+Return:
+
+/records/create?athlete=<id>
+
+↓
+Athlete auto-selected
+
+Uses: useLocation() and 
+
+new URLSearchParams(
+  location.search
+)
+
+
+
+Railway Online instance
+
+Local Backup
+
+Completed.
+
+Full local PostgreSQL dump exists.
+
+Next Task
+
+Need to replace Railway DB with current local version.
+
+Recommended steps:
+
+Backup Railway first  pg_dump ...
+
+Reset Railway schema
+
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+Restore local dump \i C:/Users/MichaelHolmes/Downloads/AthleticsWestRecordsPlatform/backend/athletics_west_full.sql
+
+
+
+
+Next Planned Development
+Phase 6
+Record History / Lineage Viewer
+
+Not started.
+
+Backend endpoint required:
+@router.get(
+    "/records/{record_id}/history"
+)
+
+
+Frontend page required:RecordHistory.jsx
+Route required:
+<Route
+  path="/records/:id/history"
+  element={<RecordHistory />}
+/>
+
+
+Edit Record history button currently needs wiring.
+Target display:
+
+Current Record
+
+John Smith
+10.01
+
+↓ superseded
+
+Peter Jones
+10.05
+
+↓ superseded
+
+Mike Brown
+10.11
+
+
+Future Work Queue
+
+Priority order:
+
+1. Railway DB reset and restore
+2. Verify deployment
+3. Record History / Lineage Viewer
+4. Athlete Search / Autocomplete
+5. Additional reporting enhancements
+
+
+
+
+Key Files
+
+Backend:
+
+backend/app/api/records.py
+backend/app/api/athletes.py
+backend/app/api/auth_dependencies.py
+backend/app/schemas/record_create.py
+
+
+Frontend:
+
+src/pages/CreateRecord.jsx
+src/pages/CreateAthlete.jsx
+src/pages/EditRecord.jsx
+src/App.jsx
+
+Database:
+
+records
+athletes
+audit_log
+event_specifications
+events
+record_types
+
+
+
+
+
+
+

@@ -1,0 +1,394 @@
+
+ Athletics West Records Platform - Project Handover Document
+Project Overview
+
+This document provides a comprehensive handover of the Athletics West Records Platform as at the current development milestone.
+
+The platform consists of:
+
+Backend API (FastAPI + PostgreSQL)
+Admin UI (React)
+Public Website (React)
+PostgreSQL Database
+
+Purpose:
+
+Manage Athletics West records.
+Support Senior and Junior record schemes.
+Maintain record progression/history.
+Manage athletes and relay teams.
+Support public athlete profiles.
+Support record verification and auditing.
+Display and maintain wind-assisted performances.
+
+
+
+Current Status
+
+
+Completed Recently
+
+Wind Reading Support
+
+End-to-end implementation completed.
+
+Database records table already contained: wind
+
+No schema change required.
+
+
+Admin UI
+
+Implemented:
+
+Create Record
+Edit Record
+
+Features:
+
+Wind field visible only for eligible events
+Numeric input
+0.1 increments
+Max wind = +2.0
+Can clear value (saves NULL)
+
+
+
+Backend
+
+Implemented in:
+RecordCreate
+RecordUpdate
+create_record()
+update_record()
+
+Wind now:
+
+Saves correctly
+Updates correctly
+Removes correctly (NULL)
+
+
+
+Public UI
+
+Implemented:
+10.00 (+1.4)
+13.10 (-0.3)
+
+shown in Athlete Profile records
+
+
+
+
+Athlete Profile Improvements
+
+Completed:
+
+
+Removed Age
+
+Public athlete profile now excludes age and date of birth
+
+
+Added Record Type
+
+Displays:
+State Record
+All Comers Record
+
+for each record
+
+
+
+Record Ordering
+
+Current and historical records now sorted most recent to oldest using
+
+record_date DESC
+record_year DESC
+
+
+
+Historical Records implemented
+
+Current Records
+Historical Records
+
+
+Displays:
+
+Event
+Specification
+Record Type
+Performance
+Date
+
+
+
+
+
+
+
+Current Architecture
+
+
+
+Backend Structure
+
+
+Repository 
+
+backend/
+
+Main Areas:
+
+backend
+│
+├── app
+│   ├── api
+│   │   ├── athletes.py
+│   │   ├── auth.py
+│   │   ├── records.py
+│   │   ├── relay.py
+│   │   ├── users.py
+│   │
+│   ├── core
+│   │   ├── config.py
+│   │   ├── database.py
+│   │
+│   ├── models
+│   │
+│   └── schemas
+│
+├── requirements.txt
+│
+└── main.py
+
+
+
+
+Major Backend File
+
+records.py
+
+Largest and most important module.
+
+Responsible for:
+
+
+Public:
+GET /records
+GET /records/{id}
+GET /public/athletes/{athlete_id}/records
+
+
+Admin:
+POST /records
+PUT /records/{id}
+DELETE /records/{id}
+
+
+Record Progression handles:
+supersedes_record_id
+superseded_by
+current_record
+
+
+
+
+
+Database Structure
+
+
+Main Tables
+
+
+athletes, contains:
+id
+first_name
+last_name
+date_of_birth
+state
+country
+
+
+
+records, contains:
+id
+record_type_id
+athlete_id
+
+performance
+performance_numeric
+
+wind
+
+club
+venue
+competition
+
+record_date
+record_year
+
+verification_status
+
+current_record
+
+supersedes_record_id
+
+event_specification_id
+
+notes
+
+
+
+events, contains:
+100m
+200m
+110m Hurdles
+Long Jump
+etc.
+
+
+
+
+event_specifications, contains:
+Open Men 100m
+U18 Women Long Jump
+Open Men Shot Put
+etc.
+
+
+
+record_types, contains:
+State Record
+All Comers Record
+Little Athletics Record
+
+
+
+relay_members, contains:
+relay legs
+linked athletes
+
+for 
+4x100m
+4x200m
+4x400m
+
+
+
+
+audit_log, tracks:
+Record Create
+Record Update
+Record Superseded
+
+actions
+
+
+
+
+
+
+Record Comparison Logic
+
+configured through:
+comparison_direction stored in event_specifications
+
+
+Possible values:
+LOWER
+HIGHER
+
+
+
+
+
+Frontend Admin
+
+Repository: athletics-west-admin
+
+src
+│
+├── pages
+│   ├── Records.jsx
+│   ├── CreateRecord.jsx
+│   ├── EditRecord.jsx
+│   ├── Athletes.jsx
+│
+├── services
+│   └── api.js
+│
+├── App.jsx
+│
+└── main.jsx
+
+
+
+
+
+Important Admin Files
+
+
+CreateRecord.jsx
+
+Features:
+Event selection
+Athlete lookup
+Record Type
+Wind field
+Date parsing
+Relay support
+
+
+EditRecord.jsx
+
+
+
+
+Records.jsx
+
+Admin records list. 
+
+
+
+
+
+Public Website
+
+
+Repository athletics-west-public
+
+
+src
+│
+├── pages
+│   ├── Home.jsx
+│   ├── Records.jsx
+│   ├── AthleteProfile.jsx
+│
+├── services
+│   └── api.js
+│
+├── App.jsx
+│
+└── main.jsx
+
+
+
+Public API Helper
+
+export async function getAthleteRecords(id) {
+  const response = await fetch(
+    `${API_URL}/public/athletes/${id}/records`
+  );
+}
+
+
+
+
+AthleteProfile.jsx
+
+
