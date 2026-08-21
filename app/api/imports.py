@@ -9,9 +9,16 @@ from fastapi import Depends
 
 from app.core.database import get_db
 
+from app.services.performance_utils import (
+    parse_performance_numeric
+)
+
 from app.services.roster_import_preview import (
     build_import_summary
 )
+
+from app.models.competition import Competition
+from app.models.result import Result
 
 from app.services.roster_importer import (
     import_results
@@ -92,55 +99,74 @@ async def import_roster_pdf(
         raw_text
     )
 
-    # TEMPORARY DUPLICATE DIAGNOSTIC
+    competition = (
+        db.query(Competition)
+        .filter(
+            Competition.id == competition_id
+        )
+        .first()
+    )
 
-    seen = set()
-    duplicates_found = 0
-
-    for event in parsed_events:
-
-        for parsed_result in event["results"]:
-
-            key = (
-                event["event"],
-                parsed_result.get("athlete_name"),
-                parsed_result.get("performance"),
-                parsed_result.get("place"),
-                parsed_result.get("club"),
-                parsed_result.get("status")
-            )
-
-            if key in seen:
-
-                duplicates_found += 1
-
-                print(
-                    f"DUPLICATE FOUND: {key}"
-                )
-
-            else:
-
-                seen.add(key)
+    if not competition:
+        raise HTTPException(
+            status_code=404,
+            detail="Competition not found"
+        )
+    print(
+        f"Competition ID: {competition.id}"
+    )
 
     print(
-        f"Duplicate result combinations detected: "
-        f"{duplicates_found}"
+        f"Competition Start Date: {competition.start_date}"
     )
 
-    results, created = import_results(
+    results, created, warnings = import_results(
         competition_id,
-        parsed_events
+        parsed_events,
+        competition.start_date
     )
 
+    print(
+        f"IMPORT_RESULTS RETURNED: "
+        f"{len(results)} results"
+    )
+    existing_count = (
+        db.query(Result)
+        .filter(
+            Result.competition_id == competition_id
+        )
+        .count()
+    )
+
+    if existing_count > 0:
+
+        raise HTTPException(
+            status_code=400,
+            detail=
+                f"Competition already contains "
+                f"{existing_count} results. "
+                f"Delete existing results before re-importing."
+        )
     db.add_all(results)
+
+    print(
+        f"ADDING {len(results)} RESULTS"
+    )
 
     db.commit()
 
-    return {
-        "competition_id": competition_id,
-        "events_imported": len(parsed_events),
-        "results_created": created
-    }
+    saved_count = (
+        db.query(Result)
+        .filter(
+            Result.competition_id == competition_id
+        )
+        .count()
+    )
+
+    print(
+        f"SAVED COUNT = {saved_count}"
+    )
+
 
 @router.post("/roster/preview")
 async def preview_roster_pdf(

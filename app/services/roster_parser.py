@@ -1,8 +1,21 @@
 import re
 import pdfplumber
 
+DEBUG = False
+
 EVENT_PATTERN = re.compile(
-    r"^(.*?)\s·\s(.*?)\s·\sMultiple(?:,\s*(.*?))?\s·\s(Final)(?:\s·\sGroup\s([A-Z]))?"
+    r"""
+    ^
+    (.*?)                      # event
+    \s·\s
+    (.*?)                      # category
+    \s·\s
+    (.*?)                      # division
+    \s·\s
+    (Final|Heat.*?|Semi.*?)
+    (?:\s·\sGroup\s([A-Z]))?
+    """,
+    re.VERBOSE,
 )
 
 NAME_PATTERN = re.compile(
@@ -11,7 +24,7 @@ NAME_PATTERN = re.compile(
 
 
 WIND_PATTERN = re.compile(
-    r"Wind:\s*([+-]?\d+\.\d)"
+    r"Wind:\s*([+-]?\d+(?:\.\d+)?)"
 )
 
 YEAR_PATTERN = re.compile(
@@ -52,7 +65,10 @@ TRACK_RESULT_PATTERN = re.compile(
     (?:\s+\([^)]+\))?      # optional countback
 
     \s*
-    (PB|SB)?               # optional flag
+    (PB|SB)?               # optional PB/SB
+
+    (?:\s+([Qq]))?         # optional qualifier
+
     $
     """,
     re.VERBOSE
@@ -97,11 +113,13 @@ FIELD_RESULT_PATTERN = re.compile(
     \s+
     (\d+\.\d+)             # performance
 
+    (?:\s+(?:q|Q|QF|qf))?  # optional qualification marker
+
     (?:\s+(PB|SB))?        # optional PB/SB
 
     (?:\s+\([^)]+\))?      # optional secondary mark e.g. (6.56)
 
-    (?:\s*[+-]\d+\.\d+)?   # optional wind e.g. +1.7, -0.5
+    (?:\s+([+-]\d+\.\d+))? # optional wind e.g. +1.7, -0.5
 
     (?:\s*NWI)?            # optional NWI
 
@@ -131,7 +149,13 @@ RESULT_STATUSES = [
 ]
 
 
-
+RESULT_FLAGS = [
+    "PB",
+    "SB",
+    "q",
+    "Q",
+    "DNS",
+]
 
 
 
@@ -277,7 +301,20 @@ def is_result(value: str) -> bool:
     except:
         return False
 
-    
+def extract_club(text):
+
+    country = extract_country(text)
+
+    if not country:
+        return None
+
+    parts = text.split(country, 1)
+
+    if len(parts) < 2:
+        return None
+
+    return parts[1].strip()
+
 
 def parse_athlete_block(text):
 
@@ -286,7 +323,6 @@ def parse_athlete_block(text):
         "birth_year": extract_birth_year(text),
         "classification": extract_classification(text),
         "country": extract_country(text),
-        "age_group": extract_age_group(text),
         "club": extract_club(text)
     }
 
@@ -295,6 +331,8 @@ def parse_athlete_block(text):
 def parse_results_for_event(lines):
 
     results = []
+
+    unparsed_count = 0
 
     for line in lines:
 
@@ -313,6 +351,12 @@ def parse_results_for_event(lines):
         parsed = parse_track_result(line)
 
         if parsed:
+            
+
+            results.append(parsed)
+            continue
+
+        if parsed:
             results.append(parsed)
             continue
 
@@ -327,18 +371,22 @@ def parse_results_for_event(lines):
         parsed = parse_field_result(line)
 
         if parsed:
+            
             results.append(parsed)
-            continue
+            continue 
+
+        
 
         # Field statuses
         parsed = parse_field_status(line)
 
-        if parsed:
-            results.append(parsed)
-            continue
+        
 
         # Nothing matched
-        print(f"UNPARSED RESULT LINE: {line}")
+
+        unparsed_count += 1
+
+        
 
     return results
 
@@ -348,23 +396,26 @@ def parse_roster_results(text: str):
 
     lines = text.splitlines()
 
-    events = []
+    events = [] 
     current_event = None
     event_lines = []
 
+    
     for line in lines:
-
         line = line.strip()
 
-        if not line:
-            continue
+        if "Heat" in line or "Semi" in line or "Final" in line:
+            event_match = EVENT_PATTERN.search(line)
 
-        if line.startswith("Attempts"):
-            continue
+            if not event_match:
+                print(f"UNMATCHED EVENT HEADER: {line}")
+        else:
+            event_match = EVENT_PATTERN.search(line)
 
-        event_match = EVENT_PATTERN.search(line)
+          
 
         if event_match:
+           
 
             # Save previous event
             if current_event:
@@ -373,23 +424,33 @@ def parse_roster_results(text: str):
                     parse_results_for_event(event_lines)
                 )
 
+                for result in current_event["results"]:
+                    result["age_group"] = current_event["division"]
+
                 current_event["result_count"] = len(
                     current_event["results"]
                 )
 
                 events.append(current_event)
 
-            # Start new event
+            wind_match = WIND_PATTERN.search(line)
+
             current_event = {
                 "event": event_match.group(1),
                 "category": event_match.group(2),
                 "division": event_match.group(3),
                 "round": event_match.group(4),
                 "group": event_match.group(5),
-                "wind": None,
+                "wind": (
+                    float(wind_match.group(1))
+                    if wind_match
+                    else None
+                ),
                 "result_count": 0,
                 "results": []
             }
+
+            
 
             event_lines = []
 
@@ -401,7 +462,13 @@ def parse_roster_results(text: str):
 
             wind_match = WIND_PATTERN.search(line)
 
+            
+
+                
+
             if wind_match:
+
+                
                 current_event["wind"] = float(
                     wind_match.group(1)
                 )
@@ -409,27 +476,50 @@ def parse_roster_results(text: str):
     # Save final event
     if current_event:
 
+        #print(
+        #    f"SAVING EVENT: "
+        #    f"{current_event['event']} "
+        #    f"group={current_event['group']} "
+        #    f"wind={current_event['wind']}"
+        #)
+
         current_event["results"] = (
             parse_results_for_event(event_lines)
         )
 
+        for result in current_event["results"]:
+            result["age_group"] = current_event["division"]
+
+
         current_event["result_count"] = len(
             current_event["results"]
+            
         )
+
+       
 
         events.append(current_event)
 
     #   Validate event counts
-    for event in events:
-        if event["result_count"] != len(event["results"]):
+        print(f"EVENTS FOUND: {len(events)}")
 
-            print(
+    #for event in events:
+    #    print(
+    #        event["event"],
+    #        event["division"],
+    #        event["round"],
+    #        len(event["results"])
+    #    )
 
-                f"COUNT MISMATCH: {event['event']} "
-                f"stored={event['result_count']} "
-                f"actual={len(event['results'])}"
+        #if event["result_count"] != len(event["results"]):
 
-            )
+            #print(
+
+            #    f"COUNT MISMATCH: {event['event']} "
+            #    f"stored={event['result_count']} "
+            #    f"actual={len(event['results'])}"
+
+            #)
 
     # Summary statistics
     total_results = sum(
@@ -437,10 +527,10 @@ def parse_roster_results(text: str):
         for event in events
     )
 
-    print(
-        f"Parsed {len(events)} events "
-        f"and {total_results} results"
-    )
+    
+
+
+    print(f"RESULTS FOUND: {total_results}")
 
     return events
 
@@ -527,6 +617,7 @@ def parse_track_status(line):
         athlete_block
     )
 
+   
     return {
         "place": None,
         "lane": lane,
@@ -538,7 +629,8 @@ def parse_track_status(line):
         "club": athlete["club"],
         "performance": None,
         "status": status,
-        "roster_flag": None
+        "roster_flag": None,
+        "wind": None
     }
 
 
@@ -547,10 +639,23 @@ def parse_field_result(line):
     match = FIELD_RESULT_PATTERN.match(line)
 
     if not match:
+
+        #print(
+        #    f"FIELD_RESULT_PATTERN FAILED: {line}"
+        #)
+
         
         return None
 
-    place, athlete_block, performance, flag = match.groups()
+    place, athlete_block, performance, flag, wind = match.groups()
+
+    
+   
+
+   
+    club = extract_club(athlete_block)
+
+    
 
     return {
         "place": int(place),
@@ -576,6 +681,11 @@ def parse_field_result(line):
         "performance": performance,
         "status": None,
         "roster_flag": flag,
+        "wind": (
+            float(wind)
+            if wind
+            else None
+        )
     }
 
 

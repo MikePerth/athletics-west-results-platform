@@ -2,6 +2,9 @@
 
 from app.models.result import Result
 
+from app.services.performance_utils import (
+    parse_performance_numeric
+)
 
 from pprint import pprint
 
@@ -12,6 +15,11 @@ def import_results(
     competition_date=None
 ):
 
+    warnings = []
+
+    print(
+        f"ENTERED import_results with competition_date={competition_date}"
+    )
     print(f"import_results competition_id = {competition_id}")
 
     # Build athlete -> club lookup from rows that have clubs
@@ -66,6 +74,11 @@ def import_results(
 
         for parsed_result in event["results"]:
 
+            
+
+            
+
+            
             result = Result(
                 competition_id=competition_id,
 
@@ -85,9 +98,17 @@ def import_results(
                 lane=parsed_result.get("lane"),
 
                 performance=parsed_result["performance"],
-                performance_numeric=None,
+                performance_numeric=parse_performance_numeric(
+                    parsed_result["performance"],
+                    event["event"]
+                ),
 
-                wind=event["wind"],
+                wind=(
+                    parsed_result.get("wind")
+                    if parsed_result.get("wind") is not None
+                    else event.get("wind")
+                ),
+                
                 status=parsed_result["status"],
 
                 round=event["round"],
@@ -96,7 +117,28 @@ def import_results(
                 competition_date=competition_date
             )
 
+             
+            #print(
+            #    f"ADDING RESULT {created + 1}: "
+            #    f"{parsed_result['athlete_name']} "
+            #    f"{event['event']}"
+            #)
+                                
             results.append(result)
             created += 1
 
-    return results, created
+            if warnings:
+                print(
+                    f"WARNING: {len(warnings)} validation warnings"
+                    )
+            
+                for warning in warnings[:20]:
+                    print(warning)
+            
+                    if len(warnings) > 20:
+            
+                        print(
+                            f"... and {len(warnings) - 20} more"
+                        ) 
+
+    return results, created, warnings
