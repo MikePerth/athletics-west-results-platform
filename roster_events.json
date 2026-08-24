@@ -1,0 +1,5951 @@
+[
+  {
+    "event_name": "Pole Vault",
+    "event_details": "Division B - Group 1 · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "5",
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "2.65",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "4",
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "ING",
+        "result": "2.65",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "3",
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Melville Roar Athletics Club",
+        "result": "2.25",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "2",
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "2.05",
+        "status": null
+      },
+      {
+        "place": "1",
+        "order": null,
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "NM",
+        "status": "NM"
+      },
+      {
+        "place": "-",
+        "order": null,
+        "name": "Nathan JENNINGS",
+        "birth_year": "1988",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "AW Test",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Pole Vault",
+    "event_details": "Division B - Group 1 · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "1",
+        "name": "Sue COATE",
+        "birth_year": "1966",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "2.25",
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "200m Hurdles · Final A",
+    "event_details": "76.2cm · Men · Multiple",
+    "wind": 1.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Hunter ETCHELLS",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "Ridgewood Athletics Centre",
+        "result": "27.93",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "3",
+        "name": "Jesse BRAIN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "29.53",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Faelan SMITH",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "32.37",
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Chase MANNELLA",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Storm HARRIS-SCHWENSEN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DQ",
+        "status": "DQ"
+      }
+    ]
+  },
+  {
+    "event_name": "Hammer Throw",
+    "event_details": "U13 - 18 · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "3",
+        "name": "Imogen SPOONER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "order": "5",
+        "name": "Imogen SPOONER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "order": "7",
+        "name": "Imogen SPOONER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "order": "6",
+        "name": "Imogen SPOONER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "Hammer Throw",
+    "event_details": "U20 - Open · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "2",
+        "name": "Chanelle TAGG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "SB"
+      },
+      {
+        "place": "2",
+        "order": "4",
+        "name": "Chanelle TAGG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "SB"
+      },
+      {
+        "place": "3",
+        "order": "3",
+        "name": "Chanelle TAGG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "SB"
+      },
+      {
+        "place": "4",
+        "order": "1",
+        "name": "Chanelle TAGG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "SB"
+      }
+    ]
+  },
+  {
+    "event_name": "200m Hurdles · Final B",
+    "event_details": "76.2cm · Men · Multiple",
+    "wind": 1.0,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "6",
+        "name": "Vivaan Raghu REDDY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "29.94",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "Zane NIELSEN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "30.55",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "3",
+        "name": "Bentley NEILSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "30.56",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Tomas DACA",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "ING",
+        "result": "31.25",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Dave WILKIE",
+        "birth_year": "1958",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m Hurdles",
+    "event_details": "76cm · Women · Multiple",
+    "wind": 1.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Autumn GOOD",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "PTFC",
+        "result": "29.54",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "5",
+        "name": "Miia Luze VELTHUYSEN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "30.49",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Lola VOGL",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "PTFC",
+        "result": "31.68",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Kavroop BHANGU",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Joondalup Athletics Centre",
+        "result": "32.27",
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "lane": "8",
+        "name": "Tarlah Ellen SMITH",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "32.85",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "KING",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "High Jump",
+    "event_details": "Division B · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "10",
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "UWA",
+        "result": "1.45",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "11",
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Melville Roar Athletics Club",
+        "result": "1.40",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "7",
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "ING",
+        "result": "1.35",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "8",
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "1.35",
+        "status": null
+      },
+      {
+        "place": "9",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "NM",
+        "status": "NM"
+      },
+      {
+        "place": "1",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "2",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "4",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Melville Roar Athletics Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Joondalup Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "12",
+        "order": null,
+        "name": "James MCDONNELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Long Jump",
+    "event_details": "U13 - U18 · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "13",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "EH LAC",
+        "result": "5.91  (+1.8)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "12",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "5.60  (+1.5)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "5",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "KING",
+        "result": "5.00w  (+2.5)",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "4",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Joondalup Athletics Centre",
+        "result": "4.95  (+0.6)",
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": "8",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Melville Roar Athletics Club",
+        "result": "4.65  (+1.5)",
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": "7",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "PTFC",
+        "result": "4.47  (+1.2)",
+        "status": null
+      },
+      {
+        "place": "7",
+        "order": "1",
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "KING",
+        "result": "3.88w  (+3.3)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "3",
+        "order": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "order": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "9",
+        "order": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "10",
+        "order": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Long Jump",
+    "event_details": "U20/Senior · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "4",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "7.46w  (+2.2)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "2",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "7.24  (+1.4)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "1",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "7.07w  (+2.5)",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "3",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "7.01w  (+3.3)",
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": "12",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Joondalup Athletics Centre",
+        "result": "6.78  (+1.9)",
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": "7",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "6.75  (+1.9)",
+        "status": null
+      },
+      {
+        "place": "7",
+        "order": "9",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "6.71  (+2.0)",
+        "status": null
+      },
+      {
+        "place": "8",
+        "order": "11",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "West Track Club",
+        "result": "6.11  (+2.0)",
+        "status": null
+      },
+      {
+        "place": "9",
+        "order": "8",
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "4.34w  (+2.1)",
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": null,
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "10",
+        "order": null,
+        "name": "Jayce HEAL",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "400m Hurdles",
+    "event_details": "91.4cm · Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "6",
+        "name": "Reuben Roy CHAPMAN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Athletics West Independent",
+        "result": "56.15",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "Jackson LYNCH",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Athletics West Independent",
+        "result": "56.52",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "8",
+        "name": "Noah STATHAM",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "56.62",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Alexander DEWAR",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "58.17",
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Brock JOHNSON",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "59.18",
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "lane": "4",
+        "name": "Noah CLARE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "59.72",
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "400m Hurdles",
+    "event_details": "83.8cm · Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "3",
+        "name": "Cambell BANNISTER",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "BDS",
+        "result": "1:00.44",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "5",
+        "name": "Levi THOMPSON",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Melville Roar Athletics Club",
+        "result": "1:02.94",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Charley HUATA",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Swan Valley Athletics Centre",
+        "result": "1:03.40",
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "Shot Put",
+    "event_details": "U13 - 18 · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "3",
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "8",
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "7",
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "1",
+        "order": null,
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "Shot Put",
+    "event_details": "U20 - Open · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "1",
+        "name": "Alex DE SILVA",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "4",
+        "name": "Alex DE SILVA",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "2",
+        "name": "Alex DE SILVA",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": null,
+        "name": "Alex DE SILVA",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "400m Hurdles",
+    "event_details": "76.2cm · Women · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "3",
+        "name": "Vivienne LE TESSIER",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "1:00.86",
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "lane": "4",
+        "name": "Rowan DENNIS",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Athletics West Independent",
+        "result": "1:07.92",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "9",
+        "name": "Kaycee IBBOTSON",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "West Track Club",
+        "result": "1:09.66",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Sabrina ELMS",
+        "birth_year": "1997",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "West Track Club",
+        "result": "1:10.27",
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "lane": "8",
+        "name": "Miya Skye CLAASSEN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "PTFC",
+        "result": "1:14.26",
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "lane": "7",
+        "name": "Sofie GOOD",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "PTFC",
+        "result": "1:14.52",
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final A",
+    "event_details": "Men · Multiple",
+    "wind": 2.9,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "2",
+        "name": "Kyle ENNIS",
+        "birth_year": "1991",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Tracksters Athletic Club",
+        "result": "10.44",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Luke TIMLIN",
+        "birth_year": "2006",
+        "country": "IRL",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "10.56",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "8",
+        "name": "Thuto NTLOTLANG",
+        "birth_year": "2005",
+        "country": "BOT",
+        "age_group": "Senior",
+        "club": "West Track Club",
+        "result": "10.69",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "3",
+        "name": "Nathan ZEMEK",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "10.70",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "5",
+        "name": "Kai GALE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "PTFC",
+        "result": "10.83",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "1",
+        "name": "Ethan SALAFIA",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "10.85 (.841)",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "9",
+        "name": "Anttwon Mwimi NZIRAMASANGA",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Joondalup Athletics Centre",
+        "result": "10.85 (.842)",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "10",
+        "name": "Ezra DIMER",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "10.88",
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "11",
+        "name": "Tinotenda HWENDERO",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Canning Districts Athletic Club",
+        "result": "11.01",
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": "7",
+        "name": "Brody OLIVER",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "AAC",
+        "result": "11.06",
+        "status": null
+      },
+      {
+        "place": "11",
+        "lane": "12",
+        "name": "Kanchana SENEVIRATNE",
+        "birth_year": "1993",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "11.35",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Wyatt HILL",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Javelin Throw",
+    "event_details": "U13 - 18 · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "6",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "1",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "9",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "8",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": "2",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": "10",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "order": "7",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "order": "11",
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": null,
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": null,
+        "name": "Holly Louise JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "Javelin Throw",
+    "event_details": "U20 - Open · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "4",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "order": "6",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "order": "3",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "order": "1",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "order": "2",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "order": "7",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "7",
+        "order": "8",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "8",
+        "order": "5",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "9",
+        "order": "9",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final B",
+    "event_details": "Men · Multiple",
+    "wind": 2.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "2",
+        "name": "Dion STASEV",
+        "birth_year": "1998",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "11.08",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "3",
+        "name": "Timothy John-George VRACHNAS",
+        "birth_year": "1993",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "11.22",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "9",
+        "name": "Haimish COLLINS",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Tracksters Athletic Club",
+        "result": "11.23",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "8",
+        "name": "Ryker KNOTT",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "ING",
+        "result": "11.29",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "12",
+        "name": "Zayne BAYIWA",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Swan Valley Athletics Centre",
+        "result": "11.31",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "10",
+        "name": "Sean MUGADZA",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "West Track Club",
+        "result": "11.33 (.325)",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "11",
+        "name": "Thomas SMITH",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "11.33 (.325)",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "5",
+        "name": "Jeandre KEET",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U23",
+        "club": "West Track Club",
+        "result": "11.34",
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "1",
+        "name": "Patrick CLARE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "11.38",
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": "7",
+        "name": "Thomas WEBB",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Belmont Athletics Centre",
+        "result": "11.47",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Noah CLARE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Brock JOHNSON",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final C",
+    "event_details": "Men · Multiple",
+    "wind": 2.4,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "6",
+        "name": "Dexter EDWARDS",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "11.38",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "2",
+        "name": "Jacob SCOON",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "KWI",
+        "result": "11.41",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Gabriel KALLE",
+        "birth_year": null,
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Belmont Athletics Centre",
+        "result": "11.44",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "10",
+        "name": "Lucas HOEDEN",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "11.69",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "9",
+        "name": "Ethan MORTON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "11.77",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Jack ALLEN",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Tracksters Athletic Club",
+        "result": "11.79",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "11",
+        "name": "Jeremie LAPIERRE",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Tracksters Athletic Club",
+        "result": "11.86",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "12",
+        "name": "Zidane Isaiah D'SYLVA",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U23",
+        "club": "West Track Club",
+        "result": "11.88",
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "3",
+        "name": "Jordan SCOTT",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "11.89",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Nathan LONG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final D",
+    "event_details": "Men · Multiple",
+    "wind": 1.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "2",
+        "name": "Regan BELL",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tMelville Roar Athletics Club\t11.63",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Charley HUATA",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tSwan Valley Athletics Centre\t11.88",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Reuben Roy CHAPMAN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tAthletics West Independent\t11.92",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "11",
+        "name": "Thomas KILGALLON",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tKING\t11.93",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "8",
+        "name": "James BRENNAN",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t12.08",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "10",
+        "name": "Jesse BRAIN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tBelmont Athletics Centre\t12.11",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "7",
+        "name": "Adam MCAULLAY",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tTracksters Athletic Club\t22.00",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": null,
+        "name": "Mark HARPER",
+        "birth_year": "1975",
+        "country": "AUS",
+        "age_group": "Senior\tAthletics West Independent\tDQ",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": null,
+        "name": "Adrian MCKENZIE",
+        "birth_year": "1972",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final E",
+    "event_details": "Men · Multiple",
+    "wind": 4.3,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "9",
+        "name": "Isaac KAY",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Joondalup Athletics Centre",
+        "result": "11.85",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Jackson KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "11.87",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Jake CHAPPLE",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Melville Roar Athletics Club",
+        "result": "11.88",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Maikah Bailey HORNER",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "11.88",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "10",
+        "name": "Xavier HARROP",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "BDS",
+        "result": "11.89",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "11",
+        "name": "Vivaan Raghu REDDY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "12.05",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "2",
+        "name": "Leo PILEGGI",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "12.19",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "5",
+        "name": "Jeremy MCVEY",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Tracksters Athletic Club",
+        "result": "12.37",
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "3",
+        "name": "Zane NIELSEN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "12.47",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Lachlan TYDINGS",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MRAC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final F",
+    "event_details": "Men · Multiple",
+    "wind": 1.9,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "5",
+        "name": "Kriss NELSON",
+        "birth_year": "1993",
+        "country": "GBR",
+        "age_group": "Senior\tAthletics West Independent\t12.42",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Xavier COELHO",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tKWI\t12.49",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Tomas DACA",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tING\t12.99 (.987)",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Jake LEYS",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tWest Track Club\t12.99 (.988)",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "9",
+        "name": "Jace HERD",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tUWA\t13.14",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "3",
+        "name": "Braith JENKINS",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tAthletics West Independent\t13.36",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "4",
+        "name": "David STATHAM",
+        "birth_year": "1969",
+        "country": "AUS",
+        "age_group": "Senior\tMAWA\t16.88",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "10",
+        "lane": null,
+        "name": "Ciaran HARRISON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "11",
+        "lane": null,
+        "name": "Thomas PEARSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Pole Vault",
+    "event_details": "Division B - Group 2 · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": null,
+        "name": "Lachlan TYDINGS",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MRAC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Pole Vault",
+    "event_details": "Division B - Group 2 · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "2",
+        "name": "Isabelle CURTIS",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "UWA",
+        "result": "3.20",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "3",
+        "name": "Isabelle CURTIS",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Bunbury Regional Athletics Club",
+        "result": "3.00",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "4",
+        "name": "Isabelle CURTIS",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "2.90",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "1",
+        "name": "Isabelle CURTIS",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "ING",
+        "result": "2.70",
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": null,
+        "name": "Isabelle CURTIS",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Ridgewood Athletics Centre",
+        "result": "NM",
+        "status": "NM"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final G",
+    "event_details": "Men · Multiple",
+    "wind": 2.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "6",
+        "name": "Halil RUSSO",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "11.94",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Jesse BINEY",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Joondalup Athletics Centre",
+        "result": "12.45",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Jack STALTERI",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "Belmont Athletics Centre",
+        "result": "13.30",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "10",
+        "name": "Archer David DICKSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "Hamersley Athletics Centre",
+        "result": "13.31",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "2",
+        "name": "Logan MARSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "KING",
+        "result": "13.36",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "11",
+        "name": "Allister GOMES",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "13.56",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "9",
+        "name": "Kien Nam NGUY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "PTFC",
+        "result": "13.64",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "4",
+        "name": "Deacon AYRES  · T37, F37",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Notes: 78.42%",
+        "club": "CBN",
+        "result": "14.09",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Ke Phong NGUY",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final H",
+    "event_details": "Men · Multiple",
+    "wind": 4.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "12",
+        "name": "Gin Wah ANG",
+        "birth_year": "1964",
+        "country": "SGP",
+        "age_group": "Senior",
+        "club": "Singapore",
+        "result": "13.31",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "5",
+        "name": "Mitchell Zak WHITING",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Melville Roar Athletics Club",
+        "result": "13.66",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "11",
+        "name": "Troy INMAN",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "Hamersley Athletics Centre",
+        "result": "13.99",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "9",
+        "name": "Lewis MARSON",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "KING",
+        "result": "15.56",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "10",
+        "name": "John DENNEHY",
+        "birth_year": "1959",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "17.01",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Raynor KEANE  · T20, F20",
+        "birth_year": "2000",
+        "country": "AUS",
+        "age_group": "Notes: 61.47%",
+        "club": "Melville Roar Athletics Club",
+        "result": "17.34",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "2",
+        "name": "Ryan Judd HENNESSY  · T54",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "Notes: 67.24%",
+        "club": "Dale Athletics Centre",
+        "result": "20.27",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "3",
+        "name": "Ryan ZILIOLI  · T34, F34",
+        "birth_year": "1985",
+        "country": "AUS",
+        "age_group": "Notes: 57.15%",
+        "club": "Athletics West Independent",
+        "result": "25.30",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Lawson Rodney READ  · T51",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Wesley KAY",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "Melville Roar Athletics Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final A",
+    "event_details": "Women · Multiple",
+    "wind": 2.2,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "12",
+        "name": "Olivia DODDS",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "11.31",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "10",
+        "name": "Taylah CRUTTENDEN",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "West Track Club",
+        "result": "11.63",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Piper CORNELIUS",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "West Track Club",
+        "result": "11.83",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "1",
+        "name": "Kate PHILPOTT",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "West Track Club",
+        "result": "11.96",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "4",
+        "name": "Blair BELL",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "West Track Club",
+        "result": "12.18",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "11",
+        "name": "Summer NAUSSEDAT",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "UWA",
+        "result": "12.25",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "5",
+        "name": "Ronia MEEHANDOUST",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "12.34",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "9",
+        "name": "Amberlee STATHAM",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "12.64",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Evelyn JOHN JIMMY",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Ilaria LEONE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final B",
+    "event_details": "Women · Multiple",
+    "wind": 2.3,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "9",
+        "name": "Demi BELL",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "West Track Club",
+        "result": "12.19",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Sophie WHITE",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "12.30",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "12",
+        "name": "Duena GALE",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "KWI",
+        "result": "12.53",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Shannon STATHAM",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "12.70",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Ivy WARBURTON",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "PTFC",
+        "result": "12.71",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "2",
+        "name": "Rejoyce ILOH",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Athletics West Independent",
+        "result": "12.95",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "10",
+        "name": "Olivia KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "13.06",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "5",
+        "name": "Dailin MILANES LOZANO",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "13.13",
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final C",
+    "event_details": "Women · Multiple",
+    "wind": 1.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "1",
+        "name": "Mackenzie RYAN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tUWA\t12.79",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "9",
+        "name": "Lucy NELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tBunbury Regional Athletics Club\t12.84",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "8",
+        "name": "Martha MCCLEMENTS",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tWest Track Club\t12.93",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Kaycee IBBOTSON",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tWest Track Club\t12.99",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "4",
+        "name": "Ella BOYNE",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tUWA\t13.00",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "12",
+        "name": "Gracie-Lee BRIGGS",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tPTFC\t13.07",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "6",
+        "name": "Autumn GOOD",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tPTFC\t13.08",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "3",
+        "name": "Summer WALTERS",
+        "birth_year": "1997",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t13.12",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "10",
+        "name": "Rhiannon CLARKE  · T38",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Notes: 93.08%",
+        "club": "UWA",
+        "result": "13.30",
+        "status": "PB"
+      },
+      {
+        "place": "10",
+        "lane": "2",
+        "name": "Hannah ETRIDGE",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tBDS\t13.56",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Miia Luze VELTHUYSEN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final D",
+    "event_details": "Women · Multiple",
+    "wind": 1.8,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "7",
+        "name": "Indianna KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tUWA\t12.93",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Ella PYKE",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior\tING\t13.04",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Dakota KING",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t13.22",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "2",
+        "name": "Grace LYTTLE",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tTracksters Athletic Club\t13.29",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Melissa FOSTER",
+        "birth_year": "1978",
+        "country": "AUS",
+        "age_group": "Senior\tMAWA\t13.46",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "4",
+        "name": "Charlotte LE",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tUWA\t13.47",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "12",
+        "name": "Brea Odina ELSDON-GOODYEAR",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tRidgewood Athletics Centre\t13.67",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "1",
+        "name": "Kavroop BHANGU",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tJoondalup Athletics Centre\t13.71",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "10",
+        "name": "Sofie GOOD",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tPTFC\t13.79",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": "8",
+        "name": "Cleo COLLINGS",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tTracksters Athletic Club\t14.11",
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final E",
+    "event_details": "Women · Multiple",
+    "wind": 1.9,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "10",
+        "name": "Mahgol RAKHSHA",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tTracksters Athletic Club\t13.14",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "1",
+        "name": "Abigail VAN DER SCHYFF",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tTracksters Athletic Club\t13.45",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Emma HILL",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tKING\t13.51",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "9",
+        "name": "Tegan JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tJoondalup Athletics Centre\t13.56",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Luana DA SILVA",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tAthletics West Independent\t13.72",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "7",
+        "name": "Rachel STATHAM",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior\tBelmont Athletics Centre\t13.94",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "11",
+        "name": "Jamie Hoi Chiu POON",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tPTFC\t14.04",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "6",
+        "name": "Imani BIJOUX",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tAthletics West Independent\t14.50",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Michelle DAVIES",
+        "birth_year": "1981",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\tDQ",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Daisy LAGINHA",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "100m · Final F",
+    "event_details": "Women · Multiple",
+    "wind": 2.4,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "11",
+        "name": "Emma WILSON",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Belmont Athletics Centre",
+        "result": "13.94",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "9",
+        "name": "Eden CLEASBY",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "UWA",
+        "result": "14.70",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Imogen BOSS",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "14.77",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Claudia FLAMINI",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Ridgewood Athletics Centre",
+        "result": "15.17",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "8",
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Curtin University Athletics Club",
+        "result": "15.77",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "6",
+        "name": "Juliette Anique MASON  · T20",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Notes: 63.72%",
+        "club": "Athletics West Independent",
+        "result": "18.69",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "4",
+        "name": "Olivia RILEY  · T72",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Notes: 86.82%",
+        "club": "Athletics West Independent",
+        "result": "19.66",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "1",
+        "name": "Elizabeth LANGFORD  · T72",
+        "birth_year": "2000",
+        "country": "AUS",
+        "age_group": "Notes: 68.30%",
+        "club": "Athletics West Independent",
+        "result": "24.99",
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "2",
+        "name": "Madison KENT  · T53, F53",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Notes: 64.22%",
+        "club": "Athletics West Independent",
+        "result": "25.21",
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": "3",
+        "name": "Eve STROMBACK  · T72",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": "Notes: 63.41%",
+        "club": "Athletics West Independent",
+        "result": "26.92",
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": null,
+        "name": "Tahlie WOODHOUSE",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "Hamersley Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final A",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Owen SPICER",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t1:52.84",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "10",
+        "name": "Benjamin PATTERSON",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t1:53.37",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "7",
+        "name": "Anthony GHISELLI",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t1:53.42",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Oscar CLEMENTS",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t1:53.72",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "9",
+        "name": "Ben TURNER",
+        "birth_year": "1994",
+        "country": "AUS",
+        "age_group": "Senior\tCanning Districts Athletic Club\t1:54.83",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "4",
+        "name": "George HOLMES",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tAthletics West Independent\t1:55.11",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "2",
+        "name": "Darren FERNANDEZ",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior\tCanning Districts Athletic Club\t1:55.67",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "1",
+        "name": "Jes BROMLEY",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t1:56.43",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "3",
+        "name": "Ezra GREIVE",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tTracksters Athletic Club\t1:56.79",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": "6",
+        "name": "Caleb DI TORO",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t1:58.82",
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final B",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "10",
+        "name": "Harvey PYETT",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t1:57.11",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "4",
+        "name": "George LANCASTER",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tCanning Districts Athletic Club\t1:59.33",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Thomas DAVEY",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tBelmont Athletics Centre\t1:59.37",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Lachlan ANGELATOS",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tMelville Roar Athletics Club\t1:59.42",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "1",
+        "name": "Nathan LONG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tAthletics West Independent\t1:59.57",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "9",
+        "name": "Harrison LICHOCIK",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tCanning Districts Athletic Club\t2:01.94",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "2",
+        "name": "James SHUCK",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tUWA\t2:04.58",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "3",
+        "name": "Cathal DE FAOITE",
+        "birth_year": "1998",
+        "country": "IRL",
+        "age_group": "Senior\tCanning Districts Athletic Club\t2:07.24",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "8",
+        "name": "Oliver KNUCKEY",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t2:09.00",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": null,
+        "name": "Andrew HILDITCH",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final C",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "3",
+        "name": "Connor MUIJS",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tBelmont Athletics Centre\t2:03.67",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "2",
+        "name": "Regan BELL",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tMelville Roar Athletics Club\t2:06.45",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Jack CAIRNS",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tING\t2:08.91",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "6",
+        "name": "Declan MOORE",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t2:09.44",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "7",
+        "name": "Isaac KAY",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tJoondalup Athletics Centre\t2:10.52",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "9",
+        "name": "Rory MCDERMOTT",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tWest Track Club\t2:11.40",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "4",
+        "name": "William REA",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tUWA\t2:14.05",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "8",
+        "name": "Henry MALKIN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tUWA\t2:14.98",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "1",
+        "lane": null,
+        "name": "Reuben Roy CHAPMAN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "High Jump",
+    "event_details": "Division A · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "2",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "2.05",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "4",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Joondalup Athletics Centre",
+        "result": "1.85",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "6",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "1.85",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "5",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "UWA",
+        "result": "1.80",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": null,
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "NM",
+        "status": "NM"
+      },
+      {
+        "place": "1",
+        "order": null,
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Long Jump",
+    "event_details": "U13 - U18 · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "2",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "2.05  (NWI)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "4",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Joondalup Athletics Centre",
+        "result": "1.85  (NWI)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "6",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "1.85  (NWI)",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "5",
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "UWA",
+        "result": "1.80  (NWI)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": null,
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "NM",
+        "status": "NM"
+      },
+      {
+        "place": "1",
+        "order": null,
+        "name": "Rylan SCOTT",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Long Jump",
+    "event_details": "U20/Senior · Women · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "5",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "5.35w  (+2.2)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "8",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "5.24  (+1.0)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "4",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "5.22  (+1.2)",
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "3",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "4.70w  (+2.2)",
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": "7",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": "1",
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": null,
+        "name": "Rhianna DI GIUSEPPE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final D",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Josh William REEVE  · T01",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior\tRidgewood Athletics Centre\t2:11.40",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "1",
+        "name": "Jack JONES",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tCanning Districts Athletic Club\t2:11.55",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Isaac DI TORO",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17\tUWA\t2:14.49",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "9",
+        "name": "Ciarain HOEY",
+        "birth_year": "1994",
+        "country": "AUS",
+        "age_group": "Senior\tMAWA\t2:14.87",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Archer David DICKSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tHamersley Athletics Centre\t2:15.06",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "10",
+        "name": "Mitchell Zak WHITING",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tMelville Roar Athletics Club\t2:18.40",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "5",
+        "name": "Oscar LO PROTO",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tUWA\t2:20.55",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "6",
+        "name": "Tyler COLLEY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tDale Athletics Centre\t2:24.60",
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final E",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "11",
+        "name": "Lih CHANG",
+        "birth_year": "1997",
+        "country": "AUS",
+        "age_group": "Senior\tCanning Districts Athletic Club\t2:15.38",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Michael SHUM",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t2:16.97",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Samuel O'BRIEN",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tBelmont Athletics Centre\t2:18.16",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "10",
+        "name": "Daniel SHEEHY",
+        "birth_year": "1999",
+        "country": "AUS",
+        "age_group": "Senior\tCurtin University Athletics Club\t2:18.71",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "9",
+        "name": "Mogga JANSUK",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tBelmont Athletics Centre\t2:20.82",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Xander VAN RIJEN",
+        "birth_year": "1967",
+        "country": "AUS",
+        "age_group": "Senior\tMAWA\t2:29.37",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "3",
+        "name": "Kien Nam NGUY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tPTFC\t2:31.03",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "1",
+        "name": "George KANE",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tUWA\t2:35.50",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "5",
+        "name": "Raynor KEANE  · T20, F20",
+        "birth_year": "2000",
+        "country": "AUS",
+        "age_group": "Notes: 68.05%",
+        "club": "Melville Roar Athletics Club",
+        "result": "2:41.50",
+        "status": "PB"
+      },
+      {
+        "place": "10",
+        "lane": "7",
+        "name": "Ryan ZILIOLI  · T34, F34",
+        "birth_year": "1985",
+        "country": "AUS",
+        "age_group": "Notes: 48.58%",
+        "club": "Athletics West Independent",
+        "result": "3:21.39",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Storm HARRIS-SCHWENSEN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final A",
+    "event_details": "Women · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Billie RICHARDSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tUWA\t2:10.11",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "2",
+        "name": "Nieve WALSH",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t2:10.95",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "3",
+        "name": "Sarah HYNES",
+        "birth_year": "1999",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t2:13.45",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Ebba WAHLBERG",
+        "birth_year": "2002",
+        "country": "SWE",
+        "age_group": "Senior\tUWA\t2:15.18",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "7",
+        "name": "Kayla Rose VAN DER LINDEN",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t2:15.82",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "6",
+        "name": "Angie ROSS",
+        "birth_year": "1981",
+        "country": "AUS",
+        "age_group": "Senior\tCanning Districts Athletic Club\t2:17.92",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "1",
+        "name": "Macey HEHIR",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t2:21.57",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "8",
+        "name": "Dannielle TILLY",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t2:22.18",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "10",
+        "lane": null,
+        "name": "Ashley SPENCER",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Notes: Pacer",
+        "club": "UWA",
+        "result": "DNF",
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final B",
+    "event_details": "Women · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "2",
+        "name": "Danielle WILKINSON",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t2:20.24",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "4",
+        "name": "Tayla BOSHOFF",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tJoondalup Athletics Centre\t2:21.33",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Emily LOWE",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t2:22.15",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "9",
+        "name": "Skyla BOSHOFF",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tJoondalup Athletics Centre\t2:23.47",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "1",
+        "name": "Cate JAMES",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t2:23.76",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "5",
+        "name": "Hannah MASLEN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tBelmont Athletics Centre\t2:24.42",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "8",
+        "name": "Baia SPODNIEWSKA",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tPTFC\t2:25.75",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "3",
+        "name": "Olivia HILDEBRANDT",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tCanning Districts Athletic Club\t2:32.73",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Emmerson JONES",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "800m · Final C",
+    "event_details": "Women · Multiple",
+    "wind": null,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "1",
+        "name": "Sienna TENARDI",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tUWA\t2:21.89",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "3",
+        "name": "Isabella O'HARE",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tSouthern Districts LAC\t2:30.31",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Mia SILVESTER",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tBelmont Athletics Centre\t2:37.57",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "6",
+        "name": "Elly TANG",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tCanning Districts Athletic Club\t2:45.02",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "4",
+        "name": "Willow WHEELER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tUWA\t2:49.91",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Madison KENT  · T53, F53",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Notes: 50.06%",
+        "club": "Athletics West Independent",
+        "result": "3:30.78",
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final A",
+    "event_details": "Men · Multiple",
+    "wind": 2.0,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "3",
+        "name": "Kyle ENNIS",
+        "birth_year": "1991",
+        "country": "AUS",
+        "age_group": "Senior\tTracksters Athletic Club\t21.13",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "5",
+        "name": "Thuto NTLOTLANG",
+        "birth_year": "2005",
+        "country": "BOT",
+        "age_group": "Senior\tWest Track Club\t21.58",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "9",
+        "name": "Ethan SALAFIA",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t21.96",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "4",
+        "name": "Justin Batalia GUYA",
+        "birth_year": "2003",
+        "country": "AUS",
+        "age_group": "Senior\tCurtin University Athletics Club\t22.28",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "7",
+        "name": "Jeremy BOYLE",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t22.38",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Thomas BRENNAN",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t22.75",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "1",
+        "name": "Adam KOPP",
+        "birth_year": "1999",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t22.93",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "6",
+        "name": "Brock JOHNSON",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tWest Track Club\t23.09",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "9",
+        "lane": "2",
+        "name": "Noah CLARE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20\tBelmont Athletics Centre\t23.53",
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final B",
+    "event_details": "Men · Multiple",
+    "wind": 2.6,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "7",
+        "name": "Toby BOYD-RATCLIFF",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Curtin University Athletics Club",
+        "result": "22.69 (.687)",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Haimish COLLINS",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Tracksters Athletic Club",
+        "result": "22.69 (.689)",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Patrick CLARE",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "23.05",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "1",
+        "name": "Dexter EDWARDS",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "23.14",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "5",
+        "name": "Kamil LAWAL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "KING",
+        "result": "23.61",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "3",
+        "name": "Ethan MORTON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "23.63",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Mark GLENTON",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Brody OLIVER",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "AAC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "9",
+        "lane": null,
+        "name": "Ryker KNOTT",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "ING",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final C",
+    "event_details": "Men · Multiple",
+    "wind": 2.2,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "9",
+        "name": "Noah STATHAM",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Belmont Athletics Centre",
+        "result": "23.19",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Gabriel KALLE",
+        "birth_year": null,
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Belmont Athletics Centre",
+        "result": "23.42",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "1",
+        "name": "Regan BELL",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Melville Roar Athletics Club",
+        "result": "23.46",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "6",
+        "name": "Jack ALLEN",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Tracksters Athletic Club",
+        "result": "23.74",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "4",
+        "name": "Sean MUGADZA",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "West Track Club",
+        "result": "23.75",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "3",
+        "name": "Cambell BANNISTER",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "BDS",
+        "result": "23.78",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "2",
+        "name": "Tyson KHIN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "PTFC",
+        "result": "23.97",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "5",
+        "name": "Christoffel VAN DER SCHYFF",
+        "birth_year": "1984",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Tracksters Athletic Club",
+        "result": "24.80",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Nathan LONG",
+        "birth_year": "2007",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final D",
+    "event_details": "Men · Multiple",
+    "wind": 1.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Thomas SMITH",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t23.02",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Braden CORDA",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tING\t23.81",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "7",
+        "name": "Thomas KILGALLON",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tKING\t24.09",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "8",
+        "name": "Maikah Bailey HORNER",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tWest Track Club\t24.27",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "James BRENNAN",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t24.38",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "5",
+        "name": "Jesse BRAIN",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tBelmont Athletics Centre\t24.69",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "9",
+        "name": "Mark HARPER",
+        "birth_year": "1975",
+        "country": "AUS",
+        "age_group": "Senior\tAthletics West Independent\t25.01",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "1",
+        "lane": null,
+        "name": "Adam MCAULLAY",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "Tracksters Athletic Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Timothy John-George VRACHNAS",
+        "birth_year": "1993",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final E",
+    "event_details": "Men · Multiple",
+    "wind": 2.4,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "3",
+        "name": "Jackson KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "24.21",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "Jordan SCOTT",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "24.58",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "4",
+        "name": "Jake CHAPPLE",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Melville Roar Athletics Club",
+        "result": "24.70",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "2",
+        "name": "Xavier HARROP",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "BDS",
+        "result": "24.85",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "6",
+        "name": "Vivaan Raghu REDDY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "24.95",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "1",
+        "name": "Ciarain HOEY",
+        "birth_year": "1994",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "25.09",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "9",
+        "name": "Callum CHARSLEY",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Melville Roar Athletics Club",
+        "result": "25.15",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "5",
+        "name": "Zane NIELSEN",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "26.31",
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Reuben Roy CHAPMAN",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final F",
+    "event_details": "Men · Multiple",
+    "wind": 2.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Andrew HILDITCH",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "23.83",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "1",
+        "name": "Josh William REEVE  · T01",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Notes: 84.53%",
+        "club": "Ridgewood Athletics Centre",
+        "result": "25.02",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Kriss NELSON",
+        "birth_year": "1993",
+        "country": "GBR",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "25.73",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "6",
+        "name": "Tomas DACA",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "ING",
+        "result": "26.81",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "7",
+        "name": "Braith JENKINS",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "Athletics West Independent",
+        "result": "27.31",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Leo PILEGGI",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Belmont Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "5",
+        "lane": null,
+        "name": "Faelan SMITH",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Oliver VAN DER WALT",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "9",
+        "lane": null,
+        "name": "Jake LEYS",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "Discus Throw",
+    "event_details": "U13 - 18 · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "1",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "order": "2",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": "3",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "order": "7",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "order": "4",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": "10",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "order": "6",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "order": "5",
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "order": null,
+        "name": "Hunter SARDELICH",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "event_name": "Discus Throw",
+    "event_details": "U20 - Open · Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "1",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "2",
+        "order": "4",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "order": "8",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "order": "5",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "order": "3",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "order": "6",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "8",
+        "order": "2",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      },
+      {
+        "place": "9",
+        "order": "7",
+        "name": "Veerpal SANDHU",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": "PB"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final G",
+    "event_details": "Men · Multiple",
+    "wind": 1.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Halil RUSSO",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior\tAthletics West Independent\t24.35",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Logan MARSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tKING\t27.08",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "3",
+        "name": "Chase MANNELLA",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tKING\t27.60",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "2",
+        "name": "Allister GOMES",
+        "birth_year": "1995",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t28.86",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "1",
+        "lane": null,
+        "name": "Ciaran HARRISON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA LAC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Jace HERD",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "7",
+        "lane": null,
+        "name": "Ke Phong NGUY",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final H",
+    "event_details": "Men · Multiple",
+    "wind": 1.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "4",
+        "name": "Jesse BINEY",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tJoondalup Athletics Centre\t26.07",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "9",
+        "name": "Archer David DICKSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tHamersley Athletics Centre\t26.93",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "7",
+        "name": "Owen CHARSLEY",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tMelville Roar Athletics Club\t27.13",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "3",
+        "name": "Carl DAVIES",
+        "birth_year": "1974",
+        "country": "AUS",
+        "age_group": "Senior\tTracksters Athletic Club\t29.18",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "5",
+        "name": "Deacon AYRES  · T37, F37",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "Notes: 76.91%",
+        "club": "CBN",
+        "result": "29.37",
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "lane": "1",
+        "name": "Troy INMAN",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tHamersley Athletics Centre\t29.41",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Thomas PEARSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Harrison DODD",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final I",
+    "event_details": "Men · Multiple",
+    "wind": 3.0,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "9",
+        "name": "Benjamin KING",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "West Track Club",
+        "result": "29.80",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "John DENNEHY",
+        "birth_year": "1959",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "37.24",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Ryan Judd HENNESSY  · T54",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "Notes: 62.41%",
+        "club": "Dale Athletics Centre",
+        "result": "38.74",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "4",
+        "name": "Raynor KEANE  · T20, F20",
+        "birth_year": "2000",
+        "country": "AUS",
+        "age_group": "Notes: 54.12%",
+        "club": "Melville Roar Athletics Club",
+        "result": "39.63",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "3",
+        "name": "Ryan ZILIOLI  · T34, F34",
+        "birth_year": "1985",
+        "country": "AUS",
+        "age_group": "Notes: 55.42%",
+        "club": "Athletics West Independent",
+        "result": "46.75",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": null,
+        "name": "Lawson Rodney READ  · T51",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Lewis MARSON",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "KING",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Tahu MURPHY",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13",
+        "club": "Athletics West Independent",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final A",
+    "event_details": "Women · Multiple",
+    "wind": 1.2,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Piper CORNELIUS",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tWest Track Club\t24.50",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "4",
+        "name": "Kate PHILPOTT",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tWest Track Club\t24.60",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Jessica HANNEY",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tTracksters Athletic Club\t24.71",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "7",
+        "name": "Blair BELL",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tWest Track Club\t25.05",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "9",
+        "name": "Harumi KUMAGAE",
+        "birth_year": "2001",
+        "country": "JPN",
+        "age_group": "Senior",
+        "club": "Aomori Prefecture Athletic Performance Improvement Headquarters",
+        "result": "25.10",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "1",
+        "name": "Demi BELL",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18\tWest Track Club\t25.69",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "5",
+        "name": "Ella PYKE",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior\tING\t26.29",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "8",
+        "lane": "3",
+        "name": "Mischa TOMLIN",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t26.87",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Billie RICHARDSON",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final B",
+    "event_details": "Women · Multiple",
+    "wind": 0.2,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Lucy NELL",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tBunbury Regional Athletics Club\t26.07",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "Indianna KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tUWA\t26.13",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Amberlee STATHAM",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t26.19",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "9",
+        "name": "Olivia KING",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tWest Track Club\t26.45",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "1",
+        "name": "Shannon STATHAM",
+        "birth_year": "2001",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t26.97",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Shy'kyla NARRIER",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "Joondalup Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final C",
+    "event_details": "Women · Multiple",
+    "wind": 2.7,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "9",
+        "name": "Xanthe EVANS",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "25.96",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "1",
+        "name": "Ivy WARBURTON",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14",
+        "club": "PTFC",
+        "result": "26.44",
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "2",
+        "name": "Martha MCCLEMENTS",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "West Track Club",
+        "result": "26.64",
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "8",
+        "name": "Sarah HYNES",
+        "birth_year": "1999",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "26.74",
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "5",
+        "name": "Ella BOYNE",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16",
+        "club": "UWA",
+        "result": "27.00",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "3",
+        "name": "Dailin MILANES LOZANO",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Athletics West Independent",
+        "result": "27.10",
+        "status": null
+      },
+      {
+        "place": "7",
+        "lane": "7",
+        "name": "Emma HILL",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "KING",
+        "result": "27.75",
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": null,
+        "name": "Summer WALTERS",
+        "birth_year": "1997",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final D",
+    "event_details": "Women · Multiple",
+    "wind": 1.1,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "2",
+        "name": "Amelia ROWE",
+        "birth_year": "2006",
+        "country": "AUS",
+        "age_group": "U23",
+        "club": "WA",
+        "result": "24.14",
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "3",
+        "name": "Grace LYTTLE",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tTracksters Athletic Club\t26.92",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "7",
+        "name": "Emily TJERKSTRA",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tBelmont Athletics Centre\t27.26",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "5",
+        "name": "Imogen SPOONER",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tBelmont Athletics Centre\t27.41",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "6",
+        "name": "Dakota KING",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20\tUWA\t27.63",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "lane": "8",
+        "name": "Abigail VAN DER SCHYFF",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tTracksters Athletic Club\t28.30",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": null,
+        "name": "Kaycee IBBOTSON",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": "U17",
+        "club": "West Track Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final E",
+    "event_details": "Women · Multiple",
+    "wind": 1.8,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "5",
+        "name": "Kavroop BHANGU",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tJoondalup Athletics Centre\t27.86",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "8",
+        "name": "Tegan JONES",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15\tJoondalup Athletics Centre\t28.46",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "6",
+        "name": "Hannah ETRIDGE",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tBDS\t28.59",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "4",
+        "name": "Cleo COLLINGS",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tTracksters Athletic Club\t28.70",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Harmony NARRIER",
+        "birth_year": "2012",
+        "country": "AUS",
+        "age_group": "U15",
+        "club": "Joondalup Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "3",
+        "lane": null,
+        "name": "Daisy LAGINHA",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "U20",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "9",
+        "lane": null,
+        "name": "Danielle WILKINSON",
+        "birth_year": "2002",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "UWA",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final F",
+    "event_details": "Women · Multiple",
+    "wind": 1.5,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "8",
+        "name": "Charlotte LE",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tUWA\t28.43",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "7",
+        "name": "Emily ADESE",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Senior\tUWA\t28.49",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "lane": "3",
+        "name": "Tarlah Ellen SMITH",
+        "birth_year": "2011",
+        "country": "AUS",
+        "age_group": "U16\tUWA\t28.65",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "4",
+        "lane": "6",
+        "name": "Michelle DAVIES",
+        "birth_year": "1981",
+        "country": "AUS",
+        "age_group": "Senior\tPTFC\t30.48",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "5",
+        "lane": "4",
+        "name": "Evie COMMONS",
+        "birth_year": "2013",
+        "country": "AUS",
+        "age_group": "U14\tWest Track Club\t30.90",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": null,
+        "name": "Jamie Hoi Chiu POON",
+        "birth_year": "2009",
+        "country": "AUS",
+        "age_group": "U18",
+        "club": "PTFC",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "5",
+        "lane": null,
+        "name": "Joe-Anne DANNENBERG",
+        "birth_year": "1974",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "MAWA",
+        "result": "DNS",
+        "status": "DNS"
+      },
+      {
+        "place": "9",
+        "lane": null,
+        "name": "Rachel STATHAM",
+        "birth_year": "2005",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Belmont Athletics Centre",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "200m · Final G",
+    "event_details": "Women · Multiple",
+    "wind": 1.2,
+    "event_type": "track",
+    "athletes": [
+      {
+        "place": "1",
+        "lane": "7",
+        "name": "Ellie DODD",
+        "birth_year": "2014",
+        "country": "AUS",
+        "age_group": "U13\tUWA\t31.55",
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "2",
+        "lane": "6",
+        "name": "Juliette Anique MASON  · T20",
+        "birth_year": "2004",
+        "country": "AUS",
+        "age_group": "Notes: 65.55%",
+        "club": "Athletics West Independent",
+        "result": "38.15",
+        "status": "PB"
+      },
+      {
+        "place": "3",
+        "lane": "5",
+        "name": "Olivia RILEY  · T72",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Notes: 85.35%",
+        "club": "Athletics West Independent",
+        "result": "41.65",
+        "status": "PB"
+      },
+      {
+        "place": "4",
+        "lane": "3",
+        "name": "Madison KENT  · T53, F53",
+        "birth_year": "2008",
+        "country": "AUS",
+        "age_group": "Notes: 59.07%",
+        "club": "Athletics West Independent",
+        "result": "48.43",
+        "status": "PB"
+      },
+      {
+        "place": "5",
+        "lane": "2",
+        "name": "Elizabeth LANGFORD  · T72",
+        "birth_year": "2000",
+        "country": "AUS",
+        "age_group": "Notes: 65.57%",
+        "club": "Athletics West Independent",
+        "result": "54.21",
+        "status": "PB"
+      },
+      {
+        "place": "6",
+        "lane": "4",
+        "name": "Eve STROMBACK  · T72",
+        "birth_year": "1979",
+        "country": "AUS",
+        "age_group": "Notes: 59.16%",
+        "club": "Athletics West Independent",
+        "result": "1:00.09",
+        "status": "PB"
+      },
+      {
+        "place": "8",
+        "lane": null,
+        "name": "Fiona BOSWELL",
+        "birth_year": "1987",
+        "country": "AUS",
+        "age_group": "Senior",
+        "club": "Curtin University Athletics Club",
+        "result": "DNS",
+        "status": "DNS"
+      }
+    ]
+  },
+  {
+    "event_name": "5000m",
+    "event_details": "Men · Multiple",
+    "wind": null,
+    "event_type": "field",
+    "athletes": [
+      {
+        "place": "1",
+        "order": "1",
+        "name": "Lewis BOOTHBY",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "3",
+        "order": null,
+        "name": "Lewis BOOTHBY",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      },
+      {
+        "place": "6",
+        "order": null,
+        "name": "Lewis BOOTHBY",
+        "birth_year": "2010",
+        "country": "AUS",
+        "age_group": null,
+        "club": null,
+        "result": null,
+        "status": null
+      }
+    ]
+  }
+]

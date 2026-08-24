@@ -1,12 +1,8 @@
-
-
 from app.models.result import Result
-
+from app.services.performance_utils import normalise_event_name
 from app.services.performance_utils import (
     parse_performance_numeric
 )
-
-from pprint import pprint
 
 
 def import_results(
@@ -16,11 +12,6 @@ def import_results(
 ):
 
     warnings = []
-
-    print(
-        f"ENTERED import_results with competition_date={competition_date}"
-    )
-    print(f"import_results competition_id = {competition_id}")
 
     # Build athlete -> club lookup from rows that have clubs
     club_lookup = {}
@@ -40,12 +31,6 @@ def import_results(
     for event in parsed_events:
         for result in event["results"]:
 
-            # TARGETED DEBUGGING
-
-            
-
-            # Club backfill
-
             if not result.get("club"):
 
                 missing_before += 1
@@ -58,31 +43,45 @@ def import_results(
 
                 missing_after += 1
 
-    print(
-        f"Missing clubs before backfill: {missing_before}"
-    )
-
-    print(
-        f"Missing clubs after backfill: {missing_after}"
-    )
-
     created = 0
-
     results = []
+
+    # Track imported results so we can suppress
+    # generic "Multiple" duplicates
+    seen_results = {}
 
     for event in parsed_events:
 
         for parsed_result in event["results"]:
 
-            
+            normalised_event = normalise_event_name(
+                event["event"]
+            )
 
-            
+            if parsed_result.get("status"):
+                print(
+                    f"IMPORT STATUS: "
+                    f"{parsed_result['athlete_name']} "
+                    f"{parsed_result['status']}"
+                )
 
-            
+            if parsed_result.get("status") == "DNS":
+                continue
+
+            dedupe_key = (
+                parsed_result["athlete_name"],
+                normalised_event,
+                event.get("category"),
+                event["round"],
+                parsed_result["performance"],
+                parsed_result.get("status")
+            )
+
             result = Result(
                 competition_id=competition_id,
 
-                event_name=event["event"],
+                event_name=normalised_event,
+
                 category=event.get("category"),
                 division=event.get("division"),
 
@@ -98,6 +97,7 @@ def import_results(
                 lane=parsed_result.get("lane"),
 
                 performance=parsed_result["performance"],
+
                 performance_numeric=parse_performance_numeric(
                     parsed_result["performance"],
                     event["event"]
@@ -108,7 +108,7 @@ def import_results(
                     if parsed_result.get("wind") is not None
                     else event.get("wind")
                 ),
-                
+
                 status=parsed_result["status"],
 
                 round=event["round"],
@@ -117,28 +117,53 @@ def import_results(
                 competition_date=competition_date
             )
 
-             
-            #print(
-            #    f"ADDING RESULT {created + 1}: "
-            #    f"{parsed_result['athlete_name']} "
-            #    f"{event['event']}"
-            #)
-                                
-            results.append(result)
-            created += 1
+            
+            existing = seen_results.get(dedupe_key)
 
-            if warnings:
-                print(
-                    f"WARNING: {len(warnings)} validation warnings"
+            if existing:
+
+                
+                existing_division = (
+                    existing.division or ""
+                )
+
+                new_division = (
+                    result.division or ""
+                )
+
+                # Prefer age-specific division
+                # over generic "Multiple"
+                if (
+                    existing_division == "Multiple"
+                    and new_division.startswith(
+                        "Multiple,"
                     )
-            
-                for warning in warnings[:20]:
-                    print(warning)
-            
-                    if len(warnings) > 20:
-            
-                        print(
-                            f"... and {len(warnings) - 20} more"
-                        ) 
+                ):
+                    results.remove(existing)
+                    results.append(result)
+                    seen_results[dedupe_key] = result
 
-    return results, created, warnings
+                # Existing record is already
+                # the more specific version
+                elif (
+                    existing_division.startswith(
+                        "Multiple,"
+                    )
+                    and new_division == "Multiple"
+                ):
+                    pass
+
+                # Otherwise keep first record
+                else:
+                    pass
+
+            else:
+
+                results.append(result)
+                seen_results[dedupe_key] = result
+
+            created += 1
+            
+    
+    
+    return results, len(results), warnings

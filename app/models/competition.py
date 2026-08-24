@@ -29,3 +29,5 @@ class Competition(Base):
     end_date = Column(Date)
 
     competition_type = Column(String)
+
+    roster_url = Column(String)

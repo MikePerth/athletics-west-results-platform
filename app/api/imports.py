@@ -112,13 +112,7 @@ async def import_roster_pdf(
             status_code=404,
             detail="Competition not found"
         )
-    print(
-        f"Competition ID: {competition.id}"
-    )
-
-    print(
-        f"Competition Start Date: {competition.start_date}"
-    )
+    
 
     results, created, warnings = import_results(
         competition_id,
@@ -126,10 +120,7 @@ async def import_roster_pdf(
         competition.start_date
     )
 
-    print(
-        f"IMPORT_RESULTS RETURNED: "
-        f"{len(results)} results"
-    )
+    
     existing_count = (
         db.query(Result)
         .filter(

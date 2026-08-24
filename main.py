@@ -7,8 +7,8 @@ from app.models.result import Result
 from app.api import athletes
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import competitions
-
-
+from app.models.result import Result
+from app.api.roster_import import router as roster_router
 
 import app.models
 
@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 
-
+app.include_router(roster_router)
 app.include_router(imports_router)
 app.include_router(parse_router)
 app.include_router(athletes.router)

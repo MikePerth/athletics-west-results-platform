@@ -16,10 +16,13 @@ export default function AthleteProfile() {
 
         const requiresWind =
             event.includes("60m") ||
+            event.includes("80m Hurdles") ||
             event.includes("90m Hurdles") ||
+            event.includes("100m Hurdles") ||
             event.includes("100m") ||
             event.includes("110m Hurdles") ||
             event.includes("200m") ||
+            event.includes("200m Hurdles") ||
             event.includes("Long Jump") ||
             event.includes("Triple Jump");
 
@@ -467,6 +470,10 @@ export default function AthleteProfile() {
                                         }}
                                     >
                                         {CleanEventName(result.event_name)}
+                                        {result.round
+                                            ? ` (${result.round})`
+                                            : ""
+                                        }
                                     </td>
 
                                     <td

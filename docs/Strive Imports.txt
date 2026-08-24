@@ -1,0 +1,20 @@
+ id |            name            |        venue         | start_date |  end_date  |   competition_type
+----+----------------------------+----------------------+------------+------------+----------------------
+ 13 | Strive                     | WA Athletics Stadium | 2025-10-17 | 2025-10-17 | Strive - Program A
+ 14 | Strive                     | WA Athletics Stadium | 2025-10-24 | 2025-10-24 | Strive - Program B
+ 15 | Strive                     | WA Athletics Stadium | 2025-11-07 | 2025-11-07 | Strive - Program C
+ 16 | Strive                     | WA Athletics Stadium | 2025-11-14 | 2025-11-14 | Strive - Program D
+ 17 | Strive                     | WA Athletics Stadium | 2025-11-21 | 2025-11-21 | Strive - Program A
+ 18 | Strive                     | WA Athletics Stadium | 2025-11-28 | 2025-11-28 | Strive - Program B
+ 19 | Strive                     | WA Athletics Stadium | 2025-12-05 | 2025-12-05 | Strive - Program C
+ 21 | Strive                     | WA Athletics Stadium | 2025-12-19 | 2025-12-19 | Strive - Program D
+ 22 | Strive                     | WA Athletics Stadium | 2026-01-09 | 2026-01-09 | Strive - Program A
+ 23 | Strive                     | WA Athletics Stadium | 2026-01-16 | 2026-01-16 | Strive - Program B
+ 24 | Strive                     | WA Athletics Stadium | 2026-01-24 | 2026-01-24 | Strive - Program C
+ 11 | Strive                     | WA Athletics Stadium | 2026-01-31 | 2026-01-31 | Strive - Program D
+ 12 | Strive                     | WA Athletics Stadium | 2026-02-11 | 2026-02-11 | Strive - Program A
+ 28 | State Junior Championships | WA Athletics Stadium | 2026-02-20 | 2026-02-20 | Junior Championships
+ 25 | Strive                     | WA Athletics Stadium | 2026-02-27 | 2026-02-27 | Strive - Program B
+ 26 | Strive                     | WA Athletics Stadium | 2026-03-13 | 2026-02-13 | Strive - Program C
+ 27 | Strive                     | WA Athletics Stadium | 2026-04-01 | 2026-04-01 | Strive - Program D
+(17 rows)

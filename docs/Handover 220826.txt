@@ -1,0 +1,423 @@
+Generating response 
+Copilot said:
+Athletics Results Platform - Handover Document
+Current Status
+
+We have fixed the original parser bug and restored imports, but there are still two unresolved issues.
+
+Current State
+
+✅ Competition 23 imports successfully
+
+✅ 253 events imported
+
+✅ 699 results imported
+
+✅ Athlete profile now displays 16/01/2026 results
+
+✅ Qualification rounds import correctly
+
+✅ Javelin Qualification (42.67) no longer appears as a 100m result
+
+✅ Age groups now correctly populate for many events
+
+❌ Duplicate "overall" and "age-specific" event results imported
+
+❌ Some age-specific events still have age_group = "Multiple, U14"
+
+
+
+
+Original Bug (Resolved)
+
+
+Symptom
+
+Kavroop had an impossible result:
+100m = 42.67
+
+
+Root Cause
+
+Parser was not recognising Qualification event headers.
+
+Roster PDF contains:
+
+U13 - 18 Javelin Throw · Women & Girls · Multiple · Qualification · q: 8
+1 Kavroop Bhangu (2013)AUS U14 Joondalup Athletics Centre 42.67 q PB
+
+
+Because Qualification headers weren't being recognised, the parser remained in:
+current_event = {
+    "event": "100m"
+}
+
+and attached 42.67 to the 100m event
+
+
+
+Result
+
+Now correctly stored as:
+U13 - 18 Javelin Throw
+Round = Qualification
+Performance = 42.67
+
+
+
+
+Current Competition 23 Data
+
+
+For Kavroop:
+
+SELECT
+    event_name,
+    division,
+    age_group,
+    round,
+    performance
+FROM results
+WHERE athlete_name = 'Kavroop Bhangu'
+  AND competition_id = 23
+
+
+produces:
+
+100m                                  | Multiple      | U14           | Final         | 13.96
+
+76.2cm 200m Hurdles                   | Multiple      | U14           | Final         | 32.02
+
+76.2cm 200m Hurdles (76.2cm / 18.29m) | Multiple, U14 | Multiple, U14 | Final         | 32.02
+
+U13 - 18 Javelin Throw                | Multiple      | U14           | Qualification | 42.67
+
+U13 - 18 Javelin Throw                | Multiple      | U14           | Final         | 39.14
+
+U13 - 18 Javelin Throw (400g)         | Multiple, U14 | Multiple, U14 | Qualification | 42.67
+
+U13 - 18 Javelin Throw (400g)         | Multiple, U14 | Multiple, U14 | Final         | 39.14
+
+
+
+
+
+Athlete Profile Endpoint
+
+location: @router.get("/{athlete_name}")
+
+
+Originally:
+
+performances = (
+    db.query(Result)
+    .filter(
+        Result.athlete_name == athlete_name,
+        Result.division.is_(None)
+    )
+)
+
+prevented Competition 23 appearing because:
+
+division = Multiple
+division = Multiple, U14
+
+rather than NULL
+
+
+Temporary fix used:
+
+performances = (
+        db.query(Result)
+        .filter(
+            Result.athlete_name == athlete_name,
+            or_(
+                Result.division.is_(None),
+                Result.division.like("Multiple%")
+            )
+        )
+        .order_by(
+            desc(Result.competition_date)
+        )
+        .all()
+    )
+
+    classifications = (
+        db.query(Result)
+        .filter(
+            Result.athlete_name == athlete_name,
+            Result.division.isnot(None),
+            ~Result.division.like("Multiple%")
+        )
+        .order_by(
+            desc(Result.competition_date)
+        )
+        .all()
+    )
+
+
+
+
+Division Investigation
+
+
+Competition 23
+
+SELECT DISTINCT division
+FROM results
+WHERE competition_id = 23;
+
+returns:
+
+Multiple
+Multiple, U13
+Multiple, U14
+Multiple, U15
+Multiple, U16
+Multiple, U17
+Multiple, U18
+Multiple, U20
+Multiple, Senior
+
+
+
+Competition 28:
+
+U13
+U14
+U15
+U16
+U17
+U18
+PA U15
+PA U17
+
+
+This shows Competition 23 uses a different structure and the previous assumption:
+
+division IS NULL = performance
+division NOT NULL = classification
+
+is no longer valid
+
+
+
+Age Group Fix
+
+
+Originally:
+
+for result in current_event["results"]:
+    result["age_group"] = current_event["division"]
+
+this overwrote:
+U14
+
+with:
+Multiple
+
+
+Fixed to:
+
+for result in current_event["results"]:
+    if not result.get("age_group"):
+        result["age_group"] = current_event["division"]
+
+
+Before: 100m -> age_group = Multiple
+After: 100m -> age_group = U14
+
+
+
+
+Current Unresolved Issue #1
+
+
+Duplicate Event Imports
+
+Athlete profile currently shows:
+
+200m Hurdles                     32.02
+76.2cm 200m Hurdles (...)        32.02
+
+Javelin Throw                    42.67
+Javelin Throw (400g)             42.67
+
+Javelin Throw                    39.14
+Javelin Throw (400g)             39.14
+
+
+These duplicates exist in the database.
+
+
+Cause
+
+
+Roster provides:
+
+
+Overall Event
+
+76.2cm 200m Hurdles
+Division = Multiple
+
+
+Age-Specific Event
+
+76.2cm 200m Hurdles (76.2cm / 18.29m)
+Division = Multiple, U14
+
+
+similarly:
+
+U13 - U18 Javelin Throw, and
+U13 - U18 Javelin Thrown (400g)
+
+
+The athlete appears in both
+
+
+
+
+Recommend Resolution
+
+
+Keep:
+
+Javelin Throw (400g)
+200m Hurdles (76.2cm / 18.29m)
+
+
+Discard or suppress:
+
+Javelin Throw
+200m Hurdles
+
+when both exist. The age-specific version is the more meaningful result.
+
+
+
+
+
+Current Unresolved Issue #2
+
+
+Age group still wrong for specific events.
+
+
+Current:
+
+Javelin Throw (400g)
+age_group = Multiple, U14
+
+200m Hurdles (76.2cm / 18.29m)
+age_group = Multiple, U14
+
+
+should become age_group = U14
+
+
+Needs investigation
+
+
+
+
+Event Name Normalisation
+
+
+Current function: def normalise_event_name
+
+currently strips:
+
+U13 - 18
+76.2cm
+Multiple Group
+
+
+User attempted adding:
+
+# Hurdle specifications
+event_name = re.sub(
+    r"\s*\([^)]*cm\s*/\s*[^)]*\)",
+    "",
+    event_name,
+    flags=re.IGNORECASE,
+)
+
+# Implement weights
+event_name = re.sub(
+    r"\s*\((?:[\d.]+(?:kg|g))\)",
+    "",
+    event_name,
+    flags=re.IGNORECASE,
+)
+
+however did not affect all records
+
+
+
+Current db still contains:
+
+76.2cm 200m Hurdles (76.2cm / 18.29m)
+
+U13 - 18 Javelin Throw (400g)
+
+
+which suggests some imports bypass normalisation.
+
+Need to verify where normalise_event_name() is called before persisting event_name=event["event"] in import_results()
+
+
+
+
+
+
+Desired Final Behaviour
+
+
+
+Athlete Profile
+
+
+Display:
+
+16/01/2026
+
+Javelin Throw (Qualification)   42.67m
+Javelin Throw (Final)           39.14m
+
+200m Hurdles                    32.02
+100m                            13.96
+
+
+keep separate rounds
+
+
+
+PB/SB Logic
+
+Use best legal performance regardless of round
+
+Example:
+
+Qualification = 42.67
+Final = 39.14
+
+PB should be 42.67, not 39.14
+
+
+
+
+
+Last Known Stable State
+
+Events imported: 253
+Results imported: 699
+Competition 23 visible in athlete profile
+Qualification rounds imported
+Parser stable
+
+
+Do not revert below this point
+
+
