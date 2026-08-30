@@ -12,6 +12,11 @@ from app.services.performance_utils import (
     normalise_event_name
 )
 
+from app.services.gender_utils import (
+    normalise_gender
+)
+
+
 router = APIRouter(
     prefix="/athletes",
     tags=["Athletes"]
@@ -20,18 +25,143 @@ router = APIRouter(
 
 @router.get("/search")
 def search_athletes(
-    q: str = Query(...),
+    q: str = "",
     db: Session = Depends(get_db)
 ):
 
-    results = (
+    athletes = (
         db.query(
             Result.athlete_name,
             func.max(Result.club).label("club"),
             func.count(Result.id).label("results")
         )
         .filter(
-            Result.athlete_name.ilike(f"%{q}%")
+            Result.athlete_name.isnot(None)
+        )
+        .group_by(
+            Result.athlete_name
+        )
+        .order_by(
+            Result.athlete_name.asc()
+        )
+    )
+
+    if q:
+
+        athletes = athletes.filter(
+            Result.athlete_name.ilike(
+                f"%{q}%"
+            )
+        )
+
+    athletes = athletes.all()
+
+    return [
+
+        {
+            "athlete_name":
+                athlete.athlete_name,
+
+            "club":
+                athlete.club,
+
+            "results":
+                athlete.results
+        }
+
+        for athlete in athletes
+
+    ]
+
+
+
+
+
+
+
+@router.get("/list")
+def athlete_list(
+    db: Session = Depends(get_db)
+):
+
+    print("ATHLETE LIST ENDPOINT CALLED")
+
+    athletes = (
+        db.query(
+            Result.athlete_name
+        )
+        .group_by(
+            Result.athlete_name
+        )
+        .order_by(
+            Result.athlete_name
+        )
+        .all()
+    )
+
+    print(type(athletes))
+    print(len(athletes))
+    print(athletes[:5])
+
+    return [
+        athlete[0]
+        for athlete in athletes
+        if athlete[0]
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+@router.get("/letters")
+def athlete_letters(
+    db: Session = Depends(get_db)
+):
+
+    athletes = (
+        db.query(
+            Result.athlete_name
+        )
+        .filter(
+            Result.athlete_name.isnot(None)
+        )
+        .all()
+    )
+
+    letters = sorted(
+        {
+            athlete.athlete_name[0].upper()
+            for athlete in athletes
+            if athlete.athlete_name
+        }
+    )
+
+    return letters
+
+
+
+@router.get("/browse/{letter}")
+def athletes_by_letter(
+    letter: str,
+    db: Session = Depends(get_db)
+):
+
+    athletes = (
+        db.query(
+            Result.athlete_name
+        )
+        .filter(
+            Result.athlete_name.ilike(
+                f"{letter}%"
+            )
         )
         .group_by(
             Result.athlete_name
@@ -43,13 +173,128 @@ def search_athletes(
     )
 
     return [
-        {
-            "athlete_name": r.athlete_name,
-            "club": r.club,
-            "results": r.results
-        }
-        for r in results
+        athlete.athlete_name
+        for athlete in athletes
     ]
+
+
+
+@router.get("/season-bests")
+def season_bests(
+    age_group: str = Query(
+        "Open"
+    ),
+    db: Session = Depends(get_db)
+):
+    print("SEASON BESTS CALLED")
+
+    results = (
+        db.query(Result)
+        .filter(
+            Result.performance_numeric.isnot(None)
+        )
+        .all()
+    )
+
+    print("RESULTS:", len(results))
+
+    male = {}
+    female = {}
+
+    #
+    # crude V1 classification
+    #
+    for result in results:
+
+        athlete_name = (
+            result.athlete_name or ""
+        )
+
+        event_name = (
+            result.event_name or ""
+        )
+
+        key = event_name
+
+        if "Women" in event_name:
+
+            current = female.get(key)
+
+            if (
+                current is None
+                or
+                (
+                    result.performance_numeric
+                    <
+                    current.performance_numeric
+                )
+            ):
+                female[key] = result
+
+        elif "Men" in event_name:
+
+            current = male.get(key)
+
+            if (
+                current is None
+                or
+                (
+                    result.performance_numeric
+                    <
+                    current.performance_numeric
+                )
+            ):
+                male[key] = result
+
+    return {
+
+        "male": [
+
+            {
+                "event_name":
+                    result.event_name,
+
+                "athlete_name":
+                    result.athlete_name,
+
+                "performance":
+                    result.performance
+            }
+
+            for result
+            in sorted(
+                male.values(),
+                key=lambda x:
+                    x.event_name
+            )
+
+        ],
+
+        "female": [
+
+            {
+                "event_name":
+                    result.event_name,
+
+                "athlete_name":
+                    result.athlete_name,
+
+                "performance":
+                    result.performance
+            }
+
+            for result
+            in sorted(
+                female.values(),
+                key=lambda x:
+                    x.event_name
+            )
+
+        ]
+
+    }
+
+
 
 
 @router.get("/{athlete_name}")
@@ -62,10 +307,10 @@ def get_athlete_profile(
         db.query(Result)
         .filter(
             Result.athlete_name == athlete_name,
-            or_(
-                Result.division.is_(None),
-                Result.division.like("Multiple%")
-            )
+           #or_(
+           #    Result.division.is_(None),
+           #    Result.division.like("Multiple%")
+           #)
         )
         .order_by(
             desc(Result.competition_date)

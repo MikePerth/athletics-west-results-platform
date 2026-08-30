@@ -108,8 +108,18 @@ class RosterResultImporter:
                     )
                 )
 
+                result.gender = (
+                    event.get("gender")
+                )
+
                 result.wind = (
-                    event.get("wind")
+                    athlete.get("wind")
+                    if athlete.get("wind") is not None
+                    else event.get("wind")
+                )
+
+                result.round = event.get(
+                    "round"
                 )
 
                 result.athlete_name = (
@@ -175,6 +185,24 @@ class RosterResultImporter:
                         .rstrip("w")
                     )
 
+                    performance = re.sub(
+                        r"\s+[Qq]$",
+                        "",
+                        performance
+                    )
+
+                    performance = re.sub(
+                        r"\s+[Qq]$",
+                        "",
+                        performance
+                    )
+
+                    performance = re.sub(
+                        r"\s*\((?:NWI|[+-]?\d+(?:\.\d+)?)\)$",
+                        "",
+                        performance
+                    )
+
                 result.performance = (
                     performance
                 )
@@ -189,11 +217,72 @@ class RosterResultImporter:
 
                 result.roster_flag = "Y"
 
+                existing_results = (
+                    self.session.query(Result)
+                    .filter(
+                        Result.competition_id
+                        == result.competition_id,
+
+                        Result.athlete_name
+                        == result.athlete_name,
+
+                        Result.competition_date
+                        == result.competition_date,
+
+                        Result.performance
+                        == result.performance,
+
+                        Result.age_group
+                        == result.age_group
+                    )
+                    .all()
+                )
+
+                is_duplicate = False
+
+                for existing in existing_results:
+
+                    if (
+                        normalise_event_name(
+                            existing.event_name
+                        )
+                        ==
+                        normalise_event_name(
+                            result.event_name
+                        )
+                    ):
+                        is_duplicate = True
+                        break
+
+                if is_duplicate:
+
+                    print(
+                        f"SKIPPED DUPLICATE | "
+                        f"{result.athlete_name} | "
+                        f"{result.event_name} | "
+                        f"{result.performance}"
+                    )
+
+                    continue
+
+
+                #print(
+                #    f"{result.event_name} | "
+                #    f"{result.gender} | "
+                #    f"{result.athlete_name}"
+                #)
+
                 self.session.add(
                     result
                 )
 
                 imported_count += 1
+
+                
+
+
+        
+
 
         self.session.commit()
 

@@ -1,0 +1,303 @@
+Athletics WA Results Platform - Roster URL Importer Handover
+
+
+Session Summary
+
+
+This session focused on improving the Roster URL scraper/importer to bring its output closer to the PDF importer and improve athlete profile consistency.
+
+
+
+Major Issues Identified and Resolved
+
+
+1. Event Name Normalisation
+
+Finding: The URL importer was already performing event name normalisation:
+
+result.event_name = (
+    normalise_event_name(
+        raw_event_name
+    )
+)
+
+
+inside RosterResultImporter.import_events()
+
+
+No change required
+
+
+
+
+2. Round Detection (Heat / Semi / Final)
+
+
+Problem: Roster event titles contain:
+
+90m Hurdles (76.2cm / 8m) · Heat 2
+200m · Final
+1500m · Final A
+
+but round information was being discarded.
+
+
+Solution
+
+Round extraction added using:
+
+round_name = None
+
+if "·" in event_name:
+
+    round_text = (
+        event_name
+        .split("·", 1)[1]
+        .strip()
+    )
+
+    if round_text.startswith("Heat"):
+        round_name = "Heat"
+
+    elif round_text.startswith("Semi"):
+        round_name = "Semi"
+
+    elif round_text.startswith("Final"):
+        round_name = "Final"
+
+event_data["round"] = round_name
+
+
+
+
+Importer Change:
+
+Added:
+result.round = (
+    event.get("round")
+)
+
+
+Result - athlete profiles now show:
+
+100m (Heat)
+100m (Final)
+80m Hurdles (Heat)
+80m Hurdles (Final)
+
+
+
+
+3. Performance Cleanup
+
+
+Problem: 
+
+Track performances imported as:
+
+13.14 Q
+15.99 q
+
+
+Field performances imported as:
+
+4.72 (+2.0)
+10.89 (NWI)
+
+
+
+Solution
+
+Qualification markers now stripped:
+
+performance = re.sub(
+    r"\s+[Qq]$",
+    "",
+    performance
+)
+
+
+Result:
+13.14
+15.99
+
+
+
+
+4. Long Jump / Triple Jump Misclassified
+
+
+Root Cause
+
+Inside: extract_event() everything was being classified as event_type = "track" because field-event detections had been commented out
+
+
+Original
+
+event_type = "track"
+
+#if "\tORDER\t" in text:
+#    event_type = "field"
+
+
+
+Field events were incorrectly sent through parse_track_rows() instead of parse_field_rows() resulting in:
+
+Long Jump
+Triple Jump
+High Jump
+Shot Put
+
+being treated as track events
+
+
+Field event detection reintroduced
+
+field_keywords = {
+                "Long Jump",
+                "Triple Jump",
+                "High Jump",
+                "Pole Vault",
+                "Shot Put",
+                "Discus",
+                "Javelin",
+                "Hammer",
+            }
+
+            event_type = "track"
+
+            if any(
+                keyword in event_name
+                for keyword in field_keywords
+            ):
+                event_type = "field"
+
+
+
+
+5. Athlete-Level Wind Extraction
+
+
+Discovery
+
+
+Field event records arrived as:
+
+13.28 (+1.1)
+13.04w (+2.2)
+12.13 (NWI)
+
+Used plain-text regex:
+
+wind_match = re.search(
+    r"\((NWI|[+-]?\d+(?:\.\d+)?)\)$",
+    result.strip()
+)
+
+
+Wind Storage
+
+If matched wind = wind_match.group(1) performance stripped:
+result = re.sub(
+    r"\s*\((NWI|[+-]?\d+(?:\.\d+)?)\)$",
+    "",
+    result
+).strip()
+
+
+
+
+
+6. NWI Database Failure
+
+
+Error in PostgreSQL invalid input syntax for type numeric: "NWI" because wind table double precision and imports attempted wind = "NWI"
+
+Fix - Added:
+
+if wind == "NWI":
+    wind = None
+
+and now measured winds stored. NWI stored as NULL
+
+
+
+
+7. Field Event Name Normalisation
+
+
+Problem
+
+Track events: Kavroop Bhangu
+
+Field events: Kavroop BHANGU
+
+because surname cleanup existed only in parse_track_rows()
+
+Added to parse_field_rows()
+
+name = record[1]
+
+name = name.replace("\xa0", " ")
+
+if "·" in name:
+    name = name.split("·")[0].strip()
+
+name = name.title()
+
+then "name": name instead of "name": record[1]
+
+
+
+
+8. Wind Extraction Success
+
+Confirmed imported rows now appear correctly
+
+
+
+
+
+
+
+
+Future Recommendation
+
+
+Import batch logging was never implemented beyond the model definition.
+
+Implement logging for:
+
+source_type
+competition_id
+competition_name
+uploaded_at
+total_events
+total_results
+
+for both PDF imports and Roster URL imports
+
+
+
+
+Current Status
+Working
+
+✅ Event normalisation
+
+✅ Round extraction
+
+✅ Qualification marker stripping
+
+✅ Field event classification
+
+✅ Athlete-level wind extraction
+
+✅ Long Jump/Triple Jump imports
+
+✅ Field-event surname normalisation
+
+✅ Wind storage
+
+✅ Athlete profile matching
+

@@ -9,6 +9,21 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api import competitions
 from app.models.result import Result
 from app.api.roster_import import router as roster_router
+from app.api.meet_manager_import import (
+    router as meet_manager_router
+)
+
+from app.api.admin_results import router as admin_results_router
+
+from app.api.admin_users import (
+    router as admin_users_router
+)
+
+from app.api.auth import router as auth_router
+from app.api.admin_dashboard import (
+    router as admin_dashboard_router
+)
+
 
 import app.models
 
@@ -26,7 +41,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+app.include_router(meet_manager_router)
 app.include_router(roster_router)
 app.include_router(imports_router)
 app.include_router(parse_router)
@@ -35,6 +50,12 @@ app.include_router(
     competitions.router,
     prefix="/competitions",
     tags=["Competitions"]
+)
+app.include_router (admin_results_router)
+app.include_router(admin_users_router)
+app.include_router(auth_router)
+app.include_router(
+    admin_dashboard_router
 )
 
 @app.get("/")

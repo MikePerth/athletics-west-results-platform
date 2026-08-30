@@ -18,3 +18,149 @@
  26 | Strive                     | WA Athletics Stadium | 2026-03-13 | 2026-02-13 | Strive - Program C
  27 | Strive                     | WA Athletics Stadium | 2026-04-01 | 2026-04-01 | Strive - Program D
 (17 rows)
+
+
+
+
+
+SELECT
+    status,
+    COUNT(*)
+FROM results
+WHERE competition_id = 29
+GROUP BY status
+ORDER BY status;
+
+
+SELECT
+    event_name,
+    COUNT(*)
+FROM results
+GROUP BY event_name
+ORDER BY event_name;
+
+
+SELECT
+    competition_id,
+    COUNT(*)
+FROM results
+WHERE event_name = 'Hurdles'
+GROUP BY competition_id
+ORDER BY competition_id;
+
+
+
+
+
+
+
+athletics_results-# FROM competitions
+athletics_results-# ORDER BY id;
+ id |                 name
+----+--------------------------------------
+ 11 | Strive
+ 12 | Strive
+ 13 | Strive
+ 14 | Strive
+ 15 | Strive
+ 16 | Strive
+ 17 | Strive
+ 18 | Strive
+ 19 | Strive
+ 21 | Strive
+ 22 | Strive
+ 23 | Strive
+ 24 | Strive
+ 25 | Strive
+ 26 | Strive
+ 27 | Strive
+ 28 | State Junior Championships
+ 29 | TEST
+ 30 | Strive
+ 31 | State 5000m Championship
+ 32 | 60m State Championship
+ 33 | Combined Events State Championship
+ 34 | 10,000m State Championship
+ 35 | WA All Schools Championships
+ 36 | Senior State Championships
+ 37 | Perth Track Classic
+ 38 | Australian All Schools
+ 39 | Australian Short Track Championships
+ 40 | Maurie Plant Meet
+ 41 | Australian Athletics Championships
+(30 rows)
+
+
+
+  id |                        name                         |        venue         | start_date |  end_date  |                competition_type
+----+-----------------------------------------------------+----------------------+------------+------------+------------------------------------------------
+ 47 | 2023 Australian Athletics All Schools               | WA Athletics Stadium | 2023-12-09 | 2023-12-11 | Australian Athletics All Schools
+ 43 | 2024 Maurie Plant Meet                              | Lakeside Stadium     | 2024-02-16 | 2024-02-16 | Maurie Plant Meet
+ 48 | 2024 Australian Athletics Championships             | SA Athletics Stadium | 2024-04-12 | 2024-04-15 | Australian Athletics Championships
+ 49 | 2024 Australian Athletics Junior Championships      | SA Athletics Stadium | 2024-04-14 | 2024-04-19 | Australian Athletics Junior Championships
+ 54 | Strive - Program A                                  | WA Athletics Stadium | 2024-10-18 | 2024-10-18 | Strive - Program A
+ 55 | Strive - Program B                                  | WA Athletics Stadium | 2024-10-25 | 2024-10-25 | Strive - Program B
+ 56 | Strive - Program C                                  | WA Athletics Stadium | 2024-11-08 | 2024-11-08 | Strive - Program C
+ 57 | Strive - Special Program                            | WA Athletics Stadium | 2024-11-16 | 2024-11-16 | Strive - Special Program
+ 58 | Strive - Program D                                  | WA Athletics Stadium | 2024-11-22 | 2024-11-22 | Strive - Program D
+ 59 | Strive - Program A                                  | WA Athletics Stadium | 2024-11-29 | 2024-11-29 | Strive - Program A
+ 50 | 2024 Australian Athletics All Schools               | QSAC                 | 2024-12-06 | 2024-12-08 | Australian Athletics All Schools
+ 60 | Strive - Program B                                  | WA Athletics Stadium | 2024-12-07 | 2024-12-07 | Strive - Program B
+ 61 | Strive - Program C                                  | WA Athletics Stadium | 2024-12-20 | 2024-12-20 | Strive - Program C
+ 62 | Strive - Program D                                  | WA Athletics Stadium | 2025-01-10 | 2025-01-10 | Strive - Program D
+ 64 | Night of the Go for 2&5                             | WA Athletics Stadium | 2025-01-18 | 2025-01-18 | Night of the Go for 2&5
+ 63 | Strive - Special Program 2                          | WA Athletics Stadium | 2025-01-18 | 2025-01-18 | Strive - Special Program 2
+ 51 | 2025 Australian Athletics Short Track Championships | SOPAC                | 2025-02-01 | 2025-12-01 | Australian Athletics Short Track Championships
+ 44 | 2025 Perth Track Classic                            | WA Athletics Stadium | 2025-03-01 | 2025-03-01 | Perth Track Classic
+ 45 | 2025 Australian Athletics Junior Championships      | WA Athletics Stadium | 2025-04-04 | 2025-04-08 | Australian Athletics Junior Championships
+ 46 | 2025 Australian Athletics Championships             | WA Athletics Stadium | 2025-04-10 | 2025-04-13 | Australian Athletics Championships
+ 13 | Strive                                              | WA Athletics Stadium | 2025-10-17 | 2025-10-17 | Strive - Program A
+ 14 | Strive                                              | WA Athletics Stadium | 2025-10-24 | 2025-10-24 | Strive - Program B
+ 35 | 2025 WA All Schools Championships                   | WA Athletics Stadium | 2025-10-31 | 2025-11-02 | WA All Schools Championships
+ 15 | Strive                                              | WA Athletics Stadium | 2025-11-07 | 2025-11-07 | Strive - Program C
+ 16 | Strive                                              | WA Athletics Stadium | 2025-11-14 | 2025-11-14 | Strive - Program D
+ 17 | Strive                                              | WA Athletics Stadium | 2025-11-21 | 2025-11-21 | Strive - Program A
+ 34 | 2025 WA 10,000m State Championships                 | WA Athletics Stadium | 2025-11-23 | 2025-11-23 | 10,000m State Championship
+ 18 | Strive                                              | WA Athletics Stadium | 2025-11-28 | 2025-11-28 | Strive - Program B
+ 38 | 2025 Australian Athletics All Schools               | Lakeside Stadium     | 2025-12-04 | 2025-12-07 | Australian All Schools
+ 19 | Strive                                              | WA Athletics Stadium | 2025-12-05 | 2025-12-05 | Strive - Program C
+ 21 | Strive                                              | WA Athletics Stadium | 2025-12-19 | 2025-12-19 | Strive - Program D
+ 22 | Strive                                              | WA Athletics Stadium | 2026-01-09 | 2026-01-09 | Strive - Program A
+ 23 | Strive                                              | WA Athletics Stadium | 2026-01-16 | 2026-01-16 | Strive - Program B
+ 31 | 2026 WA 5,000m State Championships                  | WA Athletics Stadium | 2026-01-24 | 2026-01-24 | State 5000m Championship
+ 24 | Strive                                              | WA Athletics Stadium | 2026-01-24 | 2026-01-24 | Strive - Program C
+ 29 | TEST                                                | WA Athletics Stadium | 2026-01-31 | 2026-01-31 | TEST
+ 11 | Strive                                              | WA Athletics Stadium | 2026-01-31 | 2026-01-31 | Strive - Program D
+ 32 | 2026 WA 60m State Championships                     | WA Athletics Stadium | 2026-01-31 | 2026-01-31 | 60m State Championship
+ 33 | Combined Events State Championship                  | WA Athletics Stadium | 2026-02-06 | 2026-01-08 | Combined Events State Championship
+ 39 | 2026 Australian Athletics Short Track Championships | Lakeside Stadium     | 2026-02-07 | 2026-02-07 | Australian Short Track Championships
+ 12 | Strive                                              | WA Athletics Stadium | 2026-02-11 | 2026-02-11 | Strive - Program A
+ 37 | 2026 Perth Track Classic                            | WA Athletics Stadium | 2026-02-14 | 2026-02-14 | Perth Track Classic
+ 53 | 2026 State 3,000m Championships                     | WA Athletics Stadium | 2026-02-14 | 2026-02-14 | 2026 State 3,000m Championships
+ 28 | 2026 State Junior Championships                     | WA Athletics Stadium | 2026-02-20 | 2026-02-20 | Junior Championships
+ 25 | Strive                                              | WA Athletics Stadium | 2026-02-27 | 2026-02-27 | Strive - Program B
+ 36 | 2026 State Senior Championships                     | WA Athletics Stadium | 2026-03-06 | 2026-03-08 | Senior State Championships
+ 26 | Strive                                              | WA Athletics Stadium | 2026-03-13 | 2026-03-13 | Strive - Program C
+ 40 | 2026 Maurie Plant Meet                              | Lakeside Stadium     | 2026-03-28 | 2026-03-28 | Maurie Plant Meet
+ 27 | Strive                                              | WA Athletics Stadium | 2026-04-01 | 2026-04-01 | Strive - Program D
+ 41 | 2026 Australian Athletics Championships             | SOPAC                | 2026-04-09 | 2026-04-12 | Australian Athletics Championships
+ 42 | 2026 Australian Athletics Junior Championships      | QSAC                 | 2026-04-15 | 2026-04-20 | Australian Athletics Junior Championships
+
+(42 rows)
+
+
+
+
+
+
+
+SELECT
+    id,
+    name,
+    venue,
+    start_date,
+    end_date,
+    competition_type
+FROM competitions
+ORDER BY start_date ASC;
+

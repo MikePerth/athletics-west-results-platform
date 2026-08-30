@@ -79,6 +79,20 @@ def normalise_event_name(event_name: str) -> str:
         event_name,
         flags=re.IGNORECASE,
     )
+
+    event_name = re.sub(
+        r"^(Men|Women)\s+",
+        "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        r"^(Men|Women)\s+",
+        "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
     #
     # Fix mangled middle-dot character
     #
@@ -86,6 +100,33 @@ def normalise_event_name(event_name: str) -> str:
     event_name = event_name.replace(
         "╖",
         "·"
+    )
+    # 2000 Meter Steeplechase -> 2000m Steeplechase
+    # 100 Meter Dash -> 100m Dash
+
+    event_name = re.sub(
+        r"(\d+)\s+Meter\b",
+        r"\1m",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    # 2000m Steeplechase 76.2cm
+    # 3000m Steeplechase 91.4cm
+
+    event_name = re.sub(
+        r"(\d+m\s+Steeplechase)\s+(\d+(?:\.\d+)?cm)$",
+        r"\1 (\2)",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+    # 1500 Meters -> 1500m
+
+    event_name = re.sub(
+        r"(\d+)\s+Meters\b",
+        r"\1m",
+        event_name,
+        flags=re.IGNORECASE,
     )
 
     #
@@ -110,7 +151,7 @@ def normalise_event_name(event_name: str) -> str:
     # 80m Hurdles (76.2cm / 7m)
     # 400m Hurdles (91.4cm / 35m)
     event_name = re.sub(
-        r"\s*\([^)]*cm\s*/\s*[^)]*\)",
+        r"\s+\d+(?:\.\d+)?cm$",
         "",
         event_name,
         flags=re.IGNORECASE,
@@ -122,6 +163,45 @@ def normalise_event_name(event_name: str) -> str:
     event_name = re.sub(
         r"\s*\((?:[\d.]+(?:kg|g))\)",
         "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+    # Shot Put 3kg
+    # Hammer Throw 7.26kg
+    # Javelin Throw 700g
+
+    event_name = re.sub(
+        r"\s+\d+(?:\.\d+)?(?:kg|g)$",
+        "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+    # Pole Vault Division A
+    # Pole Vault Division B
+    # High Jump Division A
+    # High Jump Division B
+
+    event_name = re.sub(
+        r"\s+Division\s+[A-Z]$",
+        "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    field_events = (
+        r"(Long Jump|Triple Jump|High Jump|Pole Vault|"
+        r"Shot Put|Discus Throw|Hammer Throw|Javelin Throw)"
+    )
+    event_name = re.sub(
+        r"^.*?\b((?:100m|200m|400m|800m|1500m))\b$",
+        r"\1",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        rf"^.*?\b{field_events}\b",
+        lambda m: m.group(1),
         event_name,
         flags=re.IGNORECASE,
     )
@@ -240,6 +320,80 @@ def normalise_event_name(event_name: str) -> str:
     event_name = re.sub(
         r"^U20-Open\s+",
         "",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    #
+    # 100m Dash -> 100m
+    # 200m Dash -> 200m
+    # 400m Dash -> 400m
+    #
+    event_name = re.sub(
+        r"^(100m|200m|400m)\s+Dash$",
+        r"\1",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    # 200m Run -> 200m 
+    # 400m Run -> 400m
+    # 800m Run -> 800m
+    # 1500m Run -> 1500m
+    #
+    event_name = re.sub(
+        r"^(200m|400m|800m|1500m)\s+Run$",
+        r"\1",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+    r"^(\d+)\s+Metre$",
+    r"\1m",
+    event_name,
+    flags=re.IGNORECASE,
+)
+
+    event_name = re.sub(
+        r"^(\d+)\s+Metre\s+Hurdles$",
+        r"\1m Hurdles",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        r"^(\d+)\s+Metre\s+Steeplechase$",
+        r"\1m Steeplechase",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        r"^(\d+)\s+Metre\s+Race\s+Walk$",
+        r"\1m Race Walk",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+
+    event_name = re.sub(
+        r"^(\d+m)\s+Run$",
+        r"\1",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        r"^(\d+m)\s+Dash$",
+        r"\1",
+        event_name,
+        flags=re.IGNORECASE,
+    )
+
+    event_name = re.sub(
+        r"^(\d+m)\s+Wheelchair$",
+        r"\1",
         event_name,
         flags=re.IGNORECASE,
     )

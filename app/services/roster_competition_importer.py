@@ -3,8 +3,57 @@ from pprint import pprint
 import time
 import re
 import json 
+import os
+import traceback
+
+from app.services.gender_utils import (
+    normalise_gender
+)
 
 
+class LayoutType:
+
+    TRACK_STANDARD = "track_standard"
+
+    TRACK_NOTES = "track_notes"
+
+    TRACK_NOTES_AGEGROUP = (
+        "track_notes_agegroup"
+    )
+
+    TRACK_COMPACT_NOTES = (
+        "track_compact_notes"
+    )
+
+    TRACK_AGEGROUP_DETAILS = (
+        "track_agroup_details"
+    )
+
+    TRACK_COMPACT_NO_BIRTHYEAR = (
+        "track_compact_no_birthyear"
+    )
+
+    TRACK_STEEPLECHASE = (
+        "track_steeplechase"
+    )
+
+    FIELD_STANDARD = "field_standard"
+
+    FIELD_AGEGROUP_IMPLEMENT = (
+        "field_agegroup_implement"
+    )
+
+    FIELD_PARA_PERCENTAGE = (
+        "field_para_percentage"
+    )
+
+    FIELD_NOTES_AGEGROUP_IMPLEMENT = (
+        "field_notes_agegroup_implement"
+    )
+
+
+    
+    
 
 
 class RosterCompetitionImporter:
@@ -20,7 +69,541 @@ class RosterCompetitionImporter:
         )
 
 
+    def detect_track_layout(
+        self,
+        record
+    ):
 
+        #
+        # Original steeplechase format
+        #
+        if (
+            len(record) >= 10
+            and record[2] in ["M", "F"]
+        ):
+            return LayoutType.TRACK_STEEPLECHASE
+        #
+        # International compact notes format
+        #
+        # GBR
+        # Notes: Hip 11
+        # Senior    Nottingham    2:26.21
+        #
+        if (
+            len(record) == 6
+            and len(record[2]) == 3
+            and record[3].startswith("Notes:")
+        ):
+            return LayoutType.TRACK_COMPACT_NOTES
+        #
+        # Notes:
+        # U18
+        # 83.8cm / 35m    Club    56.21
+        #
+        if (
+            len(record) > 7
+            and str(record[5]).startswith("Notes:")
+            and re.match(
+                r"^(U\d+|U23|Senior|Open)$",
+                str(record[6])
+            )
+        ):
+            return (
+                LayoutType
+                .TRACK_NOTES_AGEGROUP
+            )
+
+        #
+        # No birth year
+        #
+        if (
+            len(record) in [4, 5]
+            and len(record[2]) == 3
+            and "\t" in record[3]
+        ):
+            return LayoutType.TRACK_COMPACT_NO_BIRTHYEAR
+
+
+
+        #
+        # Notes:
+        # Senior    UWA    14:45.32
+        #
+        if (
+            len(record) > 6
+            and str(record[5]).startswith("Notes:")
+        ):
+            return (
+                LayoutType
+                .TRACK_NOTES
+            )
+
+        #
+        # U15
+        # 76.2cm / 18.29m    PTFC    29.51
+        #
+        # Senior
+        # 91.4cm / 35m    UWA    52.54
+        #
+        if (
+            len(record) > 6
+            and re.match(
+                r"^(U\d+|U23|Senior|Open)$",
+                str(record[5])
+            )
+        ):
+            return (
+                LayoutType
+                .TRACK_AGEGROUP_DETAILS
+            )
+
+        return (
+            LayoutType
+            .TRACK_STANDARD
+        )
+
+
+    def parse_track_compact_notes(
+        self,
+        record
+    ):
+
+        country = record[2]
+
+        details_parts = (
+            record[4]
+            .split("\t")
+        )
+
+        age_group = None
+        club = None
+        result = None
+
+        if len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+
+            club = details_parts[1]
+
+            result = details_parts[2]
+
+        return (
+            country,
+            age_group,
+            club,
+            result
+        )                               
+
+
+    def parse_track_compact_no_birthyear(
+        self,
+        record
+    ):
+        birth_year = None
+
+        country = record[2]
+
+        details_parts = (
+            record[3]
+            .split("\t")
+        )
+
+        age_group = None
+        club = None
+        result = None
+
+        if len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+            club = details_parts[1]
+            result = details_parts[2]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+            result = details_parts[1]
+
+        return (
+            birth_year,
+            country,
+            age_group,
+            club,
+            result
+        )
+
+
+    
+
+    def parse_track_agroup_details(
+        self,
+        record
+    ):
+
+        age_group = record[5]
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        club = None
+
+        result = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )
+    
+    def parse_track_standard(
+        self,
+        record
+        ):
+
+        #print("\nTRACK_STANDARD")
+        #print(record)
+    
+        details_parts = (
+            record[5]
+            .split("\t")
+        )
+
+        age_group = None
+
+        club = None
+
+        result = None
+
+        if len(details_parts) == 1:
+
+            result = details_parts[0]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+
+            result = details_parts[1]
+
+        elif len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )           
+    
+    def parse_track_steeplechase(
+        self,
+        record
+    ):
+
+        birth_year = record[4]
+
+        country = record[6]
+
+        age_group = record[8]
+
+        details_parts = (
+            record[9]
+            .split("\t")
+        )
+
+        club = None
+
+        result = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            birth_year,
+            country,
+            age_group,
+            club,
+            result
+        )
+
+
+    def parse_track_notes_agegroup(
+        self,
+        record
+    ):
+
+        age_group = record[6]
+
+        details_parts = (
+            record[7]
+            .split("\t")
+        )
+
+        club = None
+
+        result = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )
+    
+    def parse_track_notes(
+        self,
+        record
+    ):
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        age_group = None
+
+        club = None
+
+        result = None
+
+        if len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+
+            club = details_parts[1]
+
+            result = details_parts[2]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+
+            result = details_parts[1]
+
+        else:
+
+            print(
+                f"UNHANDLED TRACK_NOTES: {record}"
+            )
+
+        return (
+            age_group,
+            club,
+            result
+        )
+    
+    
+    
+    def parse_track_agegroup_details(
+        self,
+        record
+    ):
+
+        age_group = record[5]
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        club = None
+        result = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )
+
+
+
+    def detect_field_layout(
+        self,
+        record
+    ):
+
+
+        #
+        # Para field event
+        #
+        # Notes: 65.63%
+        # U20    UWA    3.82 (+1.8)
+        #
+        if (
+            len(record) > 6
+            and str(record[5]).startswith("Notes:")
+            and "%" in str(record[5])
+            and "\t" in str(record[6])
+        ):
+            return LayoutType.FIELD_PARA_PERCENTAGE
+   
+        #
+        # Notes:
+        # 600g
+        # U18
+        # 500g    UWA    35.85
+        #
+        if (
+            len(record) > 7
+            and str(record[5]).startswith("Notes:")
+            and re.match(
+                r"^(U\d+|U23|Senior|Open)$",
+                str(record[6])
+            )
+        ):
+            return (
+                LayoutType
+                .FIELD_NOTES_AGEGROUP_IMPLEMENT
+            )
+
+        #
+        # U14
+        # 400g    Club    45.12
+        #
+        if (
+            len(record) > 6
+            and re.match(
+                r"^(U\d+|U23|Senior|Open)$",
+                str(record[5])
+            )
+        ):
+            return (
+                LayoutType
+                .FIELD_AGEGROUP_IMPLEMENT
+            )
+
+        return (
+            LayoutType
+            .FIELD_STANDARD
+        )
+
+
+    def parse_field_standard(
+        self,
+        record
+    ):
+
+        details_parts = (
+            record[5]
+            .split("\t")
+        )
+
+        age_group = None
+
+        club = None
+
+        result = None
+
+        if len(details_parts) == 1:
+
+            result = details_parts[0]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+
+            result = details_parts[1]
+
+        elif len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )
+
+
+    def parse_field_agegroup_implement(
+        self,
+        record
+    ):
+
+        age_group = record[5]
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        club = None
+
+        result = None
+
+        status = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+            
+        return (
+            age_group,
+            club,
+            result
+        )
+
+
+    def parse_field_para_percentage(
+        self,
+        record
+    ):
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        age_group = None
+        club = None
+        result = None
+
+        if len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+            club = details_parts[1]
+            result = details_parts[2]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+            result = details_parts[1]
+
+            return (
+                age_group,
+                club,
+                result
+            )
+
+    
 
     def import_competition(self):
 
@@ -43,8 +626,7 @@ class RosterCompetitionImporter:
 
             if page.get_by_text("Accept").count() > 0:
 
-                try:
-
+            
                     page.get_by_text(
                         "Accept",
                         exact=True
@@ -54,9 +636,9 @@ class RosterCompetitionImporter:
 
                     page.wait_for_timeout(1000)
 
-                except Exception as e:
+                #except Exception as e:
 
-                    print(e)
+                #    print(e)
 
 
             switch_button = page.get_by_role(
@@ -87,7 +669,6 @@ class RosterCompetitionImporter:
                     print(
                         f"Unable to click Switch: {e}"
                     )
-
             
 
             page.locator(
@@ -102,13 +683,13 @@ class RosterCompetitionImporter:
                 f"Found {event_count} events"
             )
 
-            
-            
-
-
             all_events = []
 
+            failed_events =[]
+
             failed_records = 0
+
+            unhandled_records = 0
 
             # Test first 3 events only
 
@@ -123,6 +704,9 @@ class RosterCompetitionImporter:
                     .nth(i)
                     .inner_text()
                 )
+                
+
+                
 
                 print(
                     f"Loading event {i}: {event_name}"
@@ -130,18 +714,63 @@ class RosterCompetitionImporter:
 
                 event_elements.nth(i).click()
 
-                print(
-                    f"URL after event click: {page.url}"
-                )
-
                 page.wait_for_timeout(2000)
-
+                
                 event_data = self.extract_event(
                     page
                 )
+                #print(event_data)
+
+                gender = normalise_gender(
+                    event_data.get("event_details")
+                )
+
+                event_data["gender"] = gender
+
+                #print(
+                #    f"EVENT={event_data['event_name']} | "
+                #    f"DETAILS={event_data.get('event_details')} | "
+                #    f"GENDER={gender}"
+                #)
+
+                #if event_data["event_name"] in [
+                    
+                #    "Long Jump"
+                #]:
+
+                #    print("\nRAW EVENT ROWS")
+                #    print(event_data["event_name"])
+
+                #   for row in event_data["rows"]:
+                #        print(repr(row))
+
+                round_name = None
+
+                if "·" in event_name:
+
+                    round_text = (
+                        event_name
+                        .split("·", 1)[1]
+                        .strip()
+                    )
+
+                    if round_text.startswith("Heat"):
+                        round_name = "Heat"
+
+                    elif round_text.startswith("Semi"):
+                        round_name = "Semi"
+
+                    elif round_text.startswith("Final"):
+                        round_name = "Final"
+
+                event_data["round"] = round_name
 
                 print(
                     f"event_type={event_data['event_type']}"
+                )
+
+                print(
+                    f"ROUND DETECTED: {event_name} -> {round_name}"
                 )
 
                 try:
@@ -154,6 +783,7 @@ class RosterCompetitionImporter:
 
                     elif event_data["event_type"] == "track":
 
+                        
                         athletes = self.parse_track_rows(
                             event_data["rows"]
                         )
@@ -170,6 +800,14 @@ class RosterCompetitionImporter:
 
                     print(e)
 
+                    failed_events.append(
+                        {
+                            "event": event_data["event_name"],
+                            "rows": len(event_data["rows"]),
+                            "error": str(e)
+                        }
+                    )
+
                     athletes = []
 
                     failed_records += len(
@@ -180,90 +818,125 @@ class RosterCompetitionImporter:
                 event_data.pop("rows", None)
                 all_events.append(event_data)
 
-                print(
-                    f"After parsing event URL: {page.url}"
-                )
-
-                
-
                 switch_button = page.get_by_role(
                     "button",
                     name="Switch"
-                )
-
-                print(
-                   f"Switch count after event: {switch_button.count()}"
                 )
 
                 if switch_button.count() > 0:
 
                     switch_button.first.click()
 
-                    page.wait_for_timeout(1000)
+                    page.wait_for_timeout(1000)               
 
-                print(
-                    f"After navigation URL: {page.url}"
-                )
+                 
+            print("\nEVENT TYPE CHECK")
 
-                      
+            for i, event in enumerate(all_events):
+
+                if not isinstance(event, dict):
+
+                    print(
+                        f"BAD EVENT AT INDEX {i}"
+                    )
+
+                    #print(type(event))
+
+                    #print(event)
 
             athlete_count = sum(
                 len(event["athletes"])
                 for event in all_events
+                if isinstance(event, dict)
             )
 
-            missing_results = sum(
-                1
-                for event in all_events
-                for athlete in event["athletes"]
-                if not athlete.get("result")
-            )
+            missing_results = 0
 
-            print("\n===================")
-            print("IMPORT SUMMARY")
-            print("===================")
-
-            print(
-                f"Events: {len(all_events)}"
-            )
-
-            print(
-                f"Athletes: {athlete_count}"
-            )
-
-            print(
-                f"Failed records: {failed_records}"
-            )
-
-            print(
-                f"Missing results: {missing_results}"
-            )
-
-            #
-            # Show which records are missing results
-            #
             for event in all_events:
 
                 for athlete in event["athletes"]:
 
-                    if not athlete.get("result"):
+                    if (
+                        not athlete.get("result")
+                        and athlete.get("status") is None
+                    ):
 
                         print(
-                            f"MISSING RESULT | "
+                            f"\nMISSING RESULT | "
                             f"{event['event_name']} | "
                             f"{athlete['name']}"
                         )
 
+                        for i, value in enumerate(
+                            athlete["source_record"]
+                        ):
+                            print(
+                                f"{i}: {repr(value)}"
+                            )
+
+           
+
+            
+            
+            print("\n===================")
+            print("IMPORT SUMMARY")
+            print("===================")
+
+            print(f"Events: {len(all_events)}")
+            print(f"Athletes: {athlete_count}")
+            print(f"Failed records: {failed_records}")
+            print(f"Unhandled records: {unhandled_records}")
+            print(f"Missing results: {missing_results}")
+
+            #print("\nFAILED EVENTS")
+
+            
+
+            #@for failure in failed_events:
+
+            #    print(
+            #        f"{failure['event']} | "
+            #        f"rows={failure['rows']} | "
+            #        f"error={failure['error']}"
+            #    )
+
             print("===================\n")
 
             browser.close()
+
+            
 
             return all_events
 
 
 
              
+    def parse_field_notes_agegroup_implement(
+        self,
+        record
+    ):
 
+        age_group = record[6]
+
+        details_parts = (
+            record[7]
+            .split("\t")
+        )
+
+        club = None
+        result = None
+
+        if len(details_parts) >= 3:
+
+            club = details_parts[-2]
+
+            result = details_parts[-1]
+
+        return (
+            age_group,
+            club,
+            result
+        )
 
 
 
@@ -437,6 +1110,8 @@ class RosterCompetitionImporter:
             for line in text.splitlines()
             if line.strip()
         ]
+        
+
 
         try:
 
@@ -453,10 +1128,26 @@ class RosterCompetitionImporter:
             ]
 
 
+            field_keywords = {
+                "Long Jump",
+                "Triple Jump",
+                "High Jump",
+                "Pole Vault",
+                "Shot Put",
+                "Discus",
+                "Javelin",
+                "Hammer",
+            }
+
             event_type = "track"
 
-            #if "\tORDER\t" in text:
-            #    event_type = "field"
+            if any(
+                keyword in event_name
+                for keyword in field_keywords
+            ):
+                event_type = "field"
+
+            
 
         except ValueError:
 
@@ -534,8 +1225,13 @@ class RosterCompetitionImporter:
 
         for record in records:
 
+            
             place = None
             order = None
+            age_group = None
+            club = None
+            result = None
+            status = None
 
             parts = record[0].split("\t")
 
@@ -545,65 +1241,164 @@ class RosterCompetitionImporter:
             else:
                 place = record[0]
 
-            age_group = None
-            club = None
-            result = None
+            
 
-            details_parts = record[5].split("\t")
+            if len(record) < 6:
 
-            if len(details_parts) == 2:
+                print(
+                    f"SHORT FIELD RECORD: {record}"
+                )
 
-                club = details_parts[0]
-                result = details_parts[1]
+                continue
 
-            elif len(details_parts) >= 3:
+            
 
-                club = details_parts[-2]
-                result = details_parts[-1]
+            layout = self.detect_field_layout(
+                record
+            )
 
+            #if (
+            #    "PRIOR" in str(record)
+            #    or "ALASDAIR" in str(record)
+            #    or "MASON" in str(record)
+            #):
+            #    print("\nPARA LONG JUMP")
+            #    print(record)
+            #    print(f"LAYOUT = {layout}")
 
-            for record in records:
+            if (
+                layout
+                == LayoutType.FIELD_STANDARD
+            ):
 
-                if len(record) < 6:
+                (
+                    age_group,
+                    club,
+                    result
+                ) = self.parse_field_standard(
+                    record
+                )
 
-                    print(
-                        f"SHORT FIELD RECORD: {record}"
+            elif (
+                layout
+                == LayoutType.FIELD_AGEGROUP_IMPLEMENT
+            ):
+
+                (
+                    age_group,
+                    club,
+                    result
+                ) = (
+                    self.parse_field_agegroup_implement(
+                        record
                     )
-                    continue
+                )
 
-                status = None
 
-                if len(record) > 7:
-                    status = record[7]
+            elif (
+                layout
+                == LayoutType.FIELD_PARA_PERCENTAGE
+            ):
 
-            if result in ["NM", "DNS", "DQ"]:
-                status = result
+                (
+                    age_group,
+                    club,
+                    result
+                ) = self.parse_field_para_percentage(
+                    record
+                )
+
+            elif (
+                layout
+                == LayoutType.FIELD_NOTES_AGEGROUP_IMPLEMENT
+            ):
+
+                (
+                    age_group,
+                    club,
+                    result
+                ) = (
+                    self.parse_field_notes_agegroup_implement(
+                        record
+                    )
+                )
+
+
+            
+
+
+            else:
+
+                print(
+                    f"UNKNOWN FIELD LAYOUT: {record}"
+                )
+
+                continue
+            
+            wind = None
+
+            if result:
+
+                wind_match = re.search(
+                    r"\((NWI|[+-]?\d+(?:\.\d+)?)\)$",
+                    result.strip()
+                )
+
+                if wind_match:
+
+                    wind = wind_match.group(1)
+
+                    if wind == "NWI":
+                        wind = None
+
+                    result = re.sub(
+                        r"\s*\((NWI|[+-]?\d+(?:\.\d+)?)\)$",
+                        "",
+                        result
+                    ).strip()
+
+
+            name = record[1]
+
+            if result in [
+                "DNS",
+                "DQ",
+                "NM",
+                "DNF"
+            ]:
+                status = result          
+
+            name = name.replace("\xa0", " ")
+
+            if "·" in name:
+                name = name.split("·")[0].strip()
+
+            name = name.title()
+
+            #if "2.53" in str(record):
+            #    print("\nCOMP35 PARA LONG JUMP")
+            #    for i, value in enumerate(record):
+            #        print(i, repr(value))
+
+
 
             athlete = {
 
                 "place": place,
-
                 "order": order,
-
-                "name": record[1],
-
+                "name": name,
                 "birth_year": record[2],
-
                 "country": record[4],
-
                 "age_group": age_group,
-
                 "club": club,
-
                 "result": result,
-
-                "status": status
+                "wind": wind,
+                "status": status,
+                "source_record": record
 
             }
 
             athletes.append(athlete)
-
-        
 
         return athletes
 
@@ -611,13 +1406,13 @@ class RosterCompetitionImporter:
 
 
     def parse_track_rows(self, rows):
-        print(
-            "ENTERED parse_track_rows()"
-        )
+        
 
         current_record = []
 
         records = []
+
+        unhandled_records = 0
 
         for row in rows:
 
@@ -639,174 +1434,226 @@ class RosterCompetitionImporter:
 
             records.append(current_record)
 
-        print(
-            f"Records found: {len(records)}"
-        )
-
-        for r in records:
-            print(r)
-
-        print(
-            f"Record count: {len(records)}"
-        )
-
-        for idx, record in enumerate(records):
-
-            print(
-                f"\nRECORD {idx}"
-            )
-
-            print(record)
+        
 
         athletes = []
 
         for record in records:
 
-            place = None
-            lane = None
+            try:
 
-            parts = record[0].split("\t")
-
-            if len(parts) == 2:
-                place = parts[0]
-                lane = parts[1]
-            else:
-                place = record[0]
-
-            age_group = None
-            club = None
-            result = None
-            status = None
-
-            #
-            # NORMAL TRACK FORMAT
-            #
-            if len(record) >= 6:
-
-                birth_year = record[2]
-
-                country = record[4]
-
-                details_index = 5
-
-                #
-                # Hurdles format has
-                # separate age-group field
-                #
-                if len(record) > 5:
-
-                    if record[5].startswith("Notes:"):
-                        details_index = 6
-                    else:
-                        details_index = 5
-
-                details_parts = record[details_index].split("\t")
-
-                if len(details_parts) == 1:
-
-                    result = details_parts[0]
-
-                elif len(details_parts) == 2:
-
-                    club = details_parts[0]
-                    result = details_parts[1]
-
-                elif len(details_parts) >= 3:
-
-                    club = details_parts[-2]
-                    result = details_parts[-1]
-
-                marker = None
-
-                if len(record) > details_index + 1:
-
-                    marker = record[details_index + 1]
-
-                    if marker in ["DNS", "DQ", "NM"]:
-                        status = marker
-            #
-            # COMPACT TRACK FORMAT
-            #
-            elif len(record) == 4:
-
+            
+                place = None
+                lane = None
+                age_group = None
+                club = None
+                result = None
+                status = None
                 birth_year = None
 
-                country = record[2]
+                parts = record[0].split("\t")
 
-                details_parts = record[3].split("\t")
+                if len(parts) == 2:
+                    place = parts[0]
+                    lane = parts[1]
+                else:
+                    place = record[0]
+            
 
-                if len(details_parts) >= 3:
+                if len(record) > 2:
 
-                    age_group = details_parts[0]
-                    club = details_parts[1]
-                    result = details_parts[2]
+                    candidate = record[2].strip()
 
-            #
-            # UNKNOWN FORMAT
-            #
-            else:
+                    if re.fullmatch(r"\d{4}", candidate):
 
-                print(
-                    f"UNHANDLED TRACK RECORD: {record}"
+                        birth_year = candidate
+
+
+                country = None
+
+                if len(record) > 4:
+
+                    country = record[4]
+
+                layout = self.detect_track_layout(
+                    record
                 )
 
-                continue
+                #if (
+                #    "CRUZ OSBORNE" in str(record)
+                #    or "KENAN KNOTTENBELT" in str(record)
+                #):
+                #    print(layout)
 
-            if result in ["DNS", "DQ", "NM"]:
-                status = result
-
-            if result and result.endswith("w"):
-                result = result.strip("w")
-
-            print("\nRECORD")
-            print(record)
-
-            print(
-                f"name={record[1]}"
-            )
-
-            print(
-                f"result={result}"
-            )
-
-            print(
-                f"status={status}"
-            )
-
-            print(
-                f"club={club}"
-            )    
-            name = record[1]
-
-            name = name.replace("\xa0", " ")
-
-            if "·" in name:
-                name = name.split("·")[0].strip()
+                #print(
+                #    f"{record[1]} -> {layout}"
+                #)
 
 
-            athlete = {
+                if layout == LayoutType.TRACK_STANDARD:
 
-                "place": place,
+                    age_group, club, result = (
+                        self.parse_track_standard(
+                            record
+                        )
+                    )
 
-                "lane": lane,
+                elif layout == LayoutType.TRACK_NOTES:
 
-                "name": name,
+                    age_group, club, result = (
+                        self.parse_track_notes(
+                            record
+                        )
+                    )
 
-                "birth_year": birth_year,
+                elif layout == LayoutType.TRACK_COMPACT_NO_BIRTHYEAR:
 
-                "country": country,
+                    (
+                        birth_year,
+                        country,
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_compact_no_birthyear(
+                        record
+                    )
 
-                "age_group": age_group,
+                elif layout == LayoutType.TRACK_COMPACT_NOTES:
 
-                "club": club,
+                    (
+                        country,
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_compact_notes(
+                        record
+                    )
 
-                "result": result,
+                elif layout == LayoutType.TRACK_AGEGROUP_DETAILS:
 
-                "status": status
+                    #print("HIT TRACK_AGEGROUP_DETAILS")
 
-            }
+                    (
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_agegroup_details(
+                        record
+                    )
 
-            athletes.append(athlete)
+                elif layout == LayoutType.TRACK_STEEPLECHASE:
+
+                    (
+                        birth_year,
+                        country,
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_steeplechase(
+                        record
+                    )
+
+                elif layout == LayoutType.TRACK_NOTES_AGEGROUP:
+
+                    age_group, club, result = (
+                        self.parse_track_notes_agegroup(
+                            record
+                        )
+                    )
+
+                else:
+
+                    print(
+                        f"UNKNOWN TRACK LAYOUT: {record}"
+                    )
+
+                    unhandled_records += 1
+
+                    continue
+
+                if result:
+
+                    result = result.replace("á", "")
+                    result = " ".join(result.split())
+                    result = re.sub(r"\s+[Qq]$", "", result)
+
+                
+
+                if result and result.endswith("w"):
+                    result = result.strip("w")
+
+                
+                name = record[1]
+
+                
+
+                name = name.replace("\xa0", " ")
+
+                if "·" in name:
+                    name = name.split("·")[0].strip()
+
+                name = re.sub(
+                    r"\b[TF]\d{2}(?:,\s*[TF]\d{2})*\b",
+                    "",
+                    name
+                ).strip()
+
+                name = name.title()
+
+                if re.match(r'^\d+\s+', name):
+
+                    print(
+                        "\n================="
+                    )
+
+                    print(
+                        f"SUSPECT NAME: {name}"
+                    )
+
+                    print(
+                        f"FULL RECORD: {record}"
+                    )
+
+                    print(
+                        f"EVENT: {record}"
+                    )
+
+                    print(
+                        "=================\n"
+                    )
+
+                if result in ["DNS", "DQ", "NM", "DNF"]:
+                    status = result
+
+                                    
+                athlete = {
+
+                    "place": place,
+                    "lane": lane,
+                    "name": name,
+                    "birth_year": birth_year,
+                    "country": country,
+                    "age_group": age_group,
+                    "club": club,
+                    "result": result,
+                    "status": status,
+                    "source_record": record
+
+                }
+
+            
+
+
+                athletes.append(athlete)
+
+            except Exception as e:
+
+                    print("\nFAILED RECORD")
+                    print(record)
+                    print(f"ERROR: {e}")
+                    print(traceback.format_exc())
+
+                    continue
 
         
 

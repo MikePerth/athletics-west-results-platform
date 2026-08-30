@@ -30,7 +30,7 @@ class Result(Base):
 
     category = Column(String)
     division = Column(String)
-
+    gender = Column(String)
     age_group = Column(String)
     birth_year = Column(Integer)
     country = Column(String)
