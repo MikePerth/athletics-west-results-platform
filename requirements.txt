@@ -8,4 +8,4 @@ pdfplumber
 pymupdf
 rapidfuzz
 playwright
-
+passlib
