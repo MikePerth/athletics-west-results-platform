@@ -37,6 +37,7 @@ class LayoutType:
         "track_steeplechase"
     )
 
+    
     FIELD_STANDARD = "field_standard"
 
     FIELD_AGEGROUP_IMPLEMENT = (
@@ -424,6 +425,59 @@ class RosterCompetitionImporter:
             club,
             result
         )
+
+
+
+    def extract_special_road_rows(
+        self,
+        text
+    ):
+
+        lines = [
+            line.strip()
+            for line in text.splitlines()
+            if line.strip()
+        ]
+
+        start = None
+
+        for i, line in enumerate(lines):
+
+            if "PARTICIPANT" in line:
+
+                start = i + 1
+                break
+
+        if start is None:
+            return []
+
+        end = len(lines)
+
+        for i in range(start, len(lines)):
+
+            if lines[i] == "Metric":
+
+                end = i
+                break
+
+            data = lines[start:end]
+
+            for i, line in enumerate(data):
+
+                if re.match(
+                    r"^\d+\t-$",
+                    line
+                ):
+                    data[i] = line.replace(
+                        "\t-",
+                        "\t0"
+                    )
+
+            return data
+
+        return lines[start:end]
+
+
     
     def parse_track_agegroup_details(
         self,
@@ -814,7 +868,9 @@ class RosterCompetitionImporter:
                         f"Failed event: {event_data['event_name']}"
                     )
 
-                    print(e)
+                    print(
+                        traceback.format_exc()
+                    )
 
                     failed_events.append(
                         {
@@ -1052,26 +1108,7 @@ class RosterCompetitionImporter:
                 end = i
                 break
 
-        rows = []
-
-        data = lines[start:end]
-
-        for i in range(0, len(data), 7):
-
-            row = data[i:i + 7]
-
-            if len(row) == 7:
-                rows.append(row)
-
-        if rows:
-
-            print(rows[0])
-
-            print(
-                f"ROWS FOUND: {len(rows)}"
-            )
-
-        return rows
+        return lines[start:end]
 
 
 
@@ -1194,17 +1231,38 @@ class RosterCompetitionImporter:
             event_details = None
 
         
+        if "id=25926" in self.competition_url:
+
+            
+
+            rows = self.extract_special_road_rows(
+                text
+            )
+
+        else:
+
+            rows = self.extract_rows(
+                text
+            )
 
         return {
             "event_name": event_name,
             "event_details": event_details,
             "wind": self.extract_wind(text),
             "event_type": event_type,
-            "rows": self.extract_rows(text)
+            "rows": rows
         }
+        
+        #return {
+        #    "event_name": event_name,
+        #    "event_details": event_details,
+        #    "wind": self.extract_wind(text),
+        #    "event_type": event_type,
+        #    "rows": self.extract_rows(text)
+        #}
 
 
-
+    
 
 
     def extract_wind(
@@ -1530,8 +1588,8 @@ class RosterCompetitionImporter:
                 layout = self.detect_track_layout(
                     record
                 )
-                print(f"LAYOUT INPUT: {record}")
-                print(f"LAYOUT OUTPUT: {layout}")
+                #print(f"LAYOUT INPUT: {record}")
+                #print(f"LAYOUT OUTPUT: {layout}")
                 #if (
                 #    "CRUZ OSBORNE" in str(record)
                 #    or "KENAN KNOTTENBELT" in str(record)
@@ -1541,14 +1599,7 @@ class RosterCompetitionImporter:
                 #print(
                 #    f"{record[1]} -> {layout}"
                 #)
-                print(
-                    f"RECORD LENGTH: {len(record)}"
-                )
-
-                for i, value in enumerate(record):
-                    print(
-                        f"{i}: {repr(value)}"
-                    )
+                
 
                 if layout == LayoutType.TRACK_STANDARD:
 
@@ -1786,6 +1837,8 @@ class RosterCompetitionImporter:
 
             if number < 100:
                 return True
+
+            
 
         return False
 

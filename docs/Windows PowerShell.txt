@@ -1,1115 +1,3 @@
-Loading event 296: 100m Hurdles (76.2cm / 8.5m) · Heat 3
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Heat 3 -> Heat
-Loading event 297: 100m Hurdles (76.2cm / 8.5m) · Heat 1
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Heat 1 -> Heat
-Loading event 298: 100m Hurdles (76.2cm / 8.5m) · Heat 2
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Heat 2 -> Heat
-Loading event 299: 100m Hurdles (76.2cm / 8.5m) · Heat 3
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Heat 3 -> Heat
-Loading event 300: Discus Throw (1.5kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1.5kg) -> None
-Loading event 301: 110m Hurdles (91.4cm / 9.14m) · Heat 1
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 1 -> Heat
-Loading event 302: 110m Hurdles (91.4cm / 9.14m) · Heat 2
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 2 -> Heat
-Loading event 303: 110m Hurdles (91.4cm / 9.14m) · Heat 3
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 3 -> Heat
-Loading event 304: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 305: 110m Hurdles (91.4cm / 9.14m) · Heat 1
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 1 -> Heat
-Loading event 306: 110m Hurdles (91.4cm / 9.14m) · Heat 2
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 2 -> Heat
-Loading event 307: 110m Hurdles (91.4cm / 9.14m) · Heat 3
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Heat 3 -> Heat
-Loading event 308: Shot Put (3kg)
-event_type=field
-ROUND DETECTED: Shot Put (3kg) -> None
-Loading event 309: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 310: 100m · Final A
-event_type=track
-ROUND DETECTED: 100m · Final A -> Final
-Loading event 311: 100m · Final B
-event_type=track
-ROUND DETECTED: 100m · Final B -> Final
-Loading event 312: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 313: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 314: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 315: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 316: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 317: Discus Throw (1.5kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1.5kg) -> None
-Loading event 318: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 319: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 320: 100m · Heat 3
-event_type=track
-ROUND DETECTED: 100m · Heat 3 -> Heat
-Loading event 321: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 322: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 323: Shot Put (3kg)
-event_type=field
-ROUND DETECTED: Shot Put (3kg) -> None
-Loading event 324: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 325: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 326: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 327: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 328: 110m Hurdles (91.4cm / 9.14m) · Final
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Final -> Final
-Loading event 329: 110m Hurdles (91.4cm / 9.14m) · Final
-event_type=track
-ROUND DETECTED: 110m Hurdles (91.4cm / 9.14m) · Final -> Final
-Loading event 330: 100m Hurdles (76.2cm / 8.5m) · Final
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Final -> Final
-Loading event 331: 100m Hurdles (76.2cm / 8.5m) · Final
-event_type=track
-ROUND DETECTED: 100m Hurdles (76.2cm / 8.5m) · Final -> Final
-Loading event 332: Javelin Throw (600g)
-event_type=field
-ROUND DETECTED: Javelin Throw (600g) -> None
-Loading event 333: 2000m Steeplechase (83.8cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (83.8cm) -> None
-Loading event 334: Discus Throw · Final B
-event_type=field
-ROUND DETECTED: Discus Throw · Final B -> Final
-Loading event 335: 2000m Steeplechase (83.8cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (83.8cm) -> None
-Loading event 336: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 337: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 338: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 339: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 340: Discus Throw
-event_type=field
-ROUND DETECTED: Discus Throw -> None
-Loading event 341: Discus Throw
-event_type=field
-ROUND DETECTED: Discus Throw -> None
-Loading event 342: Discus Throw · Final A
-event_type=field
-ROUND DETECTED: Discus Throw · Final A -> Final
-Loading event 343: Javelin Throw (600g)
-event_type=field
-ROUND DETECTED: Javelin Throw (600g) -> None
-Loading event 344: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 345: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 346: 4x100m
-event_type=track
-ROUND DETECTED: 4x100m -> None
-Loading event 347: 4x100m
-event_type=track
-ROUND DETECTED: 4x100m -> None
-
-FAILED RECORD
-['4\t6', 'New Zealand', 'NZL', '42.73', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-Loading event 348: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 349: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 350: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 351: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 352: Javelin Throw (400g)
-event_type=field
-ROUND DETECTED: Javelin Throw (400g) -> None
-Loading event 353: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 354: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 355: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 356: Hammer Throw (5kg)
-event_type=field
-ROUND DETECTED: Hammer Throw (5kg) -> None
-Loading event 357: 200m Hurdles (76.2cm / 18.29m) · Final
-event_type=track
-ROUND DETECTED: 200m Hurdles (76.2cm / 18.29m) · Final -> Final
-Loading event 358: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 359: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 360: 200m Hurdles (76.2cm / 18.29m) · Final
-event_type=track
-ROUND DETECTED: 200m Hurdles (76.2cm / 18.29m) · Final -> Final
-Loading event 361: 200m Hurdles (76.2cm / 18.29m) · Final
-event_type=track
-ROUND DETECTED: 200m Hurdles (76.2cm / 18.29m) · Final -> Final
-Loading event 362: 200m Hurdles (76.2cm / 18.29m)
-event_type=track
-ROUND DETECTED: 200m Hurdles (76.2cm / 18.29m) -> None
-Loading event 363: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 364: 3000m Race Walk
-event_type=track
-ROUND DETECTED: 3000m Race Walk -> None
-Loading event 365: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 366: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 367: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 368: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 369: Hammer Throw (5kg)
-event_type=field
-ROUND DETECTED: Hammer Throw (5kg) -> None
-Loading event 370: 80m Hurdles (76.2cm / 7m) · Heat 1
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Heat 1 -> Heat
-Loading event 371: 80m Hurdles (76.2cm / 7m) · Heat 2
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Heat 2 -> Heat
-Loading event 372: Shot Put (3kg)
-event_type=field
-ROUND DETECTED: Shot Put (3kg) -> None
-Loading event 373: 80m Hurdles (76.2cm / 7m) · Heat 1
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Heat 1 -> Heat
-Loading event 374: 80m Hurdles (76.2cm / 7m) · Heat 2
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Heat 2 -> Heat
-Loading event 375: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 376: 90m Hurdles (76.2cm / 8m) · Heat 1
-event_type=track
-ROUND DETECTED: 90m Hurdles (76.2cm / 8m) · Heat 1 -> Heat
-Loading event 377: 90m Hurdles (76.2cm / 8m) · Heat 2
-event_type=track
-ROUND DETECTED: 90m Hurdles (76.2cm / 8m) · Heat 2 -> Heat
-Loading event 378: 800m · Heat 1
-event_type=track
-ROUND DETECTED: 800m · Heat 1 -> Heat
-Loading event 379: 800m · Heat 2
-event_type=track
-ROUND DETECTED: 800m · Heat 2 -> Heat
-Loading event 380: 800m · Heat 3
-event_type=track
-ROUND DETECTED: 800m · Heat 3 -> Heat
-Loading event 381: 800m · Heat 1
-event_type=track
-ROUND DETECTED: 800m · Heat 1 -> Heat
-Loading event 382: 800m · Heat 2
-event_type=track
-ROUND DETECTED: 800m · Heat 2 -> Heat
-Loading event 383: 800m · Heat 3
-event_type=track
-ROUND DETECTED: 800m · Heat 3 -> Heat
-Loading event 384: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 385: 800m · Heat 1
-event_type=track
-ROUND DETECTED: 800m · Heat 1 -> Heat
-Loading event 386: 800m · Heat 2
-event_type=track
-ROUND DETECTED: 800m · Heat 2 -> Heat
-Loading event 387: 800m · Heat 3
-event_type=track
-ROUND DETECTED: 800m · Heat 3 -> Heat
-Loading event 388: 800m · Heat 4
-event_type=track
-ROUND DETECTED: 800m · Heat 4 -> Heat
-Loading event 389: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 390: 800m · Heat 1
-event_type=track
-ROUND DETECTED: 800m · Heat 1 -> Heat
-Loading event 391: 800m · Heat 2
-event_type=track
-ROUND DETECTED: 800m · Heat 2 -> Heat
-Loading event 392: 800m · Heat 3
-event_type=track
-ROUND DETECTED: 800m · Heat 3 -> Heat
-Loading event 393: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 394: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 395: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 396: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 397: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 398: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 399: 3000m
-event_type=track
-ROUND DETECTED: 3000m -> None
-Loading event 400: 3000m
-event_type=track
-ROUND DETECTED: 3000m -> None
-Loading event 401: Javelin Throw
-event_type=field
-ROUND DETECTED: Javelin Throw -> None
-Loading event 402: Javelin Throw
-event_type=field
-ROUND DETECTED: Javelin Throw -> None
-Loading event 403: 200m · Heat 1
-event_type=track
-ROUND DETECTED: 200m · Heat 1 -> Heat
-Loading event 404: 200m · Heat 2
-event_type=track
-ROUND DETECTED: 200m · Heat 2 -> Heat
-Loading event 405: 200m · Heat 3
-event_type=track
-ROUND DETECTED: 200m · Heat 3 -> Heat
-Loading event 406: 200m · Heat 1
-event_type=track
-ROUND DETECTED: 200m · Heat 1 -> Heat
-Loading event 407: 200m · Heat 2
-event_type=track
-ROUND DETECTED: 200m · Heat 2 -> Heat
-Loading event 408: 200m · Heat 3
-event_type=track
-ROUND DETECTED: 200m · Heat 3 -> Heat
-Loading event 409: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 410: 200m · Heat 1
-event_type=track
-ROUND DETECTED: 200m · Heat 1 -> Heat
-Loading event 411: 200m · Heat 2
-event_type=track
-ROUND DETECTED: 200m · Heat 2 -> Heat
-Loading event 412: 200m · Heat 3
-event_type=track
-ROUND DETECTED: 200m · Heat 3 -> Heat
-Loading event 413: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 414: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 415: 200m · Heat 1
-event_type=track
-ROUND DETECTED: 200m · Heat 1 -> Heat
-Loading event 416: 200m · Heat 2
-event_type=track
-ROUND DETECTED: 200m · Heat 2 -> Heat
-Loading event 417: 200m · Heat 3
-event_type=track
-ROUND DETECTED: 200m · Heat 3 -> Heat
-Loading event 418: 200m · Heat 4
-event_type=track
-ROUND DETECTED: 200m · Heat 4 -> Heat
-Loading event 419: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 420: 3000m
-event_type=track
-ROUND DETECTED: 3000m -> None
-Loading event 421: 3000m
-event_type=track
-ROUND DETECTED: 3000m -> None
-Loading event 422: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 423: 400m · Heat 1
-event_type=track
-ROUND DETECTED: 400m · Heat 1 -> Heat
-Loading event 424: 400m · Heat 2
-event_type=track
-ROUND DETECTED: 400m · Heat 2 -> Heat
-Loading event 425: 400m · Heat 1
-event_type=track
-ROUND DETECTED: 400m · Heat 1 -> Heat
-Loading event 426: 400m · Heat 2
-event_type=track
-ROUND DETECTED: 400m · Heat 2 -> Heat
-Loading event 427: 400m · Heat 1
-event_type=track
-ROUND DETECTED: 400m · Heat 1 -> Heat
-Loading event 428: 400m · Heat 2
-event_type=track
-ROUND DETECTED: 400m · Heat 2 -> Heat
-Loading event 429: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 430: 400m · Heat 1
-event_type=track
-ROUND DETECTED: 400m · Heat 1 -> Heat
-Loading event 431: 400m · Heat 2
-event_type=track
-ROUND DETECTED: 400m · Heat 2 -> Heat
-Loading event 432: 2000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (76.2cm) -> None
-Loading event 433: Discus Throw (0.75kg)
-event_type=field
-ROUND DETECTED: Discus Throw (0.75kg) -> None
-Loading event 434: 2000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (76.2cm) -> None
-Loading event 435: 2000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (76.2cm) -> None
-Loading event 436: 2000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 2000m Steeplechase (76.2cm) -> None
-Loading event 437: Shot Put (4kg)
-event_type=field
-ROUND DETECTED: Shot Put (4kg) -> None
-Loading event 438: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 439: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 440: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 441: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 442: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 443: Javelin Throw (500g)
-event_type=field
-ROUND DETECTED: Javelin Throw (500g) -> None
-Loading event 444: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 445: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 446: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 447: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 448: 100m · Heat 3
-event_type=track
-ROUND DETECTED: 100m · Heat 3 -> Heat
-Loading event 449: 100m · Heat 4
-event_type=track
-ROUND DETECTED: 100m · Heat 4 -> Heat
-Loading event 450: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 451: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 452: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 453: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 454: 100m · Heat 3
-event_type=track
-ROUND DETECTED: 100m · Heat 3 -> Heat
-Loading event 455: Shot Put (4kg)
-event_type=field
-ROUND DETECTED: Shot Put (4kg) -> None
-Loading event 456: Discus Throw (0.75kg)
-event_type=field
-ROUND DETECTED: Discus Throw (0.75kg) -> None
-Loading event 457: 100m · Heat 1
-event_type=track
-ROUND DETECTED: 100m · Heat 1 -> Heat
-Loading event 458: 100m · Heat 2
-event_type=track
-ROUND DETECTED: 100m · Heat 2 -> Heat
-Loading event 459: 100m · Heat 3
-event_type=track
-ROUND DETECTED: 100m · Heat 3 -> Heat
-Loading event 460: 100m · Heat 4
-event_type=track
-ROUND DETECTED: 100m · Heat 4 -> Heat
-Loading event 461: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 462: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 463: Javelin Throw (700g)
-event_type=field
-ROUND DETECTED: Javelin Throw (700g) -> None
-Loading event 464: 1500m · Final A
-event_type=track
-ROUND DETECTED: 1500m · Final A -> Final
-Loading event 465: 1500m · Final B
-event_type=track
-ROUND DETECTED: 1500m · Final B -> Final
-Loading event 466: 1500m · Final A
-event_type=track
-ROUND DETECTED: 1500m · Final A -> Final
-Loading event 467: 1500m · Final B
-event_type=track
-ROUND DETECTED: 1500m · Final B -> Final
-Loading event 468: 90m Hurdles (76.2cm / 8m)
-event_type=track
-ROUND DETECTED: 90m Hurdles (76.2cm / 8m) -> None
-Loading event 469: 90m Hurdles (76.2cm / 8m) · Final
-event_type=track
-ROUND DETECTED: 90m Hurdles (76.2cm / 8m) · Final -> Final
-Loading event 470: 80m Hurdles (76.2cm / 7m) · Final
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Final -> Final
-Loading event 471: Shot Put (3kg)
-event_type=field
-ROUND DETECTED: Shot Put (3kg) -> None
-Loading event 472: 80m Hurdles (76.2cm / 7m) · Final
-event_type=track
-ROUND DETECTED: 80m Hurdles (76.2cm / 7m) · Final -> Final
-Loading event 473: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 474: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 475: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 476: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 477: 800m · Final
-event_type=track
-ROUND DETECTED: 800m · Final -> Final
-Loading event 478: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 479: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 480: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 481: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 482: Javelin Throw (700g)
-event_type=field
-ROUND DETECTED: Javelin Throw (700g) -> None
-Loading event 483: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 484: 400m · Final
-event_type=track
-ROUND DETECTED: 400m · Final -> Final
-Loading event 485: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 486: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 487: 200m · Final
-event_type=track
-ROUND DETECTED: 200m · Final -> Final
-Loading event 488: 200m · Final
-event_type=track
-ROUND DETECTED: 200m · Final -> Final
-Loading event 489: Shot Put · Final B
-event_type=field
-ROUND DETECTED: Shot Put · Final B -> Final
-Loading event 490: 200m · Final
-event_type=track
-ROUND DETECTED: 200m · Final -> Final
-Loading event 491: 200m · Final
-event_type=track
-ROUND DETECTED: 200m · Final -> Final
-Loading event 492: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 493: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 494: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 495: 100m · Final
-event_type=track
-ROUND DETECTED: 100m · Final -> Final
-Loading event 496: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 497: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 498: Shot Put
-event_type=field
-ROUND DETECTED: Shot Put -> None
-Loading event 499: Shot Put
-event_type=field
-ROUND DETECTED: Shot Put -> None
-Loading event 500: Shot Put · Final A
-event_type=field
-ROUND DETECTED: Shot Put · Final A -> Final
-Loading event 501: Javelin Throw (500g)
-event_type=field
-ROUND DETECTED: Javelin Throw (500g) -> None
-Loading event 502: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 503: 1500m · Final A
-event_type=track
-ROUND DETECTED: 1500m · Final A -> Final
-Loading event 504: 1500m · Final B
-event_type=track
-ROUND DETECTED: 1500m · Final B -> Final
-Loading event 505: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 506: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 507: 4x200m MIXED TEAM
-event_type=track
-ROUND DETECTED: 4x200m MIXED TEAM -> None
-
-FAILED RECORD
-['1\t6', 'New South Wales', 'MX · \xa0\xa0AUS', 'NSW\t1:41.00', 'CR, SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-
-FAILED RECORD
-['2\t5', 'Western Australia', 'MX · \xa0\xa0AUS', 'WA\t1:43.83', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-
-FAILED RECORD
-['3\t4', 'Queensland', 'MX · \xa0\xa0AUS', 'QLD\t1:46.21', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-
-FAILED RECORD
-['4\t3', 'Victoria', 'MX · \xa0\xa0AUS', 'VIC\t1:47.75', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-Loading event 508: 4x200m
-event_type=track
-ROUND DETECTED: 4x200m -> None
-Loading event 509: 4x200m
-event_type=track
-ROUND DETECTED: 4x200m -> None
-Loading event 510: 4x400m
-event_type=track
-ROUND DETECTED: 4x400m -> None
-
-FAILED RECORD
-['7\t4', 'New Zealand', 'NZL', '4:00.95', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-Loading event 511: 4x400m
-event_type=track
-ROUND DETECTED: 4x400m -> None
-
-FAILED RECORD
-['5\t7', 'New Zealand', 'NZL', '3:31.27', 'SB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 512
-Athletes: 4651
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:52621 - "POST /roster/roster/import HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-INFO:     127.0.0.1:59881 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64954 - "GET /athletes/letters HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59881 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63983 - "GET /athletes/letters HTTP/1.1" 200 OK
-RESULTS: 44506
-INFO:     127.0.0.1:58251 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-RESULTS: 44506
-INFO:     127.0.0.1:58251 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-INFO:     127.0.0.1:59046 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63157 - "GET /athletes/letters HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59046 - "GET /athletes/count HTTP/1.1" 200 OK
-RESULTS: 44506
-INFO:     127.0.0.1:49301 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58392 - "GET /athletes/letters HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-RESULTS: 44506
-INFO:     127.0.0.1:49301 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-'Event 45  Women 5000 Meter Run PA U20 State Champs'
-''
-'================================================================'
-'    Name                    Year Team                    Finals'
-'================================================================'
-'Finals'
-'  1 #   20 Madison Kent T53   08 Athletics We-AUS      22:25.66'
-''
-TRACK ROW: Finals
-TRACK ROW: 1 #   20 Madison Kent T53   08 Athletics We-AUS      22:25.66
-'Event 46  Women 5000 Meter Run U20 State Champs'
-''
-'================================================================'
-'    Name                    Year Team                    Finals'
-'================================================================'
-'  1 #  228 Madeline Taylor    07 Uwa Athletic-AUS      17:51.28'
-''
-TRACK ROW: 1 #  228 Madeline Taylor    07 Uwa Athletic-AUS      17:51.28
-'Event 47  Women 5000 Meter Run Open State Champs'
-''
-'================================================================'
-'    Name                    Year Team                    Finals'
-'================================================================'
-'  1 # 1184 Sian Munks         99 Athletics We-AUS      16:45.10'
-'  2 #  371 Amy Buckingham     99 Uwa Athletic-AUS      17:25.53'
-'  3 # 1175 Brittany More      96 Athletics We-AUS      17:45.44'
-'  4 #  859 Ellaby Hansen      02 Perth Track-AUS       17:46.64'
-'  5 #   88 Sarah Knox         01 Uwa Athletic-AUS      17:49.21'
-'  6 #  337 Ellie Glands       04 Perth Track-AUS       17:53.56'
-' -- # 1182 Charlotte Hall     03 Athletics We-AUS     X17:32.32'
-''
-TRACK ROW: 1 # 1184 Sian Munks         99 Athletics We-AUS      16:45.10
-TRACK ROW: 2 #  371 Amy Buckingham     99 Uwa Athletic-AUS      17:25.53
-TRACK ROW: 3 # 1175 Brittany More      96 Athletics We-AUS      17:45.44
-TRACK ROW: 4 #  859 Ellaby Hansen      02 Perth Track-AUS       17:46.64
-TRACK ROW: 5 #   88 Sarah Knox         01 Uwa Athletic-AUS      17:49.21
-TRACK ROW: 6 #  337 Ellie Glands       04 Perth Track-AUS       17:53.56
-TRACK ROW: -- # 1182 Charlotte Hall     03 Athletics We-AUS     X17:32.32
-'Event 48  Men 5000 Meter Run U20 State Champs'
-''
-'================================================================'
-'    Name                    Year Team                    Finals'
-'================================================================'
-'  1 # 1040 Andrew Hellbusch   06 Athletics We-AUS      15:14.12'
-'  2 #  360 Oliver Stampfl-Ma  09 Uwa Athletic-AUS      15:22.77'
-'  3 #  816 James Chansbury    06 Uwa Athletic-AUS      15:24.78'
-'  4 # 1159 Caide Ellis        07 Athletics We-AUS      15:29.86'
-'  5 #  298 Dante Armstrong    06 Joondalup Tr-AUS      15:34.29'
-'  6 #  398 Callum Cumming     08 Melville Roa-AUS      15:38.94'
-'  7 #  896 Alexander Gardner  08 Athletics We-AUS      16:23.57'
-'  8 # 1198 Daniel Russo       08 Athletics We-AUS      16:40.73'
-'  9 #  402 Jack Mallabone     08 Uwa Athletic-AUS      17:12.38'
-' 10 #  418 Christian Perkis   09 West Track Club-AUS   17:50.33'
-' 11 #  198 Oliver Jamieson    07 Uwa Athletic-AUS      17:57.53'
-''
-TRACK ROW: 1 # 1040 Andrew Hellbusch   06 Athletics We-AUS      15:14.12
-TRACK ROW: 2 #  360 Oliver Stampfl-Ma  09 Uwa Athletic-AUS      15:22.77
-TRACK ROW: 3 #  816 James Chansbury    06 Uwa Athletic-AUS      15:24.78
-TRACK ROW: 4 # 1159 Caide Ellis        07 Athletics We-AUS      15:29.86
-TRACK ROW: 5 #  298 Dante Armstrong    06 Joondalup Tr-AUS      15:34.29
-UNMAPPED CLUB: 'Joondalup Tr'
-TRACK ROW: 6 #  398 Callum Cumming     08 Melville Roa-AUS      15:38.94
-TRACK ROW: 7 #  896 Alexander Gardner  08 Athletics We-AUS      16:23.57
-TRACK ROW: 8 # 1198 Daniel Russo       08 Athletics We-AUS      16:40.73
-TRACK ROW: 9 #  402 Jack Mallabone     08 Uwa Athletic-AUS      17:12.38
-TRACK ROW: 10 #  418 Christian Perkis   09 West Track Club-AUS   17:50.33
-TRACK ROW: 11 #  198 Oliver Jamieson    07 Uwa Athletic-AUS      17:57.53
-'Event 49  Men 5000 Meter Run Open State Champs'
-''
-'==================================================================='
-'    Name                    Year Team                    Finals  H#'
-'==================================================================='
-'  1 #   30 Max Shervington    03 Uwa Athletic-AUS      14:05.45   2'
-'  2 #  832 Daniel Canala      96 Perth Track-AUS       14:08.69   2'
-'  3 # 1161 Dean Menzies       88 Masters Athl-AUS      14:20.98   2'
-'  4 # 1012 Thomas Moorcroft   00 Canning Dist-AUS      14:29.58   2'
-'  5 #  815 Eoin Smyth         98 Athletics We-AUS      14:33.10   2'
-'  6 # 1188 Reece Harris       00 Athletics We-AUS      14:55.37   2'
-'  7 #  968 Ryan Greenwood     96 Athletics We-AUS      15:05.43   2'
-'  8 #  895 Christophe Gardne  05 Athletics We-AUS      15:11.41   2'
-'  9 #  102 Nikil Redipali     02 Canning Dist-AUS      15:13.63   2'
-' 10 # 1136 Kurt Wesley        97 Perth Track-AUS       15:13.95   2'
-''
-''
-'Athletics West - Site License'
-''
-"Hy-Tek's MEET MANAGER  4:15 PM  20/01/2025  Page 2"
-TRACK ROW: 1 #   30 Max Shervington    03 Uwa Athletic-AUS      14:05.45   2
-TRACK ROW: 2 #  832 Daniel Canala      96 Perth Track-AUS       14:08.69   2
-TRACK ROW: 3 # 1161 Dean Menzies       88 Masters Athl-AUS      14:20.98   2
-TRACK ROW: 4 # 1012 Thomas Moorcroft   00 Canning Dist-AUS      14:29.58   2
-TRACK ROW: 5 #  815 Eoin Smyth         98 Athletics We-AUS      14:33.10   2
-TRACK ROW: 6 # 1188 Reece Harris       00 Athletics We-AUS      14:55.37   2
-TRACK ROW: 7 #  968 Ryan Greenwood     96 Athletics We-AUS      15:05.43   2
-TRACK ROW: 8 #  895 Christophe Gardne  05 Athletics We-AUS      15:11.41   2
-TRACK ROW: 9 #  102 Nikil Redipali     02 Canning Dist-AUS      15:13.63   2
-TRACK ROW: 10 # 1136 Kurt Wesley        97 Perth Track-AUS       15:13.95   2
-TRACK ROW: Strive Special Program 2 - Go For 2&5 - 5000m State Champs - 18/01/2025
-TRACK ROW: Powered by Go for 2 & 5
-TRACK ROW: WA Athletics Stadium
-TRACK ROW: Results - 5000m State Championships
-TRACK ROW: ....
-'Event 49  Men 5000 Meter Run Open State Champs'
-''
-' 11 #  438 Karlos Aquino      95 Canning Dist-AUS      15:18.98   2'
-' 12 # 1013 George Lancaster   01 Canning Dist-GBR      15:26.30   2'
-' 13 #   64 William McAlinden  05 Uwa Athletic-AUS      15:37.75   2'
-' 14 #  655 Amir Rusyaidi Osm  02 Uwa Athletic-AUS      15:45.46   1'
-' 15 #  230 Liam Dardengo      03 Athletics We-AUS      15:48.45   1'
-' 16 # 1116 Daniel Barnes      97 Athletics We-AUS      15:53.51   1'
-' 17 # 1193 Liam Kamudu        99 Athletics We-AUS      16:05.37   2'
-' 18 #  965 Lachlan Whitnell   04 Canning Dist-AUS      16:11.76   1'
-' 19 #  899 Henry Morley       83 Canning Dist-AUS      16:21.98   1'
-' 20 #  941 Owen Spicer        02 Uwa Athletic-AUS      16:28.25   1'
-' 21 #  824 Cameron Garside    02 Uwa Athletic-AUS      16:28.39   1'
-' 22 #  708 Lachlan Chambers   00 Uwa Athletic-AUS      16:55.37   1'
-' 23 # 1119 Tom Shenton        95 Athletics We-AUS      17:12.32   1'
-' 24 # 1079 Zac Thomas         01 Athletics We-AUS      17:43.87   1'
-' -- #  310 Joshua Neervoort   05 Uwa Athletic-AUS           DNF   2'
-' -- #  800 Luke Burrows       00 Perth Track-AUS            DNF   2'
-' -- #  541 Harrison Bagley    99 Harriers Athleti-AU  X14:22.18   2'
-''
-TRACK ROW: 11 #  438 Karlos Aquino      95 Canning Dist-AUS      15:18.98   2
-TRACK ROW: 12 # 1013 George Lancaster   01 Canning Dist-GBR      15:26.30   2
-TRACK ROW: 13 #   64 William McAlinden  05 Uwa Athletic-AUS      15:37.75   2
-TRACK ROW: 14 #  655 Amir Rusyaidi Osm  02 Uwa Athletic-AUS      15:45.46   1
-TRACK ROW: 15 #  230 Liam Dardengo      03 Athletics We-AUS      15:48.45   1
-TRACK ROW: 16 # 1116 Daniel Barnes      97 Athletics We-AUS      15:53.51   1
-TRACK ROW: 17 # 1193 Liam Kamudu        99 Athletics We-AUS      16:05.37   2
-TRACK ROW: 18 #  965 Lachlan Whitnell   04 Canning Dist-AUS      16:11.76   1
-TRACK ROW: 19 #  899 Henry Morley       83 Canning Dist-AUS      16:21.98   1
-TRACK ROW: 20 #  941 Owen Spicer        02 Uwa Athletic-AUS      16:28.25   1
-TRACK ROW: 21 #  824 Cameron Garside    02 Uwa Athletic-AUS      16:28.39   1
-TRACK ROW: 22 #  708 Lachlan Chambers   00 Uwa Athletic-AUS      16:55.37   1
-TRACK ROW: 23 # 1119 Tom Shenton        95 Athletics We-AUS      17:12.32   1
-TRACK ROW: 24 # 1079 Zac Thomas         01 Athletics We-AUS      17:43.87   1
-TRACK ROW: -- #  310 Joshua Neervoort   05 Uwa Athletic-AUS           DNF   2
-TRACK ROW: -- #  800 Luke Burrows       00 Perth Track-AUS            DNF   2
-TRACK ROW: -- #  541 Harrison Bagley    99 Harriers Athleti-AU  X14:22.18   2
-EVENTS = 5
-{'event_number': 45, 'event_name': 'Women 5000 Meter Run PA U20 State Champs', 'event_type': 'track', 'gender': 'Female', 'athletes': [{'place': 1, 'name': 'Madison Kent', 'birth_year': 2008, 'club': 'AW Independent', 'country': 'AUS', 'result': '22:25.66', 'wind': None, 'status': None, 'raw_row': '1 #   20 Madison Kent T53   08 Athletics We-AUS      22:25.66'}]}
-Women 5000 Meter Run PA U20 State Champs Female
-Women 5000 Meter Run U20 State Champs Female
-Women 5000 Meter Run Open State Champs Female
-Men 5000 Meter Run U20 State Champs Male
-Men 5000 Meter Run Open State Champs Male
-TOTAL ATHLETES = 43
-Women 5000 Meter Run PA U20 State Champs ATHLETES=1
-Women 5000 Meter Run U20 State Champs ATHLETES=1
-Women 5000 Meter Run Open State Champs ATHLETES=6
-Men 5000 Meter Run U20 State Champs ATHLETES=11
-Men 5000 Meter Run Open State Champs ATHLETES=24
-INFO:     127.0.0.1:57935 - "POST /meet-manager/pdf/import HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-INFO:     127.0.0.1:56678 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60586 - "GET /athletes/letters HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53853 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56678 - "GET /athletes/letters HTTP/1.1" 200 OK
-RESULTS: 44548
-INFO:     127.0.0.1:58299 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-RESULTS: 44548
-INFO:     127.0.0.1:58299 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56815 - "GET /athletes/browse/S HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51146 - "GET /athletes/Louise%20Soia HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51146 - "GET /athletes/Louise%20Soia HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-INFO:     127.0.0.1:50560 - "GET /athletes/count HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63884 - "GET /athletes/letters HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50560 - "GET /athletes/count HTTP/1.1" 200 OK
-RESULTS: 44548
-INFO:     127.0.0.1:58814 - "GET /athletes/letters HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52242 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-SEASON BESTS CALLED
-RESULTS: 44548
-INFO:     127.0.0.1:52242 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 24 events
-Loading event 0: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 1: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 2: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 3: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 4: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 5: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 6: 3000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (76.2cm) -> None
-Loading event 7: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 8: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 9: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 10: 3000m Steeplechase (91.4cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (91.4cm) -> None
-Loading event 11: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-Loading event 12: Discus Throw (2kg)
-event_type=field
-ROUND DETECTED: Discus Throw (2kg) -> None
-Loading event 13: Discus Throw
-event_type=field
-ROUND DETECTED: Discus Throw -> None
-Loading event 14: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 15: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 16: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 17: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 18: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 19: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 20: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 21: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 22: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 23: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 24
-Athletes: 200
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:60104 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 28 events
-Loading event 0: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 1: Discus Throw
-event_type=field
-ROUND DETECTED: Discus Throw -> None
-Loading event 2: Discus Throw (2kg)
-event_type=field
-ROUND DETECTED: Discus Throw (2kg) -> None
-Loading event 3: Discus Throw (1kg)
-event_type=field
-ROUND DETECTED: Discus Throw (1kg) -> None
-Loading event 4: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 5: 3000m Steeplechase (91.4cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (91.4cm) -> None
-Loading event 6: 3000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (76.2cm) -> None
-Loading event 7: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 8: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 9: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 10: 400m Hurdles (91.4cm / 35m)
-event_type=track
-ROUND DETECTED: 400m Hurdles (91.4cm / 35m) -> None
-Loading event 11: 400m Hurdles (76.2cm / 35m)
-event_type=track
-ROUND DETECTED: 400m Hurdles (76.2cm / 35m) -> None
-Loading event 12: Pole Vault
-event_type=field
-ROUND DETECTED: Pole Vault -> None
-Loading event 13: 100m
-event_type=track
 ROUND DETECTED: 100m -> None
 Loading event 14: 100m
 event_type=track
@@ -9024,3 +7912,1116 @@ Missing results: 0
 ===================
 
 INFO:     127.0.0.1:58544 - "POST /roster/roster/import HTTP/1.1" 200 OK
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 4 events
+Loading event 0: 10000m Race Walk
+['1\t5', 'Elizabeth MCMILLEN', '2004', '·', 'AUS', 'NSW\t42:50.13', 'CR']
+ROWS FOUND: 12
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+Failed event: 10000m Race Walk
+expected string or bytes-like object, got 'list'
+Loading event 1: 5000m Race Walk
+['1\t12', 'Owen TOYNE', '2007', '·', 'AUS', 'Notes:\xa0~~', 'ACT\t19:59.42']
+ROWS FOUND: 17
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+Failed event: 5000m Race Walk
+expected string or bytes-like object, got 'list'
+Loading event 2: 10000m Race Walk
+['1\t5', 'Isaac BEACROFT', '2007', '·', 'AUS', 'NSW\t38:54.11', '2\t11']
+ROWS FOUND: 17
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+Failed event: 10000m Race Walk
+expected string or bytes-like object, got 'list'
+Loading event 3: 5000m Race Walk
+['1\t14', 'Zoe WOODS', '2007', '·', 'AUS', 'NSW\t23:25.46', 'WU20Q']
+ROWS FOUND: 15
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+Failed event: 5000m Race Walk
+expected string or bytes-like object, got 'list'
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 4
+Athletes: 0
+Failed records: 61
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:65371 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14320]
+INFO:     Started server process [44812]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44812]
+INFO:     Stopping reloader process [8964]
+PS C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform> uvicorn main:app --reload --port 8001
+INFO:     Will watch for changes in these directories: ['C:\\Users\\MichaelHolmes\\downloads\\athleticswestresultsplatform']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [9616] using StatReload
+INFO:     Started server process [7880]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 4 events
+Loading event 0: 10000m Race Walk
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+LAYOUT INPUT: ['1\t5', 'Elizabeth MCMILLEN', '2004', '·', 'AUS', 'NSW\t42:50.13', 'CR']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '1\t5'
+1: 'Elizabeth MCMILLEN'
+2: '2004'
+3: '·'
+4: 'AUS'
+5: 'NSW\t42:50.13'
+6: 'CR'
+LAYOUT INPUT: ['2\t3', 'Rebecca HENDERSON', '2001', '·', 'AUS', 'VIC\t43:26.86']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '2\t3'
+1: 'Rebecca HENDERSON'
+2: '2001'
+3: '·'
+4: 'AUS'
+5: 'VIC\t43:26.86'
+LAYOUT INPUT: ['3\t4', 'Olivia SANDERY', '2003', '·', 'AUS', 'Notes:\xa0<<< (1 min added)', 'SA\t44:46.41']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '3\t4'
+1: 'Olivia SANDERY'
+2: '2003'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<< (1 min added)'
+6: 'SA\t44:46.41'
+LAYOUT INPUT: ['4\t8', 'Chelsea ROBERTS', '2006', '·', 'AUS', 'NSW\t46:44.01', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '4\t8'
+1: 'Chelsea ROBERTS'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'NSW\t46:44.01'
+6: 'PB'
+LAYOUT INPUT: ['5\t9', 'Alexandra GRIFFIN', '2005', '·', 'AUS', 'WA\t48:19.86']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '5\t9'
+1: 'Alexandra GRIFFIN'
+2: '2005'
+3: '·'
+4: 'AUS'
+5: 'WA\t48:19.86'
+LAYOUT INPUT: ['6\t2', 'Samantha FINDLAY', '1997', '·', 'AUS', 'SA\t48:46.24']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '6\t2'
+1: 'Samantha FINDLAY'
+2: '1997'
+3: '·'
+4: 'AUS'
+5: 'SA\t48:46.24'
+LAYOUT INPUT: ['7\t7', 'Kaitlyn SIVIOUR', '2000', '·', 'AUS', 'VIC\t50:50.21']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '7\t7'
+1: 'Kaitlyn SIVIOUR'
+2: '2000'
+3: '·'
+4: 'AUS'
+5: 'VIC\t50:50.21'
+LAYOUT INPUT: ['8\t13', 'Maddison NASH', '2006', '·', 'AUS', 'VIC\t52:07.88']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '8\t13'
+1: 'Maddison NASH'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'VIC\t52:07.88'
+LAYOUT INPUT: ['9\t12', 'Hana JUGOVIC', '2006', '·', 'AUS', 'Notes:\xa0<', 'ACT\t53:43.31']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '9\t12'
+1: 'Hana JUGOVIC'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'ACT\t53:43.31'
+LAYOUT INPUT: ['10\t6', 'Phoebe CHADWICK', '2006', '·', 'AUS', 'Notes:\xa0<<<', 'QLD\t56:24.70']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '10\t6'
+1: 'Phoebe CHADWICK'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<<'
+6: 'QLD\t56:24.70'
+LAYOUT INPUT: ['1', 'Nellie LANGFORD', '2005', '·', 'AUS', 'Notes:\xa0<<<<', 'SA\tDQ', 'TR54.7.5']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '1'
+1: 'Nellie LANGFORD'
+2: '2005'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<<<'
+6: 'SA\tDQ'
+7: 'TR54.7.5'
+LAYOUT INPUT: ['10', 'Tayla BILLINGTON', '1997', '·', 'AUS', 'QLD\tDNS']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '10'
+1: 'Tayla BILLINGTON'
+2: '1997'
+3: '·'
+4: 'AUS'
+5: 'QLD\tDNS'
+LAYOUT INPUT: ['11', 'Jessica LORING', '2009', '·', 'AUS', 'NSW\tDNS']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '11'
+1: 'Jessica LORING'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'NSW\tDNS'
+Loading event 1: 5000m Race Walk
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+LAYOUT INPUT: ['1\t12', 'Owen TOYNE', '2007', '·', 'AUS', 'Notes:\xa0~~', 'ACT\t19:59.42', 'CR, WU20Q']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '1\t12'
+1: 'Owen TOYNE'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0~~'
+6: 'ACT\t19:59.42'
+7: 'CR, WU20Q'
+LAYOUT INPUT: ['2\t2', 'John RONAN', '2007', '·', 'AUS', 'Notes:\xa0~~', 'WA\t20:04.21', 'WU20Q']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '2\t2'
+1: 'John RONAN'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0~~'
+6: 'WA\t20:04.21'
+7: 'WU20Q'
+LAYOUT INPUT: ['3\t5', 'Riley COUGHLAN', '2007', '·', 'AUS', 'VIC\t20:30.75', 'PB, WU20Q']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '3\t5'
+1: 'Riley COUGHLAN'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'VIC\t20:30.75'
+6: 'PB, WU20Q'
+LAYOUT INPUT: ['4\t15', 'Samuel LINDSAY', '2008', '·', 'AUS', 'Notes:\xa0~', 'TAS\t20:42.25', 'WU20Q']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '4\t15'
+1: 'Samuel LINDSAY'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0~'
+6: 'TAS\t20:42.25'
+7: 'WU20Q'
+LAYOUT INPUT: ['5\t16', 'Sebastian RICHARDS', '2008', '·', 'AUS', 'Notes:\xa0~', 'SA\t21:17.91']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '5\t16'
+1: 'Sebastian RICHARDS'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0~'
+6: 'SA\t21:17.91'
+LAYOUT INPUT: ['6\t3', 'Joel BYATT', '2007', '·', 'AUS', 'Notes:\xa0<', 'NSW\t21:48.10', 'PB']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '6\t3'
+1: 'Joel BYATT'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'NSW\t21:48.10'
+7: 'PB'
+LAYOUT INPUT: ['7\t1', 'Noah COOKE', '2010', '·', 'AUS', 'QLD\t22:08.85', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '7\t1'
+1: 'Noah COOKE'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'QLD\t22:08.85'
+6: 'PB'
+LAYOUT INPUT: ['8\t7', 'Angus SHUTTLEWORTH', '2011', '·', 'AUS', 'VIC\t22:12.89', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '8\t7'
+1: 'Angus SHUTTLEWORTH'
+2: '2011'
+3: '·'
+4: 'AUS'
+5: 'VIC\t22:12.89'
+6: 'PB'
+LAYOUT INPUT: ['9\t14', 'Bailey HOUSDEN', '2007', '·', 'AUS', 'QLD\t22:21.00']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '9\t14'
+1: 'Bailey HOUSDEN'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'QLD\t22:21.00'
+LAYOUT INPUT: ['10\t9', 'Myles ASHBY', '2007', '·', 'AUS', 'NSW\t23:07.29']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '10\t9'
+1: 'Myles ASHBY'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'NSW\t23:07.29'
+LAYOUT INPUT: ['11\t6', 'Dylan ALLABUSH', '2008', '·', 'AUS', 'NSW\t24:15.25']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '11\t6'
+1: 'Dylan ALLABUSH'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'NSW\t24:15.25'
+LAYOUT INPUT: ['12\t8', 'Cooper RECH', '2007', '·', 'AUS', 'Notes:\xa0<', 'SA\t25:05.37', 'PB']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '12\t8'
+1: 'Cooper RECH'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'SA\t25:05.37'
+7: 'PB'
+LAYOUT INPUT: ['13\t11', 'Koby IRVINE', '2010', '·', 'AUS', 'QLD\t25:20.05', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '13\t11'
+1: 'Koby IRVINE'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'QLD\t25:20.05'
+6: 'PB'
+LAYOUT INPUT: ['14\t10', 'Alexander SINNETT', '2008', '·', 'AUS', 'Notes:\xa0<<', 'NSW\t26:19.89']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '14\t10'
+1: 'Alexander SINNETT'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'NSW\t26:19.89'
+LAYOUT INPUT: ['15\t13', 'Christopher NILON', '2009', '·', 'AUS', 'NSW\t27:04.00']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '15\t13'
+1: 'Christopher NILON'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'NSW\t27:04.00'
+LAYOUT INPUT: ['16\t17', 'Alexander BRAENDLE', '2010', '·', 'AUS', 'NSW\t27:24.54', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '16\t17'
+1: 'Alexander BRAENDLE'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'NSW\t27:24.54'
+6: 'PB'
+LAYOUT INPUT: ['4', 'Max DAVIDSON', '2009', '·', 'AUS', 'VIC\tDNF']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '4'
+1: 'Max DAVIDSON'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'VIC\tDNF'
+Loading event 2: 10000m Race Walk
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+LAYOUT INPUT: ['1\t5', 'Isaac BEACROFT', '2007', '·', 'AUS', 'NSW\t38:54.11']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '1\t5'
+1: 'Isaac BEACROFT'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'NSW\t38:54.11'
+LAYOUT INPUT: ['2\t11', 'Declan TINGAY', '1999', '·', 'AUS', 'VIC\t39:13.93']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '2\t11'
+1: 'Declan TINGAY'
+2: '1999'
+3: '·'
+4: 'AUS'
+5: 'VIC\t39:13.93'
+LAYOUT INPUT: ['3\t17', 'Timothy FRASER', '2000', '·', 'AUS', 'ACT\t39:28.76']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '3\t17'
+1: 'Timothy FRASER'
+2: '2000'
+3: '·'
+4: 'AUS'
+5: 'ACT\t39:28.76'
+LAYOUT INPUT: ['4\t18', 'Will THOMPSON', '2002', '·', 'AUS', 'VIC\t39:42.06']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '4\t18'
+1: 'Will THOMPSON'
+2: '2002'
+3: '·'
+4: 'AUS'
+5: 'VIC\t39:42.06'
+LAYOUT INPUT: ['5\t15', 'Rhydian COWLEY', '1991', '·', 'AUS', 'VIC\t39:46.16']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '5\t15'
+1: 'Rhydian COWLEY'
+2: '1991'
+3: '·'
+4: 'AUS'
+5: 'VIC\t39:46.16'
+LAYOUT INPUT: ['6\t16', 'Kyle SWAN', '1999', '·', 'AUS', 'VIC\t40:16.61']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '6\t16'
+1: 'Kyle SWAN'
+2: '1999'
+3: '·'
+4: 'AUS'
+5: 'VIC\t40:16.61'
+LAYOUT INPUT: ['7\t4', 'Marcus WAKIM', '2006', '·', 'AUS', 'Notes:\xa0<', 'VIC\t40:55.48', 'PB']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '7\t4'
+1: 'Marcus WAKIM'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'VIC\t40:55.48'
+7: 'PB'
+LAYOUT INPUT: ['8\t7', 'Evan DUNFEE', '1990', '·', 'CAN', '41:12.68']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '8\t7'
+1: 'Evan DUNFEE'
+2: '1990'
+3: '·'
+4: 'CAN'
+5: '41:12.68'
+LAYOUT INPUT: ['9\t13', 'Mitchell BAKER', '2001', '·', 'AUS', 'Notes:\xa0<', 'ACT\t41:40.65']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '9\t13'
+1: 'Mitchell BAKER'
+2: '2001'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'ACT\t41:40.65'
+LAYOUT INPUT: ['10\t2', 'Jonah CROPP', '2005', '·', 'NZL', '43:14.69', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '10\t2'
+1: 'Jonah CROPP'
+2: '2005'
+3: '·'
+4: 'NZL'
+5: '43:14.69'
+6: 'PB'
+LAYOUT INPUT: ['11\t9', 'Jack MCGINNISKIN', '2002', '·', 'AUS', 'Notes:\xa0<', 'NSW\t44:05.58']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '11\t9'
+1: 'Jack MCGINNISKIN'
+2: '2002'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'NSW\t44:05.58'
+LAYOUT INPUT: ['12\t8', 'Cooper RECH', '2007', '·', 'AUS', 'Notes:\xa0<<', 'SA\t51:29.48', 'PB']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '12\t8'
+1: 'Cooper RECH'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'SA\t51:29.48'
+7: 'PB'
+LAYOUT INPUT: ['13\t19', 'Alejandro STEPHENS', '1993', '·', 'AUS', 'VIC\t52:28.13', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '13\t19'
+1: 'Alejandro STEPHENS'
+2: '1993'
+3: '·'
+4: 'AUS'
+5: 'VIC\t52:28.13'
+6: 'PB'
+LAYOUT INPUT: ['14\t12', 'Tristan CAMILLERI', '2001', '·', 'AUS', 'Notes:\xa0<<<', 'SA\t53:10.13']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '14\t12'
+1: 'Tristan CAMILLERI'
+2: '2001'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<<'
+6: 'SA\t53:10.13'
+LAYOUT INPUT: ['15\t6', 'Brendan POSPISCHIL', '2005', '·', 'AUS', 'Notes:\xa0<<', 'NSW\t54:01.29']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '15\t6'
+1: 'Brendan POSPISCHIL'
+2: '2005'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'NSW\t54:01.29'
+LAYOUT INPUT: ['1', 'Alex BRADLEY', '2006', '·', 'AUS', 'Notes:\xa0<', 'QLD\tDNF']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '1'
+1: 'Alex BRADLEY'
+2: '2006'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'QLD\tDNF'
+LAYOUT INPUT: ['3', 'Joel BYATT', '2007', '·', 'AUS', 'NSW\tDNS']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '3'
+1: 'Joel BYATT'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'NSW\tDNS'
+LAYOUT INPUT: ['10', 'Samuel LINDSAY', '2008', '·', 'AUS', 'TAS\tDNS']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '10'
+1: 'Samuel LINDSAY'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'TAS\tDNS'
+LAYOUT INPUT: ['14', 'Dylan RICHARDSON', '2000', '·', 'AUS', 'NSW\tDNS']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '14'
+1: 'Dylan RICHARDSON'
+2: '2000'
+3: '·'
+4: 'AUS'
+5: 'NSW\tDNS'
+Loading event 3: 5000m Race Walk
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+LAYOUT INPUT: ['1\t14', 'Zoe WOODS', '2007', '·', 'AUS', 'NSW\t23:25.46', 'WU20Q']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '1\t14'
+1: 'Zoe WOODS'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'NSW\t23:25.46'
+6: 'WU20Q'
+LAYOUT INPUT: ['2\t12', 'Matilda WEBB', '2009', '·', 'AUS', 'NSW\t23:34.56', 'PB, WU20Q']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '2\t12'
+1: 'Matilda WEBB'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'NSW\t23:34.56'
+6: 'PB, WU20Q'
+LAYOUT INPUT: ['3\t10', 'Sophie POLKINGHORNE', '2010', '·', 'AUS', 'NSW\t23:34.62', 'PB, WU20Q']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '3\t10'
+1: 'Sophie POLKINGHORNE'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'NSW\t23:34.62'
+6: 'PB, WU20Q'
+LAYOUT INPUT: ['4\t3', 'Sienna PITCHER', '2007', '·', 'AUS', 'Notes:\xa0<', 'NSW\t24:16.72']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '4\t3'
+1: 'Sienna PITCHER'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<'
+6: 'NSW\t24:16.72'
+LAYOUT INPUT: ['5\t8', 'Angelina LEGRAND', '2008', '·', 'AUS', 'SA\t24:59.57', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '5\t8'
+1: 'Angelina LEGRAND'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'SA\t24:59.57'
+6: 'PB'
+LAYOUT INPUT: ['6\t6', 'Milly SHARPE', '2008', '·', 'AUS', 'Notes:\xa0<<', 'QLD\t25:25.99']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '6\t6'
+1: 'Milly SHARPE'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'QLD\t25:25.99'
+LAYOUT INPUT: ['7\t5', 'Matilda READ', '2010', '·', 'AUS', 'VIC\t25:30.18', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '7\t5'
+1: 'Matilda READ'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'VIC\t25:30.18'
+6: 'PB'
+LAYOUT INPUT: ['8\t7', 'Olivia BOULTON', '2009', '·', 'AUS', 'QLD\t25:30.69', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '8\t7'
+1: 'Olivia BOULTON'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'QLD\t25:30.69'
+6: 'PB'
+LAYOUT INPUT: ['9\t13', 'Grace BECK', '2008', '·', 'AUS', 'Notes:\xa0<<', 'NSW\t26:29.12']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 7
+0: '9\t13'
+1: 'Grace BECK'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'NSW\t26:29.12'
+LAYOUT INPUT: ['10\t15', 'Eliza KELLY', '2010', '·', 'AUS', 'QLD\t26:59.67', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '10\t15'
+1: 'Eliza KELLY'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'QLD\t26:59.67'
+6: 'PB'
+LAYOUT INPUT: ['11\t2', 'Jillian RYAN', '2010', '·', 'AUS', 'ACT\t27:15.73', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '11\t2'
+1: 'Jillian RYAN'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'ACT\t27:15.73'
+6: 'PB'
+LAYOUT INPUT: ['12\t16', 'Lilah NORDEN', '2007', '·', 'AUS', 'Kembla Joggers\t27:42.81']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '12\t16'
+1: 'Lilah NORDEN'
+2: '2007'
+3: '·'
+4: 'AUS'
+5: 'Kembla Joggers\t27:42.81'
+LAYOUT INPUT: ['13\t4', 'Lexie BEACROFT', '2010', '·', 'AUS', 'NSW\t28:12.78', 'PB']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 7
+0: '13\t4'
+1: 'Lexie BEACROFT'
+2: '2010'
+3: '·'
+4: 'AUS'
+5: 'NSW\t28:12.78'
+6: 'PB'
+LAYOUT INPUT: ['14\t11', 'Jessica LORING', '2009', '·', 'AUS', 'NSW\t28:28.79']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '14\t11'
+1: 'Jessica LORING'
+2: '2009'
+3: '·'
+4: 'AUS'
+5: 'NSW\t28:28.79'
+LAYOUT INPUT: ['15\t9', 'Kaytee BOGAERS', '2008', '·', 'AUS', 'WA\t28:56.43']
+LAYOUT OUTPUT: track_standard
+RECORD LENGTH: 6
+0: '15\t9'
+1: 'Kaytee BOGAERS'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'WA\t28:56.43'
+LAYOUT INPUT: ['16\t1', 'Laura Corvalan SOTOMAYOR', '2008', '·', 'AUS', 'Notes:\xa0<<', 'NSW\t31:07.09', 'PB']
+LAYOUT OUTPUT: track_notes
+RECORD LENGTH: 8
+0: '16\t1'
+1: 'Laura Corvalan SOTOMAYOR'
+2: '2008'
+3: '·'
+4: 'AUS'
+5: 'Notes:\xa0<<'
+6: 'NSW\t31:07.09'
+7: 'PB'
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 4
+Athletes: 65
+Failed records: 0
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:58961 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7880]
+INFO:     Started server process [16136]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16136]
+INFO:     Started server process [22688]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 4 events
+Loading event 0: 10000m Race Walk
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+Loading event 1: 5000m Race Walk
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+Loading event 2: 10000m Race Walk
+event_type=track
+ROUND DETECTED: 10000m Race Walk -> None
+Loading event 3: 5000m Race Walk
+event_type=track
+ROUND DETECTED: 5000m Race Walk -> None
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 4
+Athletes: 65
+Failed records: 0
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:64649 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22688]
+INFO:     Started server process [36312]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [36312]
+INFO:     Started server process [42880]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42880]
+INFO:     Started server process [5528]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 2 events
+Loading event 0: 12km
+INFO:     127.0.0.1:60405 - "POST /roster/roster/import HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2543, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2598, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\api\roster_import.py", line 153, in import_roster
+    events = scraper.import_competition()
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 796, in import_competition
+    event_data = self.extract_event(
+        page
+    )
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1245, in extract_event
+    if self.competition.id == 78:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'RosterCompetitionImporter' object has no attribute 'competition'. Did you mean: 'competition_url'?
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5528]
+INFO:     Started server process [52464]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [52464]
+INFO:     Started server process [3108]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 2 events
+Loading event 0: 12km
+USING SPECIAL ROAD PARSER
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Failed event: 12km
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 867, in import_competition
+    athletes = self.parse_track_rows(
+        event_data["rows"]
+    )
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1542, in parse_track_rows
+    if self.is_track_record_start(row):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1840, in is_track_record_start
+    if re.match(
+       ~~~~~~~~^
+        r"^\d+\t\d+$",
+        ^^^^^^^^^^^^^^
+        row
+        ^^^
+    ):
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'list'
+
+Loading event 1: 12km
+USING SPECIAL ROAD PARSER
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Failed event: 12km
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 867, in import_competition
+    athletes = self.parse_track_rows(
+        event_data["rows"]
+    )
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1542, in parse_track_rows
+    if self.is_track_record_start(row):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1840, in is_track_record_start
+    if re.match(
+       ~~~~~~~~^
+        r"^\d+\t\d+$",
+        ^^^^^^^^^^^^^^
+        row
+        ^^^
+    ):
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\re\__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: expected string or bytes-like object, got 'list'
+
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 2
+Athletes: 0
+Failed records: 72
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:59377 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3108]
+INFO:     Started server process [43628]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 2 events
+Loading event 0: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Loading event 1: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 2
+Athletes: 2
+Failed records: 0
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:51505 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43628]
+INFO:     Started server process [30300]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 2 events
+Loading event 0: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Failed event: 12km
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 842, in import_competition
+    athletes = self.parse_track_rows(
+        event_data["rows"]
+    )
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1517, in parse_track_rows
+    if self.is_track_record_start(row):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1828, in is_track_record_start
+    data = lines[start:end]
+           ^^^^^
+NameError: name 'lines' is not defined
+
+Loading event 1: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Failed event: 12km
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 842, in import_competition
+    athletes = self.parse_track_rows(
+        event_data["rows"]
+    )
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1517, in parse_track_rows
+    if self.is_track_record_start(row):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1828, in is_track_record_start
+    data = lines[start:end]
+           ^^^^^
+NameError: name 'lines' is not defined
+
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 2
+Athletes: 0
+Failed records: 504
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:50816 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30300]
+INFO:     Started server process [40184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Accept buttons: 2
+Accepted cookies
+Switched to results view
+Found 2 events
+Loading event 0: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+Loading event 1: 12km
+USING SPECIAL ROAD PARSER
+event_type=track
+ROUND DETECTED: 12km -> None
+
+EVENT TYPE CHECK
+
+===================
+IMPORT SUMMARY
+===================
+Events: 2
+Athletes: 72
+Failed records: 0
+Unhandled records: 0
+Missing results: 0
+===================
+
+INFO:     127.0.0.1:62671 - "POST /roster/roster/import HTTP/1.1" 200 OK
