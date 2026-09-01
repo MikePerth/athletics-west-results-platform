@@ -9,3 +9,4 @@ pymupdf
 rapidfuzz
 playwright
 passlib
+jwt
