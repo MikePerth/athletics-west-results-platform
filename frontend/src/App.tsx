@@ -11,6 +11,7 @@ import UploadResults from "./pages/UploadResults";
 import AdminResults from "./pages/admin/AdminResults";
 import CreateResult from "./pages/admin/CreateResult";
 import EditResult from "./pages/admin/EditResult";
+import EditAthlete from "./pages/admin/EditAthlete";
 import MergeAthlete from "./pages/admin/MergeAthlete";
 import AdminUsers from "./pages/admin/AdminUsers";
 import Login from "./pages/Login";
@@ -98,6 +99,11 @@ function App() {
               </ProtectedRoute>
           }
       />
+
+      <Route
+        path="/admin/athletes/:athleteId/edit"
+        element={<EditAthlete />}
+      />        
 
       <Route
           path="/admin/athletes/merge"

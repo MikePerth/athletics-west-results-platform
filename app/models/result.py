@@ -5,6 +5,7 @@ from sqlalchemy import (
     String,
     Date,
     ForeignKey
+    
 )
 
 from app.core.database import Base
@@ -57,3 +58,27 @@ class Result(Base):
     group_name = Column(String)
 
     competition_date = Column(Date)
+
+
+class Athlete(Base):
+
+    __tablename__ = "athletes"
+
+    id = Column(
+        Integer,
+        primary_key=True,
+        index=True
+    )
+
+    athlete_name = Column(
+        String,
+        unique=True,
+        nullable=False,
+        index=True
+    )
+
+    gender = Column(String)
+
+    year_of_birth = Column(Integer)
+
+    primary_club = Column(String)

@@ -1,0 +1,169 @@
+import {
+    useEffect,
+    useState
+} from "react";
+
+import {
+    useNavigate,
+    useParams
+} from "react-router-dom";
+
+export default function EditAthlete() {
+
+    const { athleteId } =
+        useParams();
+
+    const navigate =
+        useNavigate();
+
+    const [
+        athlete,
+        setAthlete
+    ] = useState({
+        athlete_name: "",
+        year_of_birth: "",
+        gender: ""
+    });
+
+    const [
+        saving,
+        setSaving
+    ] = useState(false);
+
+    useEffect(() => {
+
+        async function loadAthlete() {
+
+            const response =
+                await fetch(
+                    `http://localhost:8001/athletes/admin/${athleteId}`
+                );
+
+            const data =
+                await response.json();
+
+            setAthlete(data);
+        }
+
+        loadAthlete();
+
+    }, [athleteId]);
+
+    async function saveAthlete() {
+
+        try {
+
+            setSaving(true);
+
+            await fetch(
+                `http://localhost:8001/athletes/admin/${athleteId}`,
+                {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+                    body: JSON.stringify(
+                        athlete
+                    )
+                }
+            );
+
+            navigate("/admin/athletes");
+
+        } catch (error) {
+
+            console.error(error);
+
+        } finally {
+
+            setSaving(false);
+        }
+    }
+
+    return (
+
+        <div
+            style={{
+                maxWidth: "800px",
+                margin: "0 auto",
+                padding: "2rem"
+            }}
+        >
+            <h1>
+                Edit Athlete
+            </h1>
+
+            <div
+                style={{
+                    display: "grid",
+                    gap: "1rem"
+                }}
+            >
+                <input
+                    value={
+                        athlete.athlete_name
+                    }
+                    onChange={(e) =>
+                        setAthlete({
+                            ...athlete,
+                            athlete_name:
+                                e.target.value
+                        })
+                    }
+                    placeholder="Athlete Name"
+                />
+
+                <input
+                    value={
+                        athlete.year_of_birth
+                    }
+                    onChange={(e) =>
+                        setAthlete({
+                            ...athlete,
+                            year_of_birth:
+                                e.target.value
+                        })
+                    }
+                    placeholder="Year Of Birth"
+                />
+
+                <select
+                    value={
+                        athlete.gender
+                    }
+                    onChange={(e) =>
+                        setAthlete({
+                            ...athlete,
+                            gender:
+                                e.target.value
+                        })
+                    }
+                >
+                    <option value="">
+                        Select Gender
+                    </option>
+
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+                </select>
+
+                <button
+                    onClick={saveAthlete}
+                    disabled={saving}
+                >
+                    {saving
+                        ? "Saving..."
+                        : "Save Athlete"}
+                </button>
+            </div>
+
+        </div>
+
+    );
+}

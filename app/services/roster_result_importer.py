@@ -102,6 +102,21 @@ class RosterResultImporter:
                     "event_name"
                 )
 
+                raw_event_name = event.get(
+                    "event_name"
+                )
+
+                if raw_event_name:
+
+                    name_upper = raw_event_name.upper()
+
+                    if (
+                        "TEAM" in name_upper
+                        or "RELAY" in name_upper
+                        or "4X" in name_upper
+                    ):
+                        continue
+
                 result.event_name = (
                     normalise_event_name(
                         raw_event_name

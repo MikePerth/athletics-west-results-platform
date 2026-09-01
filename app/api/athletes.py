@@ -138,7 +138,7 @@ def athlete_letters(
 
     letters = sorted(
         {
-            athlete.athlete_name[0].upper()
+            athlete.athlete_name.split()[-1][0].upper()
             for athlete in athletes
             if athlete.athlete_name
         }
@@ -159,24 +159,32 @@ def athletes_by_letter(
             Result.athlete_name
         )
         .filter(
-            Result.athlete_name.ilike(
-                f"{letter}%"
-            )
+            Result.athlete_name.isnot(None)
         )
         .group_by(
-            Result.athlete_name
-        )
-        .order_by(
             Result.athlete_name
         )
         .all()
     )
 
-    return [
+    matches = [
         athlete.athlete_name
         for athlete in athletes
+        if athlete.athlete_name
+        and athlete.athlete_name
+            .split()[-1]
+            .upper()
+            .startswith(letter.upper())
     ]
 
+    matches.sort(
+        key=lambda name: (
+            name.split()[-1].lower(),
+            name.lower()
+        )
+    )
+
+    return matches
 
 
 @router.get("/season-bests")
@@ -293,6 +301,33 @@ def season_bests(
         ]
 
     }
+
+
+@router.get("/count")
+def athlete_count(
+    db: Session = Depends(get_db)
+):
+    athlete_count = (
+        db.query(
+            Result.athlete_name
+        )
+        .filter(
+            Result.athlete_name.isnot(None)
+        )
+        .distinct()
+        .count()
+    )
+
+    result_count = (
+        db.query(Result.id)
+        .count()
+    )
+
+    return {
+        "athletes": athlete_count,
+        "results": result_count
+    }
+
 
 
 
@@ -472,3 +507,8 @@ def get_athlete_profile(
 
         
     }
+
+
+
+
+

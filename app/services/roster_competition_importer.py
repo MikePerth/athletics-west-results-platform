@@ -378,13 +378,25 @@ class RosterCompetitionImporter:
             .split("\t")
         )
 
+        details_parts = [
+            part.strip()
+            for part in details_parts
+        ]
+
         age_group = None
-
         club = None
-
         result = None
 
-        if len(details_parts) >= 3:
+        if len(details_parts) == 1:
+
+            result = details_parts[0]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+            result = details_parts[1]
+
+        elif len(details_parts) == 3:
 
             age_group = details_parts[0]
 
@@ -392,12 +404,15 @@ class RosterCompetitionImporter:
 
             result = details_parts[2]
 
-        elif len(details_parts) == 2:
+        elif len(details_parts) >= 4:
 
-            club = details_parts[0]
+            age_group = details_parts[0]
 
-            result = details_parts[1]
-
+            #
+            # Para XC format:
+            # PA Senior\t860\t\t9:04
+            #
+            result = details_parts[-1]
         else:
 
             print(
@@ -409,8 +424,6 @@ class RosterCompetitionImporter:
             club,
             result
         )
-    
-    
     
     def parse_track_agegroup_details(
         self,
@@ -720,6 +733,9 @@ class RosterCompetitionImporter:
                     page
                 )
                 #print(event_data)
+                #print(
+                #    f"TR COUNT: {page.locator('tr').count()}"
+                #)
 
                 gender = normalise_gender(
                     event_data.get("event_details")
@@ -1020,6 +1036,7 @@ class RosterCompetitionImporter:
         for i, line in enumerate(lines):
 
             if "PARTICIPANT" in line:
+
                 start = i + 1
                 break
 
@@ -1035,7 +1052,26 @@ class RosterCompetitionImporter:
                 end = i
                 break
 
-        return lines[start:end]
+        rows = []
+
+        data = lines[start:end]
+
+        for i in range(0, len(data), 7):
+
+            row = data[i:i + 7]
+
+            if len(row) == 7:
+                rows.append(row)
+
+        if rows:
+
+            print(rows[0])
+
+            print(
+                f"ROWS FOUND: {len(rows)}"
+            )
+
+        return rows
 
 
 
@@ -1101,6 +1137,9 @@ class RosterCompetitionImporter:
 
     def extract_event(self, page):
 
+        
+
+
         text = page.locator(
             "body"
         ).inner_text()
@@ -1153,6 +1192,8 @@ class RosterCompetitionImporter:
 
             event_name = None
             event_details = None
+
+        
 
         return {
             "event_name": event_name,
@@ -1380,7 +1421,19 @@ class RosterCompetitionImporter:
             #    for i, value in enumerate(record):
             #        print(i, repr(value))
 
+            if not result and not status:
 
+                print("\n==============================")
+                print("UNHANDLED FIELD RECORD")
+                print("==============================")
+                print(f"LAYOUT: {layout}")
+                print(f"NAME: {record[1]}")
+                print(f"RECORD LENGTH: {len(record)}")
+
+                for i, value in enumerate(record):
+                    print(f"{i}: {repr(value)}")
+
+                print("==============================\n")
 
             athlete = {
 
@@ -1434,7 +1487,6 @@ class RosterCompetitionImporter:
 
             records.append(current_record)
 
-        
 
         athletes = []
 
@@ -1478,7 +1530,8 @@ class RosterCompetitionImporter:
                 layout = self.detect_track_layout(
                     record
                 )
-
+                print(f"LAYOUT INPUT: {record}")
+                print(f"LAYOUT OUTPUT: {layout}")
                 #if (
                 #    "CRUZ OSBORNE" in str(record)
                 #    or "KENAN KNOTTENBELT" in str(record)
@@ -1488,7 +1541,14 @@ class RosterCompetitionImporter:
                 #print(
                 #    f"{record[1]} -> {layout}"
                 #)
+                print(
+                    f"RECORD LENGTH: {len(record)}"
+                )
 
+                for i, value in enumerate(record):
+                    print(
+                        f"{i}: {repr(value)}"
+                    )
 
                 if layout == LayoutType.TRACK_STANDARD:
 
@@ -1625,7 +1685,22 @@ class RosterCompetitionImporter:
                 if result in ["DNS", "DQ", "NM", "DNF"]:
                     status = result
 
-                                    
+                if not result and not status:
+
+                    print("\n==============================")
+                    print("UNHANDLED TRACK RECORD")
+                    print("==============================")
+                    print(f"LAYOUT: {layout}")
+                    print(f"NAME: {record[1]}")
+                    print(f"RECORD LENGTH: {len(record)}")
+
+                    for i, value in enumerate(record):
+                        print(f"{i}: {repr(value)}")
+
+                    print("==============================\n")
+
+                        
+                   
                 athlete = {
 
                     "place": place,
@@ -1646,14 +1721,16 @@ class RosterCompetitionImporter:
 
                 athletes.append(athlete)
 
-            except Exception as e:
+            except Exception:
 
-                    print("\nFAILED RECORD")
-                    print(record)
-                    print(f"ERROR: {e}")
-                    print(traceback.format_exc())
+                print("\nFAILED RECORD")
+                print(record)
 
-                    continue
+                print(
+                    f"TYPE(record): {type(record)}"
+                )
+
+                raise
 
         
 
