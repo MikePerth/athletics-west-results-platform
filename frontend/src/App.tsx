@@ -24,6 +24,12 @@ function App() {
       <Routes>
 
         <Route
+          path="/"
+          element={<Athletes />}
+        />
+
+
+        <Route
           path="/admin"
           element={
               <ProtectedRoute>
