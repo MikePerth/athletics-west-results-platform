@@ -58,20 +58,22 @@ def search_athletes(
 
     return [
 
-        {
-            "athlete_name":
-                athlete.athlete_name,
+    {
+        
 
-            "club":
-                athlete.club,
+        "athlete_name":
+            athlete.athlete_name,
 
-            "results":
-                athlete.results
-        }
+        "club":
+            athlete.club,
 
-        for athlete in athletes
+        "results":
+            athlete.results
+    }
 
-    ]
+    for athlete in athletes
+
+]
 
 
 

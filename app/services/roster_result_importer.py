@@ -75,6 +75,8 @@ class RosterResultImporter:
 
         for event in events:
 
+            
+
             for athlete in event["athletes"]:
 
                 status = athlete.get(
@@ -227,6 +229,8 @@ class RosterResultImporter:
                         performance
                     )
                 )
+
+                    
 
                 result.status = status
 

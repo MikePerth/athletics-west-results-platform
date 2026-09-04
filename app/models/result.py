@@ -7,6 +7,7 @@ from sqlalchemy import (
     ForeignKey
     
 )
+from sqlalchemy.orm import relationship
 
 from app.core.database import Base
 
@@ -39,6 +40,12 @@ class Result(Base):
 
     athlete_name = Column(String)
 
+    athlete_id = Column(
+        Integer,
+        ForeignKey("athletes.id"),
+        nullable=True
+    )
+
     club = Column(String)
 
     place = Column(Integer)
@@ -58,6 +65,11 @@ class Result(Base):
     group_name = Column(String)
 
     competition_date = Column(Date)
+
+    athlete = relationship(
+        "Athlete",
+        back_populates="results"
+    )
 
 
 class Athlete(Base):
@@ -79,6 +91,11 @@ class Athlete(Base):
 
     gender = Column(String)
 
-    year_of_birth = Column(Integer)
+    birth_year = Column(Integer)
 
     primary_club = Column(String)
+
+    results = relationship(
+        "Result",
+        back_populates="athlete"
+    )

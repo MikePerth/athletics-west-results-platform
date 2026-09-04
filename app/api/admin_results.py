@@ -404,7 +404,8 @@ def update_result(
 
     result.performance_numeric = (
         parse_performance_numeric(
-            request.performance
+            request.performance,
+            request.event_name
         )
     )
 

@@ -1,347 +1,3 @@
-ROUND DETECTED: 100m -> None
-Loading event 14: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 15: Javelin Throw (800g)
-event_type=field
-ROUND DETECTED: Javelin Throw (800g) -> None
-Loading event 16: Javelin Throw (600g)
-event_type=field
-ROUND DETECTED: Javelin Throw (600g) -> None
-Loading event 17: High Jump
-event_type=field
-ROUND DETECTED: High Jump -> None
-Loading event 18: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-Loading event 19: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-Loading event 20: Long Jump
-event_type=field
-ROUND DETECTED: Long Jump -> None
-Loading event 21: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 22: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 23: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 24: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 25: 200m
-event_type=track
-ROUND DETECTED: 200m -> None
-Loading event 26: 110m Hurdles (106.7cm / 9.14m)
-event_type=track
-ROUND DETECTED: 110m Hurdles (106.7cm / 9.14m) -> None
-Loading event 27: 100m Hurdles (83.8cm / 8.5m)
-event_type=track
-ROUND DETECTED: 100m Hurdles (83.8cm / 8.5m) -> None
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 28
-Athletes: 226
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:59622 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 33 events
-Loading event 0: Hammer Throw (7.26kg)
-event_type=field
-ROUND DETECTED: Hammer Throw (7.26kg) -> None
-Loading event 1: Hammer Throw (4kg)
-event_type=field
-ROUND DETECTED: Hammer Throw (4kg) -> None
-Loading event 2: 4x100m
-event_type=track
-ROUND DETECTED: 4x100m -> None
-
-FAILED RECORD
-['1\t3', 'Hong Kong', 'HKG', '40.05', 'PB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-
-FAILED RECORD
-['2\t4', 'Australia', 'AUS', '40.67', 'PB']
-ERROR: list index out of range
-Traceback (most recent call last):
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 1510, in parse_track_rows
-    self.parse_track_standard(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~^
-        record
-        ^^^^^^
-    )
-    ^
-  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\services\roster_competition_importer.py", line 274, in parse_track_standard
-    record[5]
-    ~~~~~~^^^
-IndexError: list index out of range
-
-Loading event 3: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 4: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 5: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 6: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 7: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 8: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 9: Shot Put (7.26kg)
-event_type=field
-ROUND DETECTED: Shot Put (7.26kg) -> None
-Loading event 10: Shot Put (4kg)
-event_type=field
-ROUND DETECTED: Shot Put (4kg) -> None
-Loading event 11: Shot Put
-event_type=field
-ROUND DETECTED: Shot Put -> None
-Loading event 12: 3000m Steeplechase (91.4cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (91.4cm) -> None
-Loading event 13: 3000m Steeplechase (76.2cm)
-event_type=track
-ROUND DETECTED: 3000m Steeplechase (76.2cm) -> None
-Loading event 14: 5000m
-event_type=track
-ROUND DETECTED: 5000m -> None
-Loading event 15: 5000m
-event_type=track
-ROUND DETECTED: 5000m -> None
-Loading event 16: 400m Hurdles (91.4cm / 35m)
-event_type=track
-ROUND DETECTED: 400m Hurdles (91.4cm / 35m) -> None
-Loading event 17: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 18: Triple Jump
-event_type=field
-ROUND DETECTED: Triple Jump -> None
-Loading event 19: 400m Hurdles (76.2cm / 35m)
-event_type=track
-ROUND DETECTED: 400m Hurdles (76.2cm / 35m) -> None
-Loading event 20: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-Loading event 21: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 22: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 23: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 24: 100m Hurdles (83.8cm / 8.5m)
-event_type=track
-ROUND DETECTED: 100m Hurdles (83.8cm / 8.5m) -> None
-Loading event 25: Javelin Throw (800g)
-event_type=field
-ROUND DETECTED: Javelin Throw (800g) -> None
-Loading event 26: 110m Hurdles (106.7cm / 9.14m)
-event_type=track
-ROUND DETECTED: 110m Hurdles (106.7cm / 9.14m) -> None
-Loading event 27: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-Loading event 28: 400m
-event_type=track
-ROUND DETECTED: 400m -> None
-Loading event 29: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 30: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 31: 100m
-event_type=track
-ROUND DETECTED: 100m -> None
-Loading event 32: 800m
-event_type=track
-ROUND DETECTED: 800m -> None
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 33
-Athletes: 224
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:49670 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 14 events
-Loading event 0: 800m · Final A
-event_type=track
-ROUND DETECTED: 800m · Final A -> Final
-Loading event 1: 800m · Final B
-event_type=track
-ROUND DETECTED: 800m · Final B -> Final
-Loading event 2: 800m · Final A
-event_type=track
-ROUND DETECTED: 800m · Final A -> Final
-Loading event 3: 800m · Final B
-event_type=track
-ROUND DETECTED: 800m · Final B -> Final
-Loading event 4: 800m · Final C
-event_type=track
-ROUND DETECTED: 800m · Final C -> Final
-Loading event 5: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 6: 1500m
-event_type=track
-ROUND DETECTED: 1500m -> None
-Loading event 7: 200m · Final A
-event_type=track
-ROUND DETECTED: 200m · Final A -> Final
-Loading event 8: 200m · Final B
-event_type=track
-ROUND DETECTED: 200m · Final B -> Final
-Loading event 9: 200m · Final A
-event_type=track
-ROUND DETECTED: 200m · Final A -> Final
-Loading event 10: 200m · Final B
-event_type=track
-ROUND DETECTED: 200m · Final B -> Final
-Loading event 11: 5000m · Final A
-event_type=track
-ROUND DETECTED: 5000m · Final A -> Final
-Loading event 12: 5000m
-event_type=track
-ROUND DETECTED: 5000m -> None
-Loading event 13: 5000m · Final B
-event_type=track
-ROUND DETECTED: 5000m · Final B -> Final
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 14
-Athletes: 58
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:54349 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 2 events
-Loading event 0: 10000m Race Walk
-event_type=track
-ROUND DETECTED: 10000m Race Walk -> None
-Loading event 1: 10000m Race Walk
-event_type=track
-ROUND DETECTED: 10000m Race Walk -> None
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 2
-Athletes: 28
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:58994 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 8 events
-Loading event 0: 20km Race Walk
-event_type=track
-ROUND DETECTED: 20km Race Walk -> None
-Loading event 1: 20km Race Walk
-event_type=track
-ROUND DETECTED: 20km Race Walk -> None
-Loading event 2: 10km Race Walk
-event_type=track
-ROUND DETECTED: 10km Race Walk -> None
-Loading event 3: 10km Race Walk
-event_type=track
-ROUND DETECTED: 10km Race Walk -> None
-Loading event 4: 3km Race Walk
-event_type=track
-ROUND DETECTED: 3km Race Walk -> None
-Loading event 5: 5km Race Walk
-event_type=track
-ROUND DETECTED: 5km Race Walk -> None
-Loading event 6: 5km Race Walk
-event_type=track
-ROUND DETECTED: 5km Race Walk -> None
-Loading event 7: 5km Race Walk
-event_type=track
-ROUND DETECTED: 5km Race Walk -> None
-
-EVENT TYPE CHECK
-
-===================
-IMPORT SUMMARY
-===================
-Events: 8
-Athletes: 71
-Failed records: 0
-Unhandled records: 0
-Missing results: 0
-===================
-
-INFO:     127.0.0.1:61226 - "POST /roster/roster/import HTTP/1.1" 200 OK
-Accept buttons: 2
-Accepted cookies
-Switched to results view
-Found 4 events
-Loading event 0: 8km XC
-event_type=track
-ROUND DETECTED: 8km XC -> None
-Loading event 1: 6km XC
-event_type=track
-ROUND DETECTED: 6km XC -> None
 Loading event 2: 10km XC
 event_type=track
 ROUND DETECTED: 10km XC -> None
@@ -9025,3 +8681,347 @@ Missing results: 0
 ===================
 
 INFO:     127.0.0.1:62671 - "POST /roster/roster/import HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40184]
+INFO:     Started server process [46328]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\roster_competition_importer.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46328]
+INFO:     Started server process [22920]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+SEASON BESTS CALLED
+INFO:     127.0.0.1:58007 - "GET /athletes/count HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63770 - "GET /athletes/letters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62258 - "GET /athletes/count HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58007 - "GET /athletes/letters HTTP/1.1" 200 OK
+RESULTS: 50782
+INFO:     127.0.0.1:65206 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+SEASON BESTS CALLED
+RESULTS: 50782
+INFO:     127.0.0.1:65206 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\api\imports.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22920]
+INFO:     Started server process [51180]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+SEASON BESTS CALLED
+INFO:     127.0.0.1:51943 - "GET /athletes/count HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53151 - "GET /athletes/letters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65397 - "GET /athletes/count HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51943 - "GET /athletes/letters HTTP/1.1" 200 OK
+RESULTS: 50782
+INFO:     127.0.0.1:59188 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+SEASON BESTS CALLED
+RESULTS: 50782
+INFO:     127.0.0.1:59188 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52703 - "GET /athletes/browse/S HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "GET /athletes/letters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "GET /athletes/count HTTP/1.1" 200 OK
+SEASON BESTS CALLED
+INFO:     127.0.0.1:57942 - "GET /athletes/count HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57530 - "GET /athletes/letters HTTP/1.1" 200 OK
+RESULTS: 50782
+INFO:     127.0.0.1:53364 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+SEASON BESTS CALLED
+RESULTS: 50782
+INFO:     127.0.0.1:53364 - "GET /athletes/season-bests?age_group=Open HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "GET /admin/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "GET /admin/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57381 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53716 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53814 - "GET /admin/results?page=2&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60646 - "GET /admin/results?page=3&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62475 - "GET /admin/results/60790 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62475 - "GET /admin/results/60790 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62005 - "OPTIONS /admin/results/60790 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62005 - "PUT /admin/results/60790 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2543, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2598, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\api\admin_results.py", line 406, in update_result
+    parse_performance_numeric(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request.performance
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: parse_performance_numeric() missing 1 required positional argument: 'event_name'
+INFO:     127.0.0.1:51919 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51919 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61202 - "GET /athletes/search?q= HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60158 - "GET /athletes/search?q= HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63035 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63035 - "GET /admin/results?page=1&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64742 - "GET /admin/results?page=2&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61294 - "GET /admin/results?page=3&page_size=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58687 - "GET /admin/results/60790 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58687 - "GET /admin/results/60790 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59168 - "PUT /admin/results/60790 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2543, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2598, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\api\admin_results.py", line 406, in update_result
+    parse_performance_numeric(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request.performance
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: parse_performance_numeric() missing 1 required positional argument: 'event_name'
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [51180]
+INFO:     Stopping reloader process [9616]
+PS C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform> uvicorn main:app --reload --port 8001
+INFO:     Will watch for changes in these directories: ['C:\\Users\\MichaelHolmes\\downloads\\athleticswestresultsplatform']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [29860] using StatReload
+INFO:     Started server process [29500]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54883 - "PUT /admin/results/60790 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2543, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 2598, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\fastapi\routing.py", line 346, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 2596, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\MichaelHolmes\AppData\Local\Programs\Python\Python314\Lib\site-packages\anyio\_backends\_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "C:\Users\MichaelHolmes\downloads\athleticswestresultsplatform\app\api\admin_results.py", line 406, in update_result
+    parse_performance_numeric(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request.performance
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: parse_performance_numeric() missing 1 required positional argument: 'event_name'

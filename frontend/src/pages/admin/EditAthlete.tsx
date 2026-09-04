@@ -10,7 +10,7 @@ import {
 
 export default function EditAthlete() {
 
-    const { athleteId } =
+    const { athleteName } =
         useParams();
 
     const navigate =
@@ -21,7 +21,7 @@ export default function EditAthlete() {
         setAthlete
     ] = useState({
         athlete_name: "",
-        year_of_birth: "",
+        birth_year: "",
         gender: ""
     });
 
@@ -36,7 +36,7 @@ export default function EditAthlete() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/athletes/admin/${athleteId}`
+                    `http://localhost:8001/athletes/admin/${athleteName}`
                 );
 
             const data =
@@ -47,7 +47,7 @@ export default function EditAthlete() {
 
         loadAthlete();
 
-    }, [athleteId]);
+    }, [athleteName]);
 
     async function saveAthlete() {
 
@@ -56,7 +56,7 @@ export default function EditAthlete() {
             setSaving(true);
 
             await fetch(
-                `http://localhost:8001/athletes/admin/${athleteId}`,
+                `http://localhost:8001/athletes/admin/${athleteName}`,
                 {
                     method: "PUT",
                     headers: {
@@ -116,12 +116,12 @@ export default function EditAthlete() {
 
                 <input
                     value={
-                        athlete.year_of_birth
+                        athlete.birth_year
                     }
                     onChange={(e) =>
                         setAthlete({
                             ...athlete,
-                            year_of_birth:
+                            birth_year:
                                 e.target.value
                         })
                     }

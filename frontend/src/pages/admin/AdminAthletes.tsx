@@ -309,6 +309,14 @@ export default function AdminAthletes() {
                                         </Link>
 
                                         <Link
+                                            to={`/admin/athletes/${encodeURIComponent(
+                                                athlete.athlete_name
+                                            )}/edit`}
+                                        >
+                                            Edit
+                                        </Link>
+
+                                        <Link
                                             to={`/admin/athletes/merge?source=${encodeURIComponent(
                                                 athlete.athlete_name
                                             )}`}

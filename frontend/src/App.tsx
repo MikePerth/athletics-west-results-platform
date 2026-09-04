@@ -7,7 +7,6 @@ import {
 import AdminHome from "./pages/admin/AdminHome";
 import Athletes from "./pages/Athletes";
 import AthleteProfile from "./pages/AthleteProfile";
-import UploadResults from "./pages/UploadResults";
 import AdminResults from "./pages/admin/AdminResults";
 import CreateResult from "./pages/admin/CreateResult";
 import EditResult from "./pages/admin/EditResult";
@@ -101,8 +100,13 @@ function App() {
       />
 
       <Route
-        path="/admin/athletes/:athleteId/edit"
-        element={<EditAthlete />}
+        path="/admin/athletes/:athleteName/edit"
+        element={
+              <ProtectedRoute>   
+                  <EditAthlete />
+              </ProtectedRoute>
+        }
+                
       />        
 
       <Route

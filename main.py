@@ -14,6 +14,7 @@ from app.api.meet_manager_import import (
 )
 
 from app.api.admin_results import router as admin_results_router
+from app.api.admin_athletes import router as admin_athletes_router
 
 from app.api.admin_users import (
     router as admin_users_router
@@ -53,9 +54,16 @@ app.include_router(
 )
 app.include_router (admin_results_router)
 app.include_router(admin_users_router)
+
 app.include_router(auth_router)
 app.include_router(
     admin_dashboard_router
+)
+
+app.include_router(
+    admin_athletes_router,
+    prefix="/athletes/admin",
+    tags=["Admin Athletes"]
 )
 
 @app.get("/")
