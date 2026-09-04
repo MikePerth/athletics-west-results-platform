@@ -62,7 +62,7 @@ export default function Athletes() {
 
                 const response =
                     await fetch(
-                        "http://localhost:8001/athletes/letters"
+                        `${import.meta.env.VITE_API_URL}/athletes/letters`
                     );
 
                 const data =
@@ -88,7 +88,7 @@ export default function Athletes() {
 
                 const response =
                     await fetch(
-                        "http://localhost:8001/athletes/count"
+                        `${import.meta.env.VITE_API_URL}/athletes/count`
                     );
 
                 const data =
@@ -122,7 +122,7 @@ export default function Athletes() {
 
                 const response =
                     await fetch(
-                        `http://localhost:8001/athletes/season-bests?age_group=${encodeURIComponent(
+                        `${import.meta.env.VITE_API_URL}/athletes/season-bests?age_group=${encodeURIComponent(
                             ageGroup
                         )}`
                     );
@@ -161,7 +161,7 @@ export default function Athletes() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/athletes/search?q=${encodeURIComponent(
+                    `${import.meta.env.VITE_API_URL}/athletes/search?q=${encodeURIComponent(
                         query.trim()
                     )}`
                 );
@@ -185,7 +185,7 @@ export default function Athletes() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/athletes/browse/${letter}`
+                    `${import.meta.env.VITE_API_URL}/{letter}`
                 );
 
             const data =

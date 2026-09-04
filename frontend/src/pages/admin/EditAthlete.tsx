@@ -36,7 +36,7 @@ export default function EditAthlete() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/athletes/admin/${athleteName}`
+                    `${import.meta.env.VITE_API_URL}/athletes/admin/${athleteName}`
                 );
 
             const data =
@@ -56,7 +56,7 @@ export default function EditAthlete() {
             setSaving(true);
 
             await fetch(
-                `http://localhost:8001/athletes/admin/${athleteName}`,
+                `${import.meta.env.VITE_API_URL}/athletes/admin/${athleteName}`,
                 {
                     method: "PUT",
                     headers: {

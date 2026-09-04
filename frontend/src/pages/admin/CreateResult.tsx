@@ -100,7 +100,7 @@ export default function CreateResult() {
             };
 
             const response = await fetch(
-                "http://localhost:8001/admin/results",
+                `${import.meta.env.VITE_API_URL}/admin/results`,
                 {
                     method: "POST",
 

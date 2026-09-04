@@ -24,7 +24,7 @@ export default function MergeAthlete() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:8001/athletes/list"
+                    `${import.meta.env.VITE_API_URL}/athletes/list`
                 );
 
                 const data =
@@ -96,7 +96,7 @@ export default function MergeAthlete() {
         try {
 
             const response = await fetch(
-                "http://localhost:8001/admin/athletes/merge",
+                `${import.meta.env.VITE_API_URL}/admin/athletes/merge`,
                 {
                     method: "POST",
                     headers: {

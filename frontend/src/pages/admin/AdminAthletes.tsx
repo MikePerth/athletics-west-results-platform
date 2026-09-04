@@ -26,7 +26,7 @@ export default function AdminAthletes() {
         try {
 
             const response = await fetch(
-                `http://localhost:8001/athletes/search?q=${encodeURIComponent(query)}`
+                `${import.meta.env.VITE_API_URL}/athletes/search?q=${encodeURIComponent(query)}`
             );
 
             const data =

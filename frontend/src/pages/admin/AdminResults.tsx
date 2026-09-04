@@ -123,7 +123,7 @@ export default function AdminResults() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/admin/results?${params}`
+                    `${import.meta.env.VITE_API_URL}/admin/results?${params}`
                 );
 
             const data =
@@ -170,7 +170,7 @@ export default function AdminResults() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/admin/results/${id}`,
+                    `${import.meta.env.VITE_API_URL}/admin/results/${id}`,
                     {
                         method:
                             "DELETE"

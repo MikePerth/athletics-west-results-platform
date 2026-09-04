@@ -47,7 +47,7 @@ export default function CompetitionResults() {
 
                 const response =
                     await fetch(
-                        `http://localhost:8001/competitions/${competitionId}/results`
+                        `${import.meta.env.VITE_API_URL}/competitions/${competitionId}/results`
                     );
 
                 const data =

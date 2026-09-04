@@ -29,7 +29,7 @@ export default function AdminHome() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:8001/admin/dashboard"
+                    `${import.meta.env.VITE_API_URL}/admin/dashboard`
                 );
 
                 const data =

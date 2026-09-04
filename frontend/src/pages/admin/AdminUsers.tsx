@@ -25,7 +25,7 @@ export default function AdminUsers() {
         try {
 
             const response = await fetch(
-                "http://localhost:8001/admin/users"
+                `${import.meta.env.VITE_API_URL}/admin/users`
             );
 
             const data =
@@ -65,7 +65,7 @@ export default function AdminUsers() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/admin/users/${userId}`,
+                    `${import.meta.env.VITE_API_URL}/admin/users/${userId}`,
                     {
                         method: "PUT",
                         headers: {
@@ -113,7 +113,7 @@ export default function AdminUsers() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/admin/users/${userId}`,
+                    `${import.meta.env.VITE_API_URL}/admin/users/${userId}`,
                     {
                         method: "PUT",
                         headers: {
@@ -161,7 +161,7 @@ export default function AdminUsers() {
 
             const response =
                 await fetch(
-                    `http://localhost:8001/admin/users/${userId}`,
+                    `${import.meta.env.VITE_API_URL}/admin/users/${userId}`,
                     {
                         method: "DELETE"
                     }

@@ -19,7 +19,7 @@ export default function EditResult() {
         try {
 
             const response = await fetch(
-                `http://localhost:8001/admin/results/${id}`
+                `${import.meta.env.VITE_API_URL}/admin/results/${id}`
             );
 
             const data = await response.json();
@@ -41,7 +41,7 @@ export default function EditResult() {
         try {
 
             const response = await fetch(
-                `http://localhost:8001/admin/results/${id}`,
+                `${import.meta.env.VITE_API_URL}1/admin/results/${id}`,
                 {
                     method: "PUT",
                     headers: {
@@ -87,7 +87,7 @@ export default function EditResult() {
         try {
 
             const response = await fetch(
-                `http://localhost:8001/admin/results/${id}`,
+                `${import.meta.env.VITE_API_URL}/admin/results/${id}`,
                 {
                     method: "DELETE"
                 }
