@@ -68,7 +68,7 @@ export default function AthleteProfile() {
         async function loadAthlete() {
 
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/{athleteName}`
+                `${import.meta.env.VITE_API_URL}/${athleteName}`
             );
 
             const data = await response.json();
