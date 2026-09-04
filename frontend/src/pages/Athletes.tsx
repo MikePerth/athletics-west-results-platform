@@ -185,7 +185,7 @@ export default function Athletes() {
 
             const response =
                 await fetch(
-                    `${import.meta.env.VITE_API_URL}/athletes/browse${letter}`
+                    `${import.meta.env.VITE_API_URL}/athletes/browse/${letter}`
                 );
 
             const data =
