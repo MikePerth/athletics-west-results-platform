@@ -380,7 +380,7 @@ def get_athlete_profile(
     #
     bests = calculate_personal_bests(
         performances
-    )
+    ) or {}
 
     pb_results = bests.get(
         "personal_bests",

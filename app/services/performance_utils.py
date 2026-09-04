@@ -528,17 +528,14 @@ def calculate_personal_bests(performances):
             season_bests[event_name] = sb
 
     
-
-    for event in sorted(personal_bests.keys()):
-        
             
     
 
-        return {
+    return {
 
-            "personal_bests": personal_bests,
+        "personal_bests": personal_bests,
 
-            "season_bests": season_bests
+       "season_bests": season_bests
 
     }
 
