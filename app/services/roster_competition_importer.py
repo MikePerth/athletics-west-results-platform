@@ -52,7 +52,9 @@ class LayoutType:
         "field_notes_agegroup_implement"
     )
 
-
+    FIELD_NOTES_CLUB_RESULT = (
+        "field_notes_club_result"
+    )
     
     
 
@@ -268,9 +270,7 @@ class RosterCompetitionImporter:
         record
         ):
 
-        #print("\nTRACK_STANDARD")
-        #print(record)
-    
+            
         details_parts = (
             record[5]
             .split("\t")
@@ -512,12 +512,10 @@ class RosterCompetitionImporter:
         record
     ):
 
+       
 
         #
         # Para field event
-        #
-        # Notes: 65.63%
-        # U20    UWA    3.82 (+1.8)
         #
         if (
             len(record) > 6
@@ -525,8 +523,17 @@ class RosterCompetitionImporter:
             and "%" in str(record[5])
             and "\t" in str(record[6])
         ):
-            return LayoutType.FIELD_PARA_PERCENTAGE
-   
+
+            print(
+                "LAYOUT =>",
+                LayoutType.FIELD_PARA_PERCENTAGE
+            )
+
+            return (
+                LayoutType
+                .FIELD_PARA_PERCENTAGE
+            )
+
         #
         # Notes:
         # 600g
@@ -541,6 +548,9 @@ class RosterCompetitionImporter:
                 str(record[6])
             )
         ):
+
+            
+
             return (
                 LayoutType
                 .FIELD_NOTES_AGEGROUP_IMPLEMENT
@@ -557,15 +567,83 @@ class RosterCompetitionImporter:
                 str(record[5])
             )
         ):
+
+            
+
             return (
                 LayoutType
                 .FIELD_AGEGROUP_IMPLEMENT
+            )
+
+        
+
+        #
+        # Notes field present
+        # Club + Result moved to next column
+        #
+        if (
+            len(record) > 6
+            and str(record[5]).startswith(
+                "Notes:"
+            )
+        ):
+
+            return (
+                LayoutType
+                .FIELD_NOTES_CLUB_RESULT
             )
 
         return (
             LayoutType
             .FIELD_STANDARD
         )
+
+
+
+
+
+
+    def parse_field_notes_club_result(
+        self,
+        record
+    ):
+
+        age_group = None
+
+        club = None
+
+        result = None
+
+        details_parts = (
+            record[6]
+            .split("\t")
+        )
+
+        if len(details_parts) >= 2:
+
+            club = (
+                details_parts[0]
+            )
+
+            result = (
+                details_parts[1]
+            )
+
+        elif len(details_parts) == 1:
+
+            result = (
+                details_parts[0]
+            )
+
+        
+
+        return (
+            age_group,
+            club,
+            result
+        )
+           
+
 
 
     def parse_field_standard(
@@ -703,9 +781,7 @@ class RosterCompetitionImporter:
 
                     page.wait_for_timeout(1000)
 
-                #except Exception as e:
-
-                #    print(e)
+                
 
 
             switch_button = page.get_by_role(
@@ -786,10 +862,7 @@ class RosterCompetitionImporter:
                 event_data = self.extract_event(
                     page
                 )
-                #print(event_data)
-                #print(
-                #    f"TR COUNT: {page.locator('tr').count()}"
-                #)
+                
 
                 gender = normalise_gender(
                     event_data.get("event_details")
@@ -797,22 +870,7 @@ class RosterCompetitionImporter:
 
                 event_data["gender"] = gender
 
-                #print(
-                #    f"EVENT={event_data['event_name']} | "
-                #    f"DETAILS={event_data.get('event_details')} | "
-                #    f"GENDER={gender}"
-                #)
-
-                #if event_data["event_name"] in [
-                    
-                #    "Long Jump"
-                #]:
-
-                #    print("\nRAW EVENT ROWS")
-                #    print(event_data["event_name"])
-
-                #   for row in event_data["rows"]:
-                #        print(repr(row))
+                
 
                 round_name = None
 
@@ -912,9 +970,7 @@ class RosterCompetitionImporter:
                         f"BAD EVENT AT INDEX {i}"
                     )
 
-                    #print(type(event))
-
-                    #print(event)
+                    
 
             athlete_count = sum(
                 len(event["athletes"])
@@ -960,17 +1016,7 @@ class RosterCompetitionImporter:
             print(f"Unhandled records: {unhandled_records}")
             print(f"Missing results: {missing_results}")
 
-            #print("\nFAILED EVENTS")
-
             
-
-            #@for failure in failed_events:
-
-            #    print(
-            #        f"{failure['event']} | "
-            #        f"rows={failure['rows']} | "
-            #        f"error={failure['error']}"
-            #    )
 
             print("===================\n")
 
@@ -1356,14 +1402,7 @@ class RosterCompetitionImporter:
                 record
             )
 
-            #if (
-            #    "PRIOR" in str(record)
-            #    or "ALASDAIR" in str(record)
-            #    or "MASON" in str(record)
-            #):
-            #    print("\nPARA LONG JUMP")
-            #    print(record)
-            #    print(f"LAYOUT = {layout}")
+            
 
             if (
                 layout
@@ -1422,6 +1461,21 @@ class RosterCompetitionImporter:
                     )
                 )
 
+            elif (
+                layout
+                == LayoutType.FIELD_NOTES_CLUB_RESULT
+            ):
+
+                (
+                    age_group,
+                    club,
+                    result
+                ) = (
+                    self.parse_field_notes_club_result(
+                        record
+                    )
+                ) 
+
 
             
 
@@ -1435,6 +1489,9 @@ class RosterCompetitionImporter:
                 continue
             
             wind = None
+
+            
+
 
             if result:
 
@@ -1474,10 +1531,7 @@ class RosterCompetitionImporter:
 
             name = name.title()
 
-            #if "2.53" in str(record):
-            #    print("\nCOMP35 PARA LONG JUMP")
-            #    for i, value in enumerate(record):
-            #        print(i, repr(value))
+           
 
             if not result and not status:
 
@@ -1588,17 +1642,7 @@ class RosterCompetitionImporter:
                 layout = self.detect_track_layout(
                     record
                 )
-                #print(f"LAYOUT INPUT: {record}")
-                #print(f"LAYOUT OUTPUT: {layout}")
-                #if (
-                #    "CRUZ OSBORNE" in str(record)
-                #    or "KENAN KNOTTENBELT" in str(record)
-                #):
-                #    print(layout)
-
-                #print(
-                #    f"{record[1]} -> {layout}"
-                #)
+                
                 
 
                 if layout == LayoutType.TRACK_STANDARD:
@@ -1642,7 +1686,7 @@ class RosterCompetitionImporter:
 
                 elif layout == LayoutType.TRACK_AGEGROUP_DETAILS:
 
-                    #print("HIT TRACK_AGEGROUP_DETAILS")
+                    
 
                     (
                         age_group,

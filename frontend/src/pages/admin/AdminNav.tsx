@@ -38,6 +38,10 @@ export default function AdminNav() {
                 Results
             </Link>
 
+            <Link to="/admin/alerts">
+                Alerts
+            </Link>
+
             <Link to="/admin/results/new">
                 New Result
             </Link>

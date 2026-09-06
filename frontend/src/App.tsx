@@ -17,6 +17,8 @@ import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminAthletes from "./pages/admin/AdminAthletes";
 import CompetitionResults from "./pages/CompetitionResults";
+import AdminAlerts from "./pages/admin/AdminAlerts";
+
 
 function App() {
   return (
@@ -28,6 +30,14 @@ function App() {
           element={<Athletes />}
         />
 
+        <Route
+            path="/admin/alerts"
+            element={
+                <ProtectedRoute>
+                    <AdminAlerts />
+                </ProtectedRoute>
+            }
+        />
 
         <Route
           path="/admin"
@@ -37,6 +47,11 @@ function App() {
               </ProtectedRoute>
           }
       />
+        <Route
+            path="/admin/alerts"
+            element={<AdminAlerts />}
+        />
+
 
         <Route
             path="/athletes"

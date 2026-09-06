@@ -285,11 +285,7 @@ class RosterResultImporter:
                     continue
 
 
-                #print(
-                #    f"{result.event_name} | "
-                #    f"{result.gender} | "
-                #    f"{result.athlete_name}"
-                #)
+                
 
                 self.session.add(
                     result

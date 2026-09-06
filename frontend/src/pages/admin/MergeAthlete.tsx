@@ -96,7 +96,7 @@ export default function MergeAthlete() {
         try {
 
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/admin/athletes/merge`,
+                `${import.meta.env.VITE_API_URL}/athletes/admin/merge`,
                 {
                     method: "POST",
                     headers: {

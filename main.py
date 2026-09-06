@@ -15,7 +15,7 @@ from app.api.meet_manager_import import (
 
 from app.api.admin_results import router as admin_results_router
 from app.api.admin_athletes import router as admin_athletes_router
-
+from app.api import admin_alerts
 from app.api.admin_users import (
     router as admin_users_router
 )
@@ -26,7 +26,7 @@ from app.api.admin_dashboard import (
 )
 
 
-import app.models
+
 
 app = FastAPI(
     title="Athletics West Results Platform"
@@ -60,7 +60,9 @@ app.include_router(auth_router)
 app.include_router(
     admin_dashboard_router
 )
-
+app.include_router(
+    admin_alerts.router
+)
 app.include_router(
     admin_athletes_router,
     prefix="/athletes/admin",

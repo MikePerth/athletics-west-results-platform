@@ -41,7 +41,7 @@ export default function EditResult() {
         try {
 
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}1/admin/results/${id}`,
+                `${import.meta.env.VITE_API_URL}/admin/results/${id}`,
                 {
                     method: "PUT",
                     headers: {
