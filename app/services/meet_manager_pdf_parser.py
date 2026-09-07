@@ -8,6 +8,91 @@ class MeetManagerPdfParser:
     def __init__(self):
         pass
 
+    def convert_two_digit_year(
+        self,
+        year_text
+    ):
+
+        year = int(year_text)
+
+        if year <= 26:
+            return f"20{year:02d}"
+
+        return f"19{year:02d}"
+
+
+    def clean_hytek_name(
+        self,
+        name
+    ):
+
+        name = re.sub(
+            r"\s+[TF]\d+[A-Z]?",
+            "",
+            name
+        )
+
+        return name.strip()
+
+
+
+
+    def normalise_hytek_name(
+        self,
+        name
+    ):
+
+        name = self.clean_hytek_name(
+            name
+        )
+
+        #
+        # Convert:
+        # Surname, Firstname
+        # ->
+        # Firstname Surname
+        #
+        if "," in name:
+
+            surname, firstname = (
+                part.strip()
+                for part in name.split(
+                    ",",
+                    1
+                )
+            )
+
+            return (
+                f"{firstname} {surname}"
+            )
+
+        return name
+    
+
+    def clean_hytek_result(
+        self,
+        result
+    ):
+
+        result = result.strip()
+
+        #
+        # World Championship Qualifier
+        # 12.75W -> 12.75
+        #
+        if result.endswith("W"):
+            result = result[:-1]
+
+        #
+        # Meet Record
+        # 7:41.38M -> 7:41.38
+        #
+        if result.endswith("M"):
+            result = result[:-1]
+
+        return result
+
+
     def parse(self, text):
 
         events = self.extract_events(text)
@@ -34,6 +119,11 @@ class MeetManagerPdfParser:
 
         events = []
 
+        #
+        # Existing Meet Manager parser
+        # Event 1 ...
+        # Event 2 ...
+        #
         event_pattern = re.compile(
             r"Event\s+\d+.*?(?=Event\s+\d+|\Z)",
             re.DOTALL
@@ -41,17 +131,235 @@ class MeetManagerPdfParser:
 
         matches = event_pattern.findall(text)
 
-        for block in matches:
+        print(
+            f"EVENT-NUMBER BLOCKS FOUND = {len(matches)}"
+        )
 
-            event_number = self.extract_event_number(block)
+        #
+        # Existing parser path
+        #
+        if matches:
 
-            event_name = self.extract_event_name(block)
+            for block in matches:
+
+                event_number = self.extract_event_number(
+                    block
+                )
+
+                event_name = self.extract_event_name(
+                    block
+                )
+
+                gender = normalise_gender(
+                    event_name
+                )
+
+                if any(
+                    keyword in event_name
+                    for keyword in [
+                        "Long Jump",
+                        "Triple Jump",
+                        "High Jump",
+                        "Pole Vault",
+                        "Shot Put",
+                        "Discus",
+                        "Hammer",
+                        "Javelin"
+                    ]
+                ):
+
+                    event_type = "field"
+
+                    athletes = (
+                        self.parse_field_rows(
+                            block.splitlines()
+                        )
+                    )
+
+                else:
+
+                    event_type = "track"
+
+                    athletes = (
+                        self.parse_track_rows(
+                            block.splitlines()
+                        )
+                    )
+
+                events.append(
+                    {
+                        "event_number": event_number,
+                        "event_name": event_name,
+                        "event_type": event_type,
+                        "gender": gender,
+                        "athletes": athletes
+                    }
+                )
+
+            merged_events = {}
+
+            for event in events:
+
+                print(
+                    f"{event['event_name']}: "
+                    f"{len(event['athletes'])} athletes"
+                )
+
+                key = (
+                    event["event_number"],
+                    event["event_name"]
+                )
+
+                if key not in merged_events:
+
+                    merged_events[key] = event
+
+                else:
+
+                    merged_events[key][
+                        "athletes"
+                    ].extend(
+                        event["athletes"]
+                    )
+
+            return list(
+                merged_events.values()
+            )
+
+        #
+        # Fallback parser for Hy-Tek exports
+        # Example:
+        # Women 100 Metres
+        # Men 200 Metres
+        #
+        print(
+            "NO EVENT-NUMBER EVENTS FOUND"
+        )
+
+        print(
+            "ATTEMPTING HY-TEK FALLBACK PARSER"
+        )
+
+        return self.extract_hytek_events(
+            text
+        )
+
+
+    def extract_hytek_events(
+        self,
+        text
+    ):
+
+        print(
+            "HY-TEK FALLBACK PARSER ACTIVATED"
+        )
+
+        events = []
+
+        lines = text.splitlines()
+
+        #
+        # Event headers like:
+        #
+        # Women 100 Metres
+        # Men 200 Metres
+        # Women Long Jump
+        #
+        header_pattern = re.compile(
+            r"^(Women|Men)\s+.+$"
+        )
+
+        event_headers = []
+
+        for i, line in enumerate(lines):
+
+            line = line.strip()
+
+            if not line:
+                continue
+
+            #
+            # Ignore page headers
+            #
+            if (
+                "MEET MANAGER" in line
+                or "Results" == line
+                or "Athletics House" in line
+            ):
+                continue
+
+            if header_pattern.match(line):
+
+                event_headers.append(
+                    (i, line)
+                )
+
+        print(
+            f"HY-TEK HEADERS FOUND = "
+            f"{len(event_headers)}"
+        )
+
+        for idx, (start_idx, header) in enumerate(
+            event_headers
+        ):
+
+            if idx < len(event_headers) - 1:
+
+                end_idx = (
+                    event_headers[idx + 1][0]
+                )
+
+            else:
+
+                end_idx = len(lines)
+
+            block_lines = (
+                lines[start_idx:end_idx]
+            )
+
+            block_text = "\n".join(
+                block_lines
+            )
+
+            event_name = header.strip()
+
+            if event_name == "Women Long Jump":
+
+                print("\n===================")
+                print("WOMEN LONG JUMP")
+                print("===================")
+
+                for line in block_lines:
+                    print(repr(line))
+
+                print("===================\n")
+
+            if event_name == "Men Long Jump":
+
+                print("\n===================")
+                print("MEN LONG JUMP")
+                print("===================")
+
+                for line in block_lines:
+                    print(repr(line))
+
+                print("===================\n")
+
+            #if event_name == "Women 1500 Metres":
+
+            #    print("\n===================")
+            #    print("WOMEN 1500 METRES")
+            #    print("===================")
+
+            #    for line in block_lines:
+            #        print(repr(line))
+
+            #    print("===================\n")
 
             gender = normalise_gender(
                 event_name
             )
 
-            
             if any(
                 keyword in event_name
                 for keyword in [
@@ -68,38 +376,68 @@ class MeetManagerPdfParser:
 
                 event_type = "field"
 
-                #print("\n========================")
-                #print("FIELD EVENT")
-                #print(event_name)
-                #print("========================")
-
-                for line in block.splitlines()[:20]:
-                    print(repr(line))
-
-                athletes = self.parse_field_rows(
-                    block.splitlines()
+                athletes = (
+                    self.parse_hytek_field_rows(
+                        block_lines
+                    )
                 )
+
+                if len(athletes) == 0:
+
+                    print(
+                        "\n=============================="
+                    )
+                
+                    print(
+                        f"NO ATHLETES EXTRACTED: "
+                        f"{event_name}"
+                    )
+                
+                    print(
+                        "==============================\n"
+                    )
+            
 
             else:
 
                 event_type = "track"
 
-                #print("\n========================")
-                #print("TRACK EVENT")
-                #print(event_name)
-                #print("========================")
-
-                for line in block.splitlines()[:20]:
-                    print(repr(line))
-
-                athletes = self.parse_track_rows(
-                    block.splitlines()
+                athletes = (
+                    self.parse_hytek_track_rows(
+                        block_lines
+                    )
                 )
+            
+                
+                for athlete in athletes:
 
+                    if not self.is_valid_performance(
+                        athlete.get("result")
+                    ):
 
+                        print(
+                            "\n=============================="
+                        )
+
+                        print(
+                            "INVALID PERFORMANCE"
+                        )
+
+                        print(
+                            f"EVENT: {event_name}"
+                        )
+
+                        print(
+                            athlete
+                        )
+
+                        print(
+                            "==============================\n"
+                        )
+                
             events.append(
                 {
-                    "event_number": event_number,
+                    "event_number": None,
                     "event_name": event_name,
                     "event_type": event_type,
                     "gender": gender,
@@ -107,32 +445,49 @@ class MeetManagerPdfParser:
                 }
             )
 
-        merged_events = {}
+        print(
+            f"HY-TEK EVENTS PARSED = "
+            f"{len(events)}"
+        )
 
-        for event in events:
-
-            key = (
-                event["event_number"],
-                event["event_name"]
-            )
-
-            if key not in merged_events:
-
-                merged_events[key] = event
-
-            else:
-
-                merged_events[key]["athletes"].extend(
-                    event["athletes"]
-                )
-
-        return list(
-            merged_events.values()
-)
+        return events
 
 
 
+    def is_valid_performance(
+        self,
+        result
+    ):
 
+        if result is None:
+            return False
+
+        result = str(result).strip()
+
+        #
+        # Numeric field event
+        # 6.72
+        # 59.00
+        #
+        if re.match(
+            r"^\d+\.\d+$",
+            result
+        ):
+            return True
+
+        #
+        # Track time
+        # 11.20
+        # 1:45.85
+        # 4:07.11
+        #
+        if re.match(
+            r"^\d+(?::\d+)*(?:\.\d+)?$",
+            result
+        ):
+            return True
+
+        return False
 
     def normalise_club_name(
         self,
@@ -193,6 +548,139 @@ class MeetManagerPdfParser:
         
         return club_map[club]
             
+
+
+    def parse_hytek_track_rows(
+        self,
+        lines
+    ):
+
+        athletes = []
+
+        result_pattern = re.compile(
+            r"^\s*(\d+)\s+"
+            r"(.+?)\s+"
+            r"(\d{2})\s+"
+            r"([A-Z]{3})\s+"
+            r"([\d:.]+)\s+"
+            r"(-?\d+\.\d+)\s*$"
+        )
+
+        distance_pattern = re.compile(
+            r"^\s*(\d+)\s+"
+            r"(.+?)\s+"
+            r"(\d{2})\s+"
+            r"([A-Z]{3})\s+"
+            r"([\d:.]+)"
+            r"(?:\s+.*)?$"
+        )
+
+        for line in lines:
+
+            line = line.strip()
+
+            #if (
+            #    line.startswith("1 ")
+            #    or line.startswith("2 ")
+            #    or line.startswith("3 ")
+            #):
+                #print(
+                #    "TRACK LINE:",
+                #    repr(line)
+                #)
+
+            match = result_pattern.match(
+                line
+            )
+
+            if not match:
+
+                match = distance_pattern.match(
+                    line
+                )
+
+            if not match:
+                continue
+
+            year = int(
+                match.group(3)
+            )
+
+            if year <= 26:
+                birth_year = (
+                    f"20{year:02d}"
+                )
+            else:
+                birth_year = (
+                    f"19{year:02d}"
+                )
+
+            athletes.append(
+                {
+                    "place": match.group(1),
+                    "name": self.normalise_hytek_name(
+                        match.group(2)
+                    ),
+                    "birth_year": self.convert_two_digit_year(
+                        match.group(3)
+                    ),
+                    "country": match.group(4),
+                    "result": self.clean_hytek_result(
+                        match.group(5)
+                    ),
+                    "status": None
+                }
+            )
+
+        return athletes
+
+
+    def parse_hytek_field_rows(
+        self,
+        lines
+    ):
+
+        athletes = []
+
+        result_pattern = re.compile(
+            r"^\s*(\d+)\s+"
+            r"(.+?)\s+"
+            r"(\d{2})\s+"
+            r"([A-Z]{3})\s+"
+            r"([\d.]+m?)"
+            r"(?:\s+[+-]?\d+\.\d+)?\s*$"
+        )
+
+        for line in lines:
+
+            match = result_pattern.match(
+                line.strip()
+            )
+
+            if not match:
+                continue
+
+            athletes.append(
+                {
+                    "place": match.group(1),
+                    "name": self.normalise_hytek_name(
+                        match.group(2)
+                    ),
+                    "birth_year": (
+                        self.convert_two_digit_year(
+                            match.group(3)
+                        )
+                    ),
+                    "country": match.group(4),
+                    "result": (
+                        match.group(5)
+                        .rstrip("m")
+                    ),
+                    "status": None
+                }
+            )
+
+        return athletes
 
 
 

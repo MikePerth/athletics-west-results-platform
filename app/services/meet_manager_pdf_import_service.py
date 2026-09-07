@@ -36,8 +36,15 @@ class MeetManagerPdfImportService:
             Path(pdf_path)
         )
 
+        #print(f"TEXT LENGTH = {len(text)}")
+
+        #print("FIRST 10000 CHARS:")
+        #print(text[:8000])
+
         events = self.parser.parse(
             text
         )
+
+        print(f"EVENTS PARSED = {len(events)}")
 
         return events

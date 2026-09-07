@@ -49,14 +49,34 @@ async def import_meet_manager_pdf(
     
     print(f"EVENTS = {len(events)}")
 
-    print(events[0])
+    if not events:
+        print("NO EVENTS EXTRACTED")
+        return {
+            "success": False,
+            "message": "No events extracted from PDF"
+        }
 
-    for event in events[:10]:
+    for event in events:
 
+        print(
+            f"\n{event['event_name']}"
+        )
+
+        print(
+            f"ATHLETES = "
+            f"{len(event['athletes'])}"
+        )
+
+        if event["athletes"]:
+            print(
+                event["athletes"][0]
+            )
+
+    for event in events[:50]:
         print(
             event["event_name"],
             event.get("gender")
-        )
+    )
     #print(
     #    f"FIRST EVENT ATHLETES = "
     #    f"{len(events[0]['athletes'])}"
