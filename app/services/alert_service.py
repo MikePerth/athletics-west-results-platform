@@ -113,6 +113,7 @@ def scan_invalid_performances(
 
     Returns the number of new alerts created.
     """
+    
 
     created = 0
 
@@ -137,6 +138,14 @@ def scan_invalid_performances(
             if result.performance
             else ""
         )
+
+        #if result.competition_id == 24:
+
+        #    print(
+        #        "SUSPICIOUS VALUE:",
+        #        result.id,
+        #        repr(performance)
+        #    )
 
         alert_message = None
 
@@ -164,14 +173,15 @@ def scan_invalid_performances(
         #
         # Known suspicious values
         #
-        elif performance in (
-            SUSPICIOUS_VALUES
-        ):
+        #elif (
+        #    performance == "·"
+        #    or performance.startswith("·")
+        #):
 
-            alert_message = (
-                f"Suspicious performance "
-                f"value: '{performance}'"
-            )
+            #alert_message = (
+            #    f"Suspicious performance "
+            #    f"value: '{performance}'"
+            #)
 
         #
         # No issue found

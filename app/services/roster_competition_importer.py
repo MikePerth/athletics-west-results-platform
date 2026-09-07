@@ -37,7 +37,12 @@ class LayoutType:
         "track_steeplechase"
     )
 
-    
+    TRACK_XC = "track_xc"
+
+    TRACK_HURDLES_IMPLEMENT = (
+        "track_hurdles_implement"
+    )
+
     FIELD_STANDARD = "field_standard"
 
     FIELD_AGEGROUP_IMPLEMENT = (
@@ -72,11 +77,73 @@ class RosterCompetitionImporter:
         )
 
 
+    def is_suspicious_performance(
+        self,
+        result
+    ):
+        if not result:
+            return False
+
+        result = str(result).strip()
+
+        statuses = {
+            "DNS",
+            "DNF",
+            "DQ",
+            "NM",
+            "NH"
+        }
+
+        if result in statuses:
+            return False
+
+        #
+        # Numeric performance
+        #
+        if re.match(
+            r"^\d+(\.\d+)?$",
+            result
+        ):
+            return False
+
+        #
+        # Time performance
+        #
+        if re.match(
+            r"^\d+:\d+(?:\.\d+)?$",
+            result
+        ):
+            return False
+
+        #
+        # Hours:Minutes:Seconds
+        #
+        if re.match(
+            r"^\d+:\d+:\d+(?:\.\d+)?$",
+            result
+        ):
+            return False
+
+        return True
+
+
+
     def detect_track_layout(
         self,
         record
     ):
-
+        
+            
+        #
+        # Cross-country format
+        #
+        if (
+            len(record) == 8
+            and record[2] in ["M", "F"]
+            and record[3] == "·"
+            and record[5] == "·"
+        ):
+            return LayoutType.TRACK_XC
         #
         # Original steeplechase format
         #
@@ -159,6 +226,23 @@ class RosterCompetitionImporter:
                 LayoutType
                 .TRACK_AGEGROUP_DETAILS
             )
+
+
+        #
+        # Hurdles implement format
+        #
+        if (
+            len(record) == 9
+            and record[2] in ["M", "F"]
+            and record[3] == "·"
+            and record[5] == "·"
+        ):
+            return (
+                LayoutType
+                .TRACK_HURDLES_IMPLEMENT
+            )
+
+        
 
         return (
             LayoutType
@@ -426,7 +510,45 @@ class RosterCompetitionImporter:
             result
         )
 
+    def parse_track_xc(
+        self,
+        record
+    ):
 
+        birth_year = record[4]
+
+        country = record[6]
+
+        age_group = None
+
+        club = None
+
+        result = None
+
+        details_parts = (
+            record[7]
+            .split("\t")
+        )
+
+        if len(details_parts) >= 3:
+
+            age_group = details_parts[0]
+
+            result = details_parts[-1]
+
+        elif len(details_parts) == 2:
+
+            club = details_parts[0]
+
+            result = details_parts[1]
+
+        return (
+            birth_year,
+            country,
+            age_group,
+            club,
+            result
+        )
 
     def extract_special_road_rows(
         self,
@@ -985,6 +1107,20 @@ class RosterCompetitionImporter:
                 for athlete in event["athletes"]:
 
                     if (
+                        athlete.get("result")
+                        and "·" in athlete["result"]
+                    ):
+
+                       
+
+                        for i, value in enumerate(
+                            athlete["source_record"]
+                        ):
+                            print(
+                                f"{i}: {repr(value)}"
+                            )
+
+                    if (
                         not athlete.get("result")
                         and athlete.get("status") is None
                     ):
@@ -1299,13 +1435,7 @@ class RosterCompetitionImporter:
             "rows": rows
         }
         
-        #return {
-        #    "event_name": event_name,
-        #    "event_details": event_details,
-        #    "wind": self.extract_wind(text),
-        #    "event_type": event_type,
-        #    "rows": self.extract_rows(text)
-        #}
+        
 
 
     
@@ -1547,6 +1677,22 @@ class RosterCompetitionImporter:
 
                 print("==============================\n")
 
+
+            if self.is_suspicious_performance(result):
+
+                print("\n==============================")
+                print("SUSPICIOUS FIELD PERFORMANCE")
+                print("==============================")
+                print(f"LAYOUT: {layout}")
+                print(f"RESULT: {repr(result)}")
+
+                for i, value in enumerate(record):
+                    print(f"{i}: {repr(value)}")
+
+                print("==============================\n")
+
+            
+
             athlete = {
 
                 "place": place,
@@ -1617,6 +1763,7 @@ class RosterCompetitionImporter:
 
                 parts = record[0].split("\t")
 
+                
                 if len(parts) == 2:
                     place = parts[0]
                     lane = parts[1]
@@ -1642,16 +1789,49 @@ class RosterCompetitionImporter:
                 layout = self.detect_track_layout(
                     record
                 )
+                #if (
+                #    len(record) == 9
+                #    and record[3] == "·"
+                #    and record[5] == "·"
+                #):
+                #    print(
+                #        "LAYOUT:",
+                #        layout
+                #    )
                 
                 
+                if layout == LayoutType.TRACK_XC:
 
-                if layout == LayoutType.TRACK_STANDARD:
+                    (
+                        birth_year,
+                        country,
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_xc(
+                        record
+                    )
+
+                elif layout == LayoutType.TRACK_HURDLES_IMPLEMENT:
+
+                    (
+                        birth_year,
+                        country,
+                        age_group,
+                        club,
+                        result
+                    ) = self.parse_track_hurdles_implement(
+                        record
+                    )
+
+                elif layout == LayoutType.TRACK_STANDARD:
 
                     age_group, club, result = (
                         self.parse_track_standard(
                             record
                         )
                     )
+
 
                 elif layout == LayoutType.TRACK_NOTES:
 
@@ -1794,7 +1974,19 @@ class RosterCompetitionImporter:
 
                     print("==============================\n")
 
-                        
+                if self.is_suspicious_performance(result):
+
+                    print("\n==============================")
+                    print("SUSPICIOUS TRACK PERFORMANCE")
+                    print("==============================")
+                    print(f"LAYOUT: {layout}")
+                    print(f"RESULT: {repr(result)}")
+
+                    for i, value in enumerate(record):
+                        print(f"{i}: {repr(value)}")
+
+                    print("==============================\n")
+       
                    
                 athlete = {
 
@@ -1864,7 +2056,53 @@ class RosterCompetitionImporter:
         return False
 
 
-    
+    def parse_track_hurdles_implement(
+        self,
+        record
+    ):
+        birth_year = record[4]
+
+        country = record[6]
+
+        age_group = record[7]
+
+        club = None
+        result = None
+
+        if len(record) >= 9:
+
+            details_parts = record[8].split("\t")
+
+            #
+            # U16
+            # 83.8cm / 8.5m\tClub\t13.68w
+            #
+            if len(details_parts) >= 3:
+
+                age_group = record[7]
+                club = details_parts[-2]
+                result = details_parts[-1]
+
+            #
+            # Club\t13.99
+            # PB
+            #
+            else:
+
+                details_parts = record[7].split("\t")
+
+                if len(details_parts) >= 2:
+
+                    club = details_parts[0]
+                    result = details_parts[1]
+
+        return (
+            birth_year,
+            country,
+            age_group,
+            club,
+            result
+        )
 
     def is_track_record_start(self, row):
 
