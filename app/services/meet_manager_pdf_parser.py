@@ -651,14 +651,26 @@ class MeetManagerPdfParser:
             r"(?:\s+[+-]?\d+\.\d+)?\s*$"
         )
 
+
         for line in lines:
 
             match = result_pattern.match(
                 line.strip()
             )
 
+            if match:
+                print(
+                    "FIELD MATCH:",
+                    repr(line)
+                )
+
             if not match:
                 continue
+
+            print(
+                "NO MATCH:",
+                repr(line)
+            )  
 
             athletes.append(
                 {
